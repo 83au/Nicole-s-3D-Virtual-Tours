@@ -190,12 +190,12 @@ a:active {
   }
 
   .contact-main__details-1 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .contact-main__details-1 p a:link,
   .contact-main__details-2 a:link {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
 }
