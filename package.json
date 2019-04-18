@@ -1,0 +1,25 @@
+{
+  "name": "virtualtours",
+  "version": "1.0.0",
+  "description": "Nicole's 3D Virtual Tours brochure website",
+  "main": "index.js",
+  "scripts": {
+    "concat:css": "concat -o css/style.concat.css css/main.css css/services.css css/gallery.css css/contact.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "transpile": "babel src -d lib",
+    "minify:css": "minify css/style.prefix.css > css/style.css",
+    "minify:js": "minify lib/main.js > lib/main.min.js",
+    "build": "npm-run-all concat:css prefix:css transpile minify:css minify:js"
+  },
+  "author": "Beau Sherman",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concat": "^1.0.3",
+    "minify": "^4.1.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2"
+  }
+}

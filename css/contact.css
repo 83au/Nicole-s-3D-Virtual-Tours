@@ -1,0 +1,201 @@
+.contact-main {
+  padding: 5rem 0 2rem 0;
+}
+
+.contact-main__container {
+  padding: 0 2rem;
+  color: #f8f7f1;
+}
+
+.contact-hero__heading {
+  margin-top: 2rem;
+}
+
+.contact-main__details a:link {
+  color: #db27fa;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.contact-info .contact-main__details a:visited {
+  color: #AF9933;
+  opacity: .9;
+  font-weight: 400;
+}
+
+a:hover,
+a:focus,
+a:active {
+  opacity: .9;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+  height: 24.5rem;
+  width: 100%;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: -8rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons i {
+  padding: 1rem 0;
+  animation: fade-in 1.3s .5s backwards;
+}
+
+.contact-main__details {
+  position: relative;
+  left: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 60%;
+}
+
+.contact-main__details-1 p {
+  padding: 1rem 0;
+  border-bottom: 3px solid gray;
+  animation: fade-in 1.3s .5s backwards;
+
+  line-height: 1;
+  margin: 0;
+}
+
+.contact-main__details-1 p:first-child {
+  border-top: 3px solid gray;
+  animation: fade-in 1.3s .4s backwards;
+}
+
+.contact-main__details-2 a {
+  display: block;
+  padding: 1rem 0;
+  border-bottom: 3px solid gray;
+  animation: fade-in 1.3s .7s backwards;
+}
+
+.contact-main__details-2 a:first-child {
+  border-top: 3px solid gray;
+  animation: fade-in 1.3s .6s backwards;
+}
+
+
+/* === Media Queries === */
+
+/* = Wide Tablet */
+
+@media only screen and (min-width: 62.5em) and (orientation: portrait) { /* 1000px */
+  .contact-main {
+    padding: 10rem 0;
+  }
+
+  .contact-main__container {
+    margin: 4rem 0;
+  }
+
+  .contact-hero__heading {
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    letter-spacing: .5rem;
+  }
+
+  .contact-info {
+    height: 40rem;
+    font-size: 2rem;
+  }
+
+  .icons i {
+    padding: 2rem 0;
+  }
+
+  .contact-main__details {
+    width: 80%;
+  }
+
+  .contact-main__details-1 p,
+  .contact-main__details-2 a {
+    padding: 2rem 0;
+    width: 100%;
+    line-height: 2;
+    font-size: 2rem;
+  }
+}
+
+/* = Tablet = */
+@media only screen and (max-width: 770px) and (orientation: portrait) { /* 770px */
+  .contact-main {
+    padding: 10rem 0;
+  }
+
+  .contact-main__container {
+    margin: 4rem 0;
+  }
+
+  .contact-hero__heading {
+    margin-bottom: 1rem;
+  }
+
+  .contact-info {
+    height: 30rem;
+  }
+
+  .contact-main__details-1 p {
+    line-height: 1.7;
+  }
+}
+
+/* = Mobile = */
+@media only screen and (max-width: 41.9em) { /* 670px */
+  .contact-main {
+    padding: 5rem 0;
+  }
+
+  .contact-main__container {
+    margin-top: 3rem;
+    padding: 0;
+  }
+
+  .contact-hero__heading {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+  }
+
+  .contact-info {
+    height: 24.5rem;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .contact-icons {
+    position: relative;
+    left: 1rem;
+    margin-left: -4rem;
+  }
+
+  .contact-main__details {
+    left: 2.5rem;
+    width: 80%;
+  }
+
+  .contact-main__details-1 p {
+    font-size: 1rem;
+  }
+
+  .contact-main__details-1 p a:link,
+  .contact-main__details-2 a:link {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
