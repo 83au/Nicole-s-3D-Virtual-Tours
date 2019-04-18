@@ -7,8 +7,8 @@
     "concat:css": "concat -o css/style.concat.css css/main.css css/services.css css/gallery.css css/contact.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
     "transpile": "babel src -d lib",
-    "minify:css": "minify css/style.prefix.css > site/style.css",
-    "minify:js": "minify lib/main.js > site/main.min.js",
+    "minify:css": "minify css/style.prefix.css > css/style.css",
+    "minify:js": "minify lib/main.js > lib/main.min.js",
     "build": "npm-run-all concat:css prefix:css transpile minify:css minify:js"
   },
   "author": "Beau Sherman",
