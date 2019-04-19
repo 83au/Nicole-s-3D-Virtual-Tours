@@ -770,8 +770,16 @@ a:visited .btn {
   .hero__buttons--btn {
     height: 4rem;
     width: 11rem;
-    font-size: .9rem;
-    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .hero__buttons--btn-1 {
+    margin-right: .5rem;
+  }
+
+  .hero__buttons--btn-2 {
+    margin-left: .5rem;
   }
 
   /* Footer */
