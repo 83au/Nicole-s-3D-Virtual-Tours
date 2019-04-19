@@ -59,6 +59,7 @@
         <div class="sub-hero-container gallery-main__container container">
           <h2 class="sub-hero-heading gallery-hero__heading">Gallery</h2>
           <div class="gallery-main__nav">
+            <a href="#studio" class="gallery-main__nav--link">Studio Apartment</a>
             <a href="#single" class="gallery-main__nav--link">Single Bedroom Apartment</a>
             <a href="#house" class="gallery-main__nav--link">3 Bedroom House</a>
             <a href="#senior" class="gallery-main__nav--link">The Heights Inn Senior Care Facility</a>
@@ -68,6 +69,150 @@
     </div>
 
     <main class="gallery-main" role="main">
+      <section id="studio">
+        <div class="container">
+          <h3>Studio Apartment</h3>
+          <video controls>
+            <source src="./assets/videos/studio-apartment.mp4" type="video/mp4"
+            poster="./assets/studio-poster.png">
+            Video format not supported.
+          </video>
+
+          <h4 class="section-sub-heading">Still Shots</h4>
+          <div class="stills" id="studio-stills">
+
+            <!-- Popup -->
+            <div class="popup" id="pop-studio-liv-kitch">
+              <div class="popup-content">
+                <img srcset="./assets/studio-stills/livingroom-kitchen-lg-1x.jpg 1x,
+                ./assets/studio-stills/livingroom-kitchen-lg-2x.jpg 2x"
+                alt="Livingroom and kitchen">
+                <a href="#studio-stills" class="close">X</a>
+              </div>
+            </div>
+
+            <!-- normal page -->
+
+            <div class="image-box" id="norm-studio-liv-kitch">
+              <a href="#pop-studio-liv-kitch">
+                <picture>
+                  <source media="(max-width: 41.9em)"
+                  srcset="./assets/studio-stills/livingroom-kitchen-small-1x.jpg 1x,
+                  ./assets/studio-stills/livingroom-kitchen-small-2x.jpg 2x">
+                  <img srcset="./assets/studio-stills/livingroom-kitchen-lg-1x.jpg 1x,
+                  ./assets/studio-stills/livingroom-kitchen-lg-2x.jpg 2x"
+                  alt="Livingroom and kitchen">
+                </picture>
+              </a>
+            </div>
+
+            <!-- Popup -->
+            <div class="popup" id="pop-studio-liv">
+              <div class="popup-content">
+                <img srcset="./assets/studio-stills/livingroom-lg-1x.jpg 1x,
+                ./assets/studio-stills/livingroom-lg-2x.jpg 2x" alt="Livingroom">
+                <a href="#studio-stills" class="close">X</a>
+              </div>
+            </div>
+
+            <!-- normal page -->
+
+            <div class="image-box" id="norm-studio-liv">
+              <a href="#pop-studio-liv">
+                <picture>
+                  <source media="(max-width: 41.9em)" srcset="./assets/studio-stills/livingroom-small-1x.jpg 1x,
+                  ./assets/studio-stills/livingroom-small-2x.jpg 2x">
+                  <img srcset="./assets/studio-stills/livingroom-lg-1x.jpg 1x,
+                  ./assets/studio-stills/livingroom-lg-2x.jpg 2x" alt="Livingroom">
+                </picture>
+              </a>
+            </div>
+
+            <!-- Popup -->
+            <div class="popup" id="pop-studio-kitch">
+              <div class="popup-content">
+                <img srcset="./assets/studio-stills/kitchen-1-lg-1x.jpg 1x,
+                ./assets/studio-stills/kitchen-1-lg-2x.jpg 2x" alt="Kitchen">
+                <a href="#norm-studio-liv-kitch" class="close">X</a>
+              </div>
+            </div>
+
+            <!-- normal page -->
+
+            <div class="image-box" id="norm-studio-kitch">
+              <a href="#pop-studio-kitch">
+                <picture>
+                  <source media="(max-width: 41.9em)"
+                  srcset="./assets/studio-stills/kitchen-1-small-1x.jpg 1x,
+                  ./assets/studio-stills/kitchen-1-small-2x.jpg 2x">
+                  <img srcset="./assets/studio-stills/kitchen-1-lg-1x.jpg 1x,
+                  ./assets/studio-stills/kitchen-1-lg-2x.jpg 2x" alt="Kitchen">
+                </picture>
+              </a>
+            </div>
+
+            <!-- Popup -->
+            <div class="popup" id="pop-studio-entr-kitch">
+              <div class="popup-content">
+                <img srcset="./assets/studio-stills/kitchen-2-lg-1x.jpg 1x,
+                ./assets/studio-stills/kitchen-2-lg-2x.jpg 2x"
+                alt="Entrance to kitchen">
+                <a href="#norm-studio-liv" class="close">X</a>
+              </div>
+            </div>
+
+            <!-- normal page -->
+
+            <div class="image-box" id="norm-studio-entr-kitch">
+              <a href="#pop-studio-entr-kitch">
+                <picture>
+                  <source media="(max-width: 41.9em)"
+                  srcset="./assets/studio-stills/kitchen-2-small-1x.jpg 1x,
+                  ./assets/studio-stills/kitchen-2-small-2x.jpg 2x">
+                  <img srcset="./assets/studio-stills/kitchen-2-lg-1x.jpg 1x,
+                  ./assets/studio-stills/kitchen-2-lg-2x.jpg 2x"
+                  alt="Entrance to kitchen">
+                </picture>
+              </a>
+            </div>
+
+            <!-- Popup -->
+            <div class="popup" id="pop-studio-bath">
+              <div class="popup-content">
+                <img srcset="./assets/studio-stills/bathroom-lg-1x.jpg 1x,
+                ./assets/studio-stills/bathroom-lg-2x.jpg 2x" alt="Bathroom">
+                <a href="#norm-studio-entr-kitch" class="close">X</a>
+              </div>
+            </div>
+
+            <!-- normal page -->
+
+            <div class="image-box" id="norm-studio-bath">
+              <a href="#pop-studio-bath">
+                <picture>
+                  <source media="(max-width: 41.9em)" srcset="./assets/studio-stills/bathroom-small-1x.jpg 1x,
+                  ./assets/studio-stills/bathroom-small-2x.jpg 2x">
+                  <img srcset="./assets/studio-stills/bathroom-lg-1x.jpg 1x,
+                  ./assets/studio-stills/bathroom-lg-2x.jpg 2x" alt="Bathroom">
+                </picture>
+              </a>
+            </div>
+          </div>
+
+          <h4 class="section-sub-heading">360 Tour Demo</h4>
+          <div class="resp-container">
+            <iframe class="resp-iframe" src='https://my.matterport.com/show/?m=qVvJhqyZfE6'
+            frameborder='0' allowfullscreen allow='vr'></iframe>
+          </div>
+
+          <h4 class="section-sub-heading">360 Tour Link:</h4>
+          <a href="https://my.matterport.com/show/?m=qVvJhqyZfE6" class="gallery-main__sect--link">https://my.matterport.com/show/?m=qVvJhqyZfE6</a>
+
+          <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
+          <a href="https://my.matterport.com/vr/show/?m=qVvJhqyZfE6" class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=qVvJhqyZfE6</a>
+        </div>
+      </section>
+
       <section id="single">
         <div class="container">
           <h3>Single Bedroom Apartment</h3>
