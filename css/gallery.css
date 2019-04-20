@@ -250,6 +250,7 @@ h3 {
 
   .image-box {
     width: 80%;
+    height: auto;
   }
 
   section {
