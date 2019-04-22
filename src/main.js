@@ -13,7 +13,7 @@ $(document).ready(() => {
   // Remove popup images so browser doesn't render them on mobile
 
   if (window.screen.width < 670) {
-    document.querySelector('.popup').img.src = "#";
+    document.querySelector('.pop-img').src = '#';
   }
 
 
