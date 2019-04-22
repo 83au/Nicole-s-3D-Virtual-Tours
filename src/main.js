@@ -10,6 +10,11 @@ $(document).ready(() => {
     }
   });
 
+  // Remove Popup
+  if (window.screen.width < 670) {
+    document.querySelector('.popup').remove();
+  }
+
   // Highlight current page with jquery
   $(function(){
     $('a').each(function() {
