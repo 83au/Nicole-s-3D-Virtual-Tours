@@ -10,10 +10,12 @@ $(document).ready(() => {
     }
   });
 
-  // Remove Popup
+  // Remove popup images so browser doesn't render them on mobile
+  /*
   if (window.screen.width < 670) {
     document.querySelector('.popup').remove();
   }
+  */
 
   // Highlight current page with jquery
   $(function(){
