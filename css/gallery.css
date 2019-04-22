@@ -243,6 +243,10 @@ h3 {
     width: 90%;
   }
 
+  .popup {
+    display: none;
+  }
+  
   .popup:target {
     display: none;
   }
