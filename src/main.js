@@ -1,3 +1,4 @@
+
 $(document).ready(() => {
   // Toggle header background visibility when mobile menu is shown
   const navButton = document.querySelector('.navButton');
@@ -10,15 +11,13 @@ $(document).ready(() => {
     }
   });
 
-  // Remove popup images so browser doesn't render them on mobile
-
-  if (window.screen.width < 670) {
-    document.querySelector('.pop-img').src = '#';
-  }
-
+  /* TODO:
+    Stop popups from loading on mobile by creating the popups with JS only if
+    screen is larger than mobile
+  */
 
   // Highlight current page with jquery
-  $(function(){
+  $(function() {
     $('a').each(function() {
       if ($(this).prop('href') === window.location.href) {
         $(this).addClass('current');
@@ -26,14 +25,3 @@ $(document).ready(() => {
     });
   });
 });
-
-/*
-
-$('.navButton').on('click', () => {
-  if ($('input').is(':checked')) {
-    $('.header').addClass('hide');
-  } else if ($('input').is(':not(:checked)')) {
-    $('.header').removeClass('hide');
-  }
-});
-*/
