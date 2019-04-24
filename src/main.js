@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
   // Toggle header background visibility when mobile menu is shown
   const navButton = document.querySelector('.navButton');
