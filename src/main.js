@@ -27,3 +27,8 @@ $(document).ready(() => {
   Stop popups from loading on mobile by creating the popups with JS only
   if screen is larger than mobile
 */
+
+/*
+  TODO:
+  Implement lazy loading for gallery images
+*/
