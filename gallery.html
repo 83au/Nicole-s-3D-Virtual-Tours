@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="lib/jquery-3.4.0.min.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>
     <script src="lib/main.min.js" defer></script>
   </head>
   <body>
@@ -46,10 +47,7 @@
         <div class="container">
           <div class="header__logo-box">
             <a href="index.html">
-              <picture>
-                <source srcset="./assets/logo-1x" media="max-width: 720px">
-                <img srcset="./assets/logo-1x 1x, ./assets/logo-2x.png 2x" alt="Logo">
-              </picture>
+              <img src="./assets/logo-1x.png" alt="Logo">
             </a>
           </div>
 
@@ -1026,11 +1024,8 @@
           </div>
 
           <div class="footer__matt">
-            <picture>
-              <source srcset="./assets/matt-partner-1x.png 1x" media="max-width: 720px">
-              <img srcset="./assets/matt-partner-1x.png 1x, ./assets/matt-partner-2x.png 2x" alt="Matterport
+            <img srcset="./assets/matt-partner-1x.png" alt="Matterport
               Service Partner Logo">
-            </picture>
           </div>
 
           <ul class="footer__nav">
@@ -1043,7 +1038,5 @@
       </div>
       <span>Nicole's 3D Virtual Tours &copy; 2019</span>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>
   </body>
 </html>
