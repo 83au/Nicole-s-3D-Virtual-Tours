@@ -2,14 +2,9 @@ $(document).ready(() => {
 
   // Toggle header background visibility when mobile menu is shown
   const navButton = document.querySelector('.navButton');
-  const input = document.getElementById('menuToggle');
 
   navButton.addEventListener('click', () => {
-    if (!input.checked) {
-      document.querySelector('.header').classList.add('hide');
-    } else if (input.checked) {
-      document.querySelector('.header').classList.remove('hide');
-    }
+    document.querySelector('.header').classList.toggle('hide');
   });
 
 
@@ -21,14 +16,9 @@ $(document).ready(() => {
       }
     });
   });
-});
 
-var lazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-    // More options here
+  // Lazy load images
+  var lazyLoad = new LazyLoad({
+      elements_selector: ".lazy",
+  });
 });
-
-/*
-  TODO:
-  Implement lazy loading for gallery images
-*/
