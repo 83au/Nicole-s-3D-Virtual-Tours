@@ -467,7 +467,7 @@ a:visited .btn {
 
   .fb-share-button {
     position: relative;
-    left: 6rem;
+    left: 5rem;
   }
 
   .footer__connect--icon-box {
@@ -478,7 +478,7 @@ a:visited .btn {
 
   .footer__matt {
     width: 12rem;
-    left: 5rem;
+    left: 1rem;
     margin: 0 10rem;
   }
 
@@ -488,7 +488,7 @@ a:visited .btn {
     text-align: left;
     margin-top: -1rem;
     position: relative;
-    left: 8.5rem;
+    left: 5rem;
   }
 
   .footer li:not(:first-child) {
@@ -590,9 +590,13 @@ a:visited .btn {
     margin-top: 2rem;
   }
 
+  .fb-share-button {
+    left: -4rem;
+  }
+
   .footer__matt {
     width: 10rem;
-    left: 2.5rem;
+    left: -5rem;
   }
 
   .footer__nav {
@@ -601,7 +605,7 @@ a:visited .btn {
     text-align: left;
     margin-top: -3rem;
     position: relative;
-    left: 2rem;
+    left: -1rem;
   }
 
   .footer li:not(:first-child) {
@@ -774,18 +778,18 @@ a:visited .btn {
   }
 
   .hero__buttons--btn {
-    height: 5rem;
-    width: 13rem;
-    font-size: 1.3rem;
+    height: 4rem;
+    width: 11rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 
   .hero__buttons--btn-1 {
-    margin-right: .5rem;
+    margin-right: .3rem;
   }
 
   .hero__buttons--btn-2 {
-    margin-left: .5rem;
+    margin-left: .3rem;
   }
 
   /* Footer */

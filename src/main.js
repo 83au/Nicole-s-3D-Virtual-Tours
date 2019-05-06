@@ -15,6 +15,7 @@ $(document).ready(() => {
     });
   });
 
+  // TODO: Implement lazy loading myself without cdn
   // Lazy load images using remote cdn
   var lazyLoad = new LazyLoad({
       elements_selector: ".lazy",
