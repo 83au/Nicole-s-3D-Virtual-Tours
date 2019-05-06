@@ -146,6 +146,10 @@ header {
 
 /* === Main Content === */
 
+.home {
+  height: 90vh;
+}
+
 .hero {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
@@ -154,6 +158,7 @@ header {
     url(../assets/banner-1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 5rem;
 }
 
 .home-main {
