@@ -195,8 +195,13 @@ h3 {
               -1rem 1rem 0 #db27fa;
 }
 
+.primary-content__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .primary-content {
-  display: inline-block;
   margin: 2rem;
   width: 40%;
 }
@@ -282,8 +287,11 @@ h3 {
     margin-top: -3.3rem;
   }
 
-  .primary-content {
+  .primary-content__container {
     display: block;
+  }
+
+  .primary-content {
     width: 90%;
   }
 
