@@ -22,10 +22,16 @@
 .gallery-main__nav--link:visited {
   margin-bottom: 2rem;
   padding: 0 1rem;
-  color: #db27fa;
-  transition: all .3s;
-  animation: fade-in 1.3s .8s backwards;
 
+  animation: fade-in 1.3s .8s backwards;
+  background: linear-gradient(120deg,
+                              transparent 0%,
+                              transparent 50%,
+                              #db27fa 50%);
+  background-size: 280%;
+  transition: all .5s ease;
+
+  color: #db27fa;
   font-weight: 600;
   font-size: 2rem;
   text-decoration: none;
@@ -34,7 +40,7 @@
 .gallery-main__nav--link:hover,
 .gallery-main__nav--link:active,
 .gallery-main__nav--link:focus {
-  background-color: #db27fa;
+  background-position: 90%;
   color: white;
 }
 
