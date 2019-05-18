@@ -150,12 +150,23 @@ header {
   height: 90vh;
 }
 
-.hero {
+.no-webp .hero {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(../assets/banner-1x.jpg);
+    url(../assets/banner/banner-1x.jpg);
+}
+
+.webp .hero {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../assets/banner-webp/banner-1x.webp);
+}
+
+.hero {
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 5rem;
@@ -390,12 +401,20 @@ a:visited .btn {
 /* = Wide Desktop = */
 
 @media only screen and (min-width: 75em) { /* 1200px */
-  .hero {
+  .no-webp .hero {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(../assets/banner-2x.jpg);
+      url(../assets/banner/banner-2x.jpg);
+  }
+
+  .webp .hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../assets/banner-webp/banner-2x.webp);
   }
 }
 
@@ -426,12 +445,20 @@ a:visited .btn {
   }
 
   /* Main */
-  .hero {
+  .no-webp .hero {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(../assets/banner-2x-trimmed.jpg);
+      url(../assets/banner/banner-2x-trimmed.jpg);
+  }
+
+  .webp .hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../assets/banner-webp/banner-2x-trimmed.webp);
   }
 
   .home-main {
@@ -514,12 +541,20 @@ a:visited .btn {
 
 @media only screen and (max-width: 55.63rem) { /* 890px */
   /* Main */
-  .hero {
+  .no-webp .hero {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(../assets/banner-slightly-trimmed-1x.jpg);
+      url(../assets/banner/banner-slightly-trimmed-1x.jpg);
+  }
+
+  .webp .hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../assets/banner-webp/banner-slightly-trimmed-1x.webp);
   }
 
   .home-main {
@@ -548,13 +583,22 @@ a:visited .btn {
 /* = Tablet = */
 @media only screen and (max-width: 55.63rem) and (orientation: portrait) { /* 890px */
   /* Main */
-  .hero {
+  .no-webp .hero {
     height: 100%;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(../assets/banner-trimmed-1x.jpg);
+      url(../assets/banner/banner-trimmed-1x.jpg);
+  }
+
+  .webp .hero {
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../assets/banner-webp/banner-trimmed-1x.webp);
   }
 
   /* Banner */
@@ -631,12 +675,20 @@ a:visited .btn {
 
 @media only screen and (max-width: 41.9em) { /* 670px */
   /* Main */
-  .hero {
+  .no-webp .hero {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(../assets/banner-ultra-trimmed-1x.jpg);
+      url(../assets/banner/banner-ultra-trimmed-1x.jpg);
+  }
+
+  .webp .hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../assets/banner-webp/banner-ultra-trimmed-1x.webp);
   }
 
   header {
