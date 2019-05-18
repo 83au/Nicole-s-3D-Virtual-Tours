@@ -62,7 +62,7 @@ section {
 
 h3 {
   margin: 4rem 0 2rem 0;
-  color: #242e34;
+  color: #391f3a;
   font-size: 3rem;
   letter-spacing: .2rem;
 }
@@ -273,6 +273,9 @@ h3 {
   .image-box {
     width: 40%;
   }
+  .image-box-doll {
+    width: 80%;
+  }
 }
 
 /* = Mobile = */
@@ -296,6 +299,8 @@ h3 {
   }
 
   .image-box {
+    width: 80%;
+    height: auto;
     margin-bottom: 1rem;
   }
 
@@ -307,11 +312,6 @@ h3 {
     display: none;
   }
 
-  .image-box {
-    width: 80%;
-    height: auto;
-  }
-
   section {
     padding: 2rem 0 4rem 0;
   }
@@ -319,7 +319,6 @@ h3 {
   h3 {
     margin: 3rem 0 4rem 0;
     padding: 0 .5rem;
-    color: #242e34;
     font-size: 2.5rem;
   }
 
