@@ -80,18 +80,21 @@
       <section id="studio">
         <div class="container">
           <h3>Studio Apartment</h3>
-          <div class="primary-content">
-            <h4 class="section-sub-heading">360 Tour Video</h4>
-            <video controls poster="./assets/studio-poster.png">
-              <source src="./assets/videos/studio-apartment.mp4" type="video/mp4">
-              Video format not supported.
-            </video>
-          </div>
-          <div class="primary-content">
-            <h4 class="section-sub-heading">360 Tour Demo</h4>
-            <div class="resp-container">
-              <iframe class="resp-iframe" src='https://my.matterport.com/show/?m=qVvJhqyZfE6'
-              frameborder='0' allowfullscreen allow='vr'></iframe>
+
+          <div class="primary-content__container">
+            <div class="primary-content">
+              <h4 class="section-sub-heading">360 Tour Video</h4>
+              <video controls poster="./assets/posters/studio-poster.png">
+                <source src="./assets/videos/studio-apartment.mp4" type="video/mp4">
+                Video format not supported.
+              </video>
+            </div>
+            <div class="primary-content">
+              <h4 class="section-sub-heading">360 Tour Demo</h4>
+              <div class="resp-container">
+                <iframe class="resp-iframe" src='https://my.matterport.com/show/?m=qVvJhqyZfE6'
+                frameborder='0' allowfullscreen allow='vr'></iframe>
+              </div>
             </div>
           </div>
 
@@ -114,9 +117,9 @@
               <div class="popup-content">
                 <picture>
                   <source class="pop-img lazy" data-srcset="./assets/studio-webp/livingroom-kitchen-1476w.webp"
-                          alt="Livingroom and kitchen">
+                          alt="Livingroom and kitchen" type="image/webp">
                   <img class="pop-img lazy" data-src="./assets/studio-stills/livingroom-kitchen-1476w.jpg"
-                  alt="Livingroom and kitchen">
+                  alt="Livingroom and kitchen" type="image/jpg">
                 </picture>
                 <a href="#studio-stills" class="close">X</a>
               </div>
@@ -129,13 +132,13 @@
                 <picture>
                   <source class="lazy"
                   data-srcset="./assets/studio-webp/livingroom-kitchen-530w.webp"
-                  alt="Livingroom and kitchen">
+                  alt="Livingroom and kitchen" type="image/webp">
 
                   <source class="lazy"
                   data-srcset="./assets/studio-stills/livingroom-kitchen-530w.jpg"
-                  alt="Livingroom and kitchen">
+                  alt="Livingroom and kitchen" type="image/jpeg">
                   <img class="lazy" data-src="./assets/studio-stills/livingroom-kitchen-530w.jpg"
-                  alt="Livingroom and kitchen">
+                  alt="Livingroom and kitchen" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -146,10 +149,10 @@
                 <picture>
                   <source class="pop-img lazy"
                           data-srcset="./assets/studio-webp/livingroom-1476w.webp"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/webp">
                   <img class="pop-img lazy"
                        data-src="./assets/studio-stills/livingroom-1476w.jpg"
-                       alt="Livingroom">
+                       alt="Livingroom" type="image/jpg">
                 </picture>
                 <a href="#studio-stills" class="close">X</a>
               </div>
@@ -162,13 +165,13 @@
                 <picture>
                   <source class="lazy"
                   data-srcset="./assets/studio-webp/livingroom-530w.webp"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/webp">
 
                   <source class="lazy"
                   data-srcset="./assets/studio-stills/livingroom-530w.jpg"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/studio-stills/livingroom-530w.jpg"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -177,9 +180,12 @@
             <div class="popup" id="pop-studio-kitch">
               <div class="popup-content">
                 <picture>
-                  <source class="pop-img lazy" data-srcset="./assets/studio-webp/kitchen-1-1476w.webp">
-                  <img class="pop-img lazy" data-src="./assets/studio-stills/kitchen-1-1476w.jpg"
-                  alt="Kitchen">
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/studio-webp/kitchen-1-1476w.webp"
+                  alt="Kitchen" type="image/webp">
+                  <img class="pop-img lazy"
+                  data-src="./assets/studio-stills/kitchen-1-1476w.jpg"
+                  alt="Kitchen" type="image/jpg">
                 </picture>
                 <a href="#norm-studio-liv-kitch" class="close">X</a>
               </div>
@@ -192,12 +198,14 @@
                 <picture>
                   <source class="lazy"
                   data-srcset="./assets/studio-webp/kitchen-1-526w.webp"
-                  alt="Kitchen">
+                  alt="Kitchen" type="image/webp">
 
                   <source class="lazy"
                   data-srcset="./assets/studio-stills/kitchen-1-526w.jpg"
-                  alt="Kitchen">
-                  <img class="lazy" data-src="./assets/studio-stills/kitchen-1-526w.jpg" alt="Kitchen">
+                  alt="Kitchen" type="image/jpg">
+                  <img class="lazy"
+                  data-src="./assets/studio-stills/kitchen-1-526w.jpg"
+                  alt="Kitchen" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -208,9 +216,9 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/studio-webp/kitchen-2-1473w.webp"
-                  alt="Entrance to kitchen">
+                  alt="Entrance to kitchen" type="image/webp">
                   <img class="pop-img lazy" data-src="./assets/studio-stills/kitchen-2-1473w.jpg"
-                  alt="Entrance to kitchen">
+                  alt="Entrance to kitchen" type="image/jpg">
                 </picture>
                 <a href="#norm-studio-liv" class="close">X</a>
               </div>
@@ -223,13 +231,13 @@
                 <picture>
                   <source class="lazy"
                   data-srcset="./assets/studio-webp/kitchen-2-529w.webp"
-                  alt="Entrance to kitchen">
+                  alt="Entrance to kitchen" type="image/webp">
 
                   <source class="lazy"
                   data-srcset="./assets/studio-stills/kitchen-2-529w.jpg"
-                  alt="Entrance to kitchen">
+                  alt="Entrance to kitchen" type="image/jpg">
                   <img class="lazy" data-src="./assets/studio-stills/kitchen-2-529w.jpg"
-                  alt="Entrance to kitchen">
+                  alt="Entrance to kitchen" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -240,10 +248,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/studio-webp/bathroom-1474w.webp"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/studio-stills/bathroom-1474w.jpg"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/jpg">
                 </picture>
                 <a href="#norm-studio-entr-kitch" class="close">X</a>
               </div>
@@ -256,12 +264,12 @@
                 <picture>
                   <source class="lazy"
                   data-srcset="./assets/studio-webp/bathroom-530w.webp"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/webp">
                   <source class="lazy"
                   data-srcset="./assets/studio-stills/bathroom-530w.jpg"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/studio-stills/bathroom-530w.jpg"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -275,7 +283,7 @@
 
           <div class="primary-content">
             <h4 class="section-sub-heading">360 Tour Video</h4>
-            <video controls poster="./assets/single-poster.png">
+            <video controls poster="./assets/posters/single-poster.png">
               <source src="./assets/videos/1-bedroom-house2.mp4" type="video/mp4">
               Video format not supported.
             </video>
@@ -310,10 +318,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/single-webp/livingroom-1474w.webp"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/single-stills/livingroom-1474w.jpg"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/jpg">
                 </picture>
                 <a href="#single-stills" class="close">X</a>
               </div>
@@ -326,12 +334,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/single-webp/livingroom-530w.webp"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/single-stills/livingroom-530w.jpg"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/single-stills/livingroom-530w.jpg"
-                       alt="Livingroom">
+                       alt="Livingroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -342,10 +350,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/single-webp/bedroom-1474w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/single-stills/bedroom-1474w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#single-stills" class="close">X</a>
               </div>
@@ -358,12 +366,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/single-webp/bedroom-528w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/single-stills/bedroom-528w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/single-stills/bedroom-528w.jpg"
-                       alt="Bedroom">
+                       alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -374,10 +382,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/single-webp/bedroom2-1476w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/single-stills/bedroom2-1476w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-single-liv" class="close">X</a>
               </div>
@@ -390,12 +398,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/single-webp/bedroom2-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/single-stills/bedroom2-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/single-stills/bedroom2-530w.jpg"
-                       alt="Bedroom">
+                       alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -406,10 +414,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/single-webp/kitchen-1474w.webp"
-                  alt="Kitchen">
+                  alt="Kitchen" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/single-stills/kitchen-1474w.jpg"
-                  alt="Kitchen">
+                  alt="Kitchen" type="image/jpg">
                 </picture>
                 <a href="#norm-single-liv" class="close">X</a>
               </div>
@@ -422,12 +430,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/single-webp/kitchen-528w.webp"
-                          alt="Kitchen">
+                          alt="Kitchen" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/single-stills/kitchen-528w.jpg"
-                          alt="Kitchen">
+                          alt="Kitchen" type="image/jpg">
                   <img class="lazy" data-src="./assets/single-stills/kitchen-528w.jpg"
-                       alt="Kitchen">
+                       alt="Kitchen" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -438,10 +446,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/single-webp/bathroom-1474w.webp"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/single-stills/bathroom-1474w.jpg"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/jpg">
                 </picture>
                 <a href="#norm-single-kitch" class="close">X</a>
               </div>
@@ -454,12 +462,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/single-webp/bathroom-530w.webp"
-                          alt="Bathroom">
+                          alt="Bathroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/single-stills/bathroom-530w.jpg"
-                          alt="Bathroom">
+                          alt="Bathroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/single-stills/bathroom-530w.jpg"
-                       alt="Bathroom">
+                       alt="Bathroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -474,10 +482,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/single-webp/dollhouse-1474w.webp"
-                  alt="Single bedroom apartment dollhouse">
+                  alt="Single bedroom apartment dollhouse" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/single-stills/dollhouse-1474w.jpg"
-                  alt="Single bedroom apartment dollhouse">
+                  alt="Single bedroom apartment dollhouse" type="image/jpg">
                 </picture>
                 <a href="#norm-single-doll" class="close">X</a>
               </div>
@@ -489,19 +497,19 @@
                 <picture>
                   <source media="(max-width: 41.9em)"
                           class="lazy" data-srcset="./assets/single-webp/dollhouse-528w.webp"
-                          alt="Single bedroom apartment dollhouse">
+                          alt="Single bedroom apartment dollhouse" type="image/webp">
                   <source media="(min-width: 42em)"
                           class="lazy" data-srcset="./assets/single-webp/dollhouse-884w.webp"
-                          alt="Single bedroom apartment dollhouse">
+                          alt="Single bedroom apartment dollhouse" type="image/webp">
 
                   <source media="(max-width: 41.9em)"
                           class="lazy" data-srcset="./assets/single-stills/dollhouse-528w.jpg"
-                          alt="Single bedroom apartment dollhouse">
+                          alt="Single bedroom apartment dollhouse" type="image/jpg">
                   <source media="(min-width: 42em)"
                           class="lazy" data-srcset="./assets/single-stills/dollhouse-884w.jpg"
-                          alt="Single bedroom apartment dollhouse">
+                          alt="Single bedroom apartment dollhouse" type="image/jpg">
                   <img class="lazy" data-src="./assets/single-stills/dollhouse-884w.jpg"
-                       alt="Single bedroom apartment dollhouse">
+                       alt="Single bedroom apartment dollhouse" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -515,7 +523,7 @@
 
           <div class="primary-content">
             <h4 class="section-sub-heading">360 Tour Video</h4>
-            <video controls poster="./assets/house-poster.png">
+            <video controls poster="./assets/posters/house-poster.png">
               <source src="./assets/videos/3-bedroom-house2.mp4" type="video/mp4">
               Video format not supported.
             </video>
@@ -551,10 +559,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/livingroom1-1474w.webp"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/livingroom1-1474w.jpg"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/jpg">
                 </picture>
                 <a href="#house-stills" class="close">X</a>
               </div>
@@ -567,12 +575,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/livingroom1-528w.webp"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/livingroom1-528w.jpg"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/livingroom1-528w.jpg"
-                       alt="Livingroom">
+                       alt="Livingroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -583,10 +591,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/livingroom2-1474w.webp"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/livingroom2-1474w.jpg"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/jpg">
                 </picture>
                 <a href="#house-stills" class="close">X</a>
               </div>
@@ -599,12 +607,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/livingroom2-528w.webp"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/livingroom2-528w.jpg"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/livingroom2-528w.jpg"
-                       alt="Livingroom">
+                       alt="Livingroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -615,10 +623,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/bedroom1-1474w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/bedroom1-1474w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-house-liv" class="close">X</a>
               </div>
@@ -631,12 +639,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/bedroom1-528w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/bedroom1-528w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/bedroom1-528w.jpg"
-                       alt="Bedroom">
+                       alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -647,10 +655,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/sliding-door-1474w.webp"
-                  alt="Bedroom sliding glass door">
+                  alt="Bedroom sliding glass door" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/sliding-door-1474w.jpg"
-                  alt="Bedroom sliding glass door">
+                  alt="Bedroom sliding glass door" type="image/jpg">
                 </picture>
                 <a href="#norm-house-liv" class="close">X</a>
               </div>
@@ -663,12 +671,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/sliding-door-528w.webp"
-                          alt="Bedroom sliding glass door">
+                          alt="Bedroom sliding glass door" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/sliding-door-528w.jpg"
-                          alt="Bedroom sliding glass door">
+                          alt="Bedroom sliding glass door" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/sliding-door-528w.jpg"
-                       alt="Bedroom sliding glass door">
+                       alt="Bedroom sliding glass door" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -679,10 +687,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/bedroom2-1476w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/bedroom2-1476w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-house-bed" class="close">X</a>
               </div>
@@ -695,12 +703,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/bedroom2-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/bedroom2-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/bedroom2-530w.jpg"
-                       alt="Bedroom">
+                       alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -711,10 +719,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/kitchen1-1474w.webp"
-                  alt="Kitchen front view">
+                  alt="Kitchen front view" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/kitchen1-1474w.jpg"
-                  alt="Kitchen front view">
+                  alt="Kitchen front view" type="image/jpg">
                 </picture>
                 <a href="#norm-house-bed" class="close">X</a>
               </div>
@@ -727,12 +735,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/kitchen1-530w.webp"
-                          alt="Kitchen front view">
+                          alt="Kitchen front view" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/kitchen1-530w.jpg"
-                          alt="Kitchen front view">
+                          alt="Kitchen front view" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/kitchen1-530w.jpg"
-                       alt="Kitchen front view">
+                       alt="Kitchen front view" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -743,10 +751,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/kitchen2-1474w.webp"
-                  alt="Kitchen side view">
+                  alt="Kitchen side view" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/kitchen2-1474w.jpg"
-                  alt="Kitchen side view">
+                  alt="Kitchen side view" type="image/jpg">
                 </picture>
                 <a href="#norm-house-bed2" class="close">X</a>
               </div>
@@ -759,12 +767,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/kitchen2-530w.webp"
-                          alt="Kitchen side view">
+                          alt="Kitchen side view" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/kitchen2-530w.jpg"
-                          alt="Kitchen side view">
+                          alt="Kitchen side view" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/kitchen2-530w.jpg"
-                       alt="Kitchen side view">
+                       alt="Kitchen side view" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -775,10 +783,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/bathroom1-1474w.webp"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/bathroom1-1474w.jpg"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/jpg">
                 </picture>
                 <a href="#norm-house-bed2" class="close">X</a>
               </div>
@@ -791,12 +799,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/bathroom1-528w.webp"
-                          alt="Bathroom">
+                          alt="Bathroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/bathroom1-528w.jpg"
-                          alt="Bathroom">
+                          alt="Bathroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/bathroom1-528w.jpg"
-                       alt="Bathroom">
+                       alt="Bathroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -807,10 +815,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/bathroom2-1474w.webp"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/bathroom2-1474w.jpg"
-                  alt="Bathroom">
+                  alt="Bathroom" type="image/jpg">
                 </picture>
                 <a href="#norm-house-kitch-side" class="close">X</a>
               </div>
@@ -823,12 +831,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/house-webp/bathroom2-530w.webp"
-                          alt="Bathroom">
+                          alt="Bathroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/house-stills/bathroom2-530w.jpg"
-                          alt="Bathroom">
+                          alt="Bathroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/bathroom2-530w.jpg"
-                       alt="Bathroom">
+                       alt="Bathroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -843,10 +851,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/house-webp/dollhouse-1474w.webp"
-                  alt="Dollhouse simulation of property">
+                  alt="Dollhouse simulation of property" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/house-stills/dollhouse-1474w.jpg"
-                  alt="Dollhouse simulation of property">
+                  alt="Dollhouse simulation of property" type="image/jpg">
                 </picture>
                 <a href="#house-doll" class="close">X</a>
               </div>
@@ -859,19 +867,19 @@
                 <picture>
                   <source media="(max-width: 41.9em)"
                           class="lazy" data-srcset="./assets/house-webp/dollhouse-530w.webp"
-                          alt="Dollhouse simulation of property">
+                          alt="Dollhouse simulation of property" type="image/webp">
                   <source media="(min-width: 42em)"
                           class="lazy" data-srcset="./assets/house-webp/dollhouse-884w.webp"
-                          alt="Dollhouse simulation of property">
+                          alt="Dollhouse simulation of property" type="image/webp">
 
                   <source media="(max-width: 41.9em)"
                           class="lazy" data-srcset="./assets/house-stills/dollhouse-530w.jpg"
-                          alt="Dollhouse simulation of property">
+                          alt="Dollhouse simulation of property" type="image/jpg">
                   <source media="(min-width: 42em)"
                           class="lazy" data-srcset="./assets/house-stills/dollhouse-884w.jpg"
-                          alt="Dollhouse simulation of property">
+                          alt="Dollhouse simulation of property" type="image/jpg">
                   <img class="lazy" data-src="./assets/house-stills/dollhouse-530w.jpg"
-                       alt="Dollhouse simulation of property">
+                       alt="Dollhouse simulation of property" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -886,7 +894,7 @@
 
           <div class="primary-content">
             <h4 class="section-sub-heading">360 Tour Video</h4>
-            <video controls poster="./assets/senior-poster.png">
+            <video controls poster="./assets/posters/senior-poster.png">
               <source src="./assets/videos/heights.mp4" type="video/mp4">
               Video format not supported.
             </video>
@@ -922,10 +930,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-livingroom-1474w.webp"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-livingroom-1474w.jpg"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/jpg">
                 </picture>
                 <a href="#senior-stills" class="close">X</a>
               </div>
@@ -938,12 +946,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-livingroom-530w.webp"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-livingroom-530w.jpg"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-livingroom-530w.jpg"
-                       alt="Livingroom">
+                       alt="Livingroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -954,10 +962,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-livingroom2-1472w.webp"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-livingroom2-1472w.jpg"
-                  alt="Livingroom">
+                  alt="Livingroom" type="image/jpg">
                 </picture>
                 <a href="#senior-stills" class="close">X</a>
               </div>
@@ -970,12 +978,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-livingroom2-530w.webp"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-livingroom2-530w.jpg"
-                          alt="Livingroom">
+                          alt="Livingroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-livingroom2-530w.jpg"
-                       alt="Livingroom">
+                       alt="Livingroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -986,10 +994,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-bedroom-1472w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-bedroom-1472w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-senior-liv" class="close">X</a>
               </div>
@@ -1002,12 +1010,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-bedroom-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-bedroom-530w.jpg"
-                       alt="Bedroom">
+                       alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -1018,10 +1026,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-bedroom2-1472w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-bedroom2-1472w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-senior-liv" class="close">X</a>
               </div>
@@ -1034,12 +1042,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom2-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-bedroom2-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-bedroom2-530w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -1050,10 +1058,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-bedroom3-1472w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-bedroom3-1472w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-senior-bed" class="close">X</a>
               </div>
@@ -1066,12 +1074,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom3-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-bedroom3-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-bedroom3-530w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -1082,10 +1090,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-bedroom4-1472w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-bedroom4-1472w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-senior-bed" class="close">X</a>
               </div>
@@ -1098,12 +1106,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom4-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-bedroom4-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-bedroom4-530w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -1114,10 +1122,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-bedroom5-1472w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-bedroom5-1472w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-senior-bed3" class="close">X</a>
               </div>
@@ -1130,12 +1138,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom5-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-bedroom5-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-bedroom5-530w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -1146,10 +1154,10 @@
                 <picture>
                   <source class="pop-img lazy"
                   data-srcset="./assets/senior-webp/heights-bedroom6-1472w.webp"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                   data-src="./assets/senior-stills/heights-bedroom6-1472w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-senior-bed3" class="close">X</a>
               </div>
@@ -1162,12 +1170,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom6-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-bedroom6-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-bedroom6-530w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -1178,10 +1186,10 @@
                 <picture>
                   <source class="pop-img lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom7-1472w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <img class="pop-img lazy"
                        data-src="./assets/senior-stills/heights-bedroom7-1472w.jpg"
-                       alt="Bedroom">
+                       alt="Bedroom" type="image/jpg">
                 </picture>
                 <a href="#norm-senior-bed5" class="close">X</a>
               </div>
@@ -1194,12 +1202,12 @@
                 <picture>
                   <source class="lazy"
                           data-srcset="./assets/senior-webp/heights-bedroom7-530w.webp"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/webp">
                   <source class="lazy"
                           data-srcset="./assets/senior-stills/heights-bedroom7-530w.jpg"
-                          alt="Bedroom">
+                          alt="Bedroom" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-bedroom7-530w.jpg"
-                  alt="Bedroom">
+                  alt="Bedroom" type="image/jpg">
                 </picture>
               </a>
             </div>
@@ -1214,10 +1222,10 @@
                 <picture>
                   <source class="pop-img lazy"
                           data-srcset="./assets/senior-webp/heights-dollhouse-1472w.webp"
-                          alt="Dollhouse simulation of property">
+                          alt="Dollhouse simulation of property" type="image/webp">
                   <img class="pop-img lazy"
                        data-src="./assets/senior-stills/heights-dollhouse-1472w.jpg"
-                       alt="Dollhouse simulation of property">
+                       alt="Dollhouse simulation of property" type="image/jpg">
                 </picture>
                 <a href="#senior-doll" class="close">X</a>
               </div>
@@ -1229,19 +1237,19 @@
                 <picture>
                   <source media="(max-width: 41.9em)"
                   class="lazy" data-srcset="./assets/senior-webp/heights-dollhouse-530w.webp"
-                  alt="Dollhouse simulation of property">
+                  alt="Dollhouse simulation of property" type="image/webp">
                   <source media="(min-width: 42em)"
                   class="lazy" data-srcset="./assets/senior-webp/heights-dollhouse-882w.webp"
-                  alt="Dollhouse simulation of property">
+                  alt="Dollhouse simulation of property" type="image/webp">
 
                   <source media="(max-width: 41.9em)"
                   class="lazy" data-srcset="./assets/senior-stills/heights-dollhouse-530w.jpg"
-                  alt="Dollhouse simulation of property">
+                  alt="Dollhouse simulation of property" type="image/jpg">
                   <source media="(min-width: 42em)"
                   class="lazy" data-srcset="./assets/senior-stills/heights-dollhouse-882w.jpg"
-                  alt="Dollhouse simulation of property">
+                  alt="Dollhouse simulation of property" type="image/jpg">
                   <img class="lazy" data-src="./assets/senior-stills/heights-dollhouse-530w.jpg"
-                       alt="Dollhouse simulation of property">
+                       alt="Dollhouse simulation of property" type="image/jpg">
                 </picture>
               </a>
             </div>
