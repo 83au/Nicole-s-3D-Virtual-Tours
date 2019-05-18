@@ -16,6 +16,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script defer src="lib/jquery-3.4.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>
+    <script src="lib/modernizr-custom.js"></script>
     <script defer src="lib/smooth.min.js"></script>
     <script defer src="lib/main.min.js"></script>
   </head>
@@ -84,7 +85,7 @@
           <div class="primary-content__container">
             <div class="primary-content">
               <h4 class="section-sub-heading">360 Tour Video</h4>
-              <video controls poster="./assets/posters/studio-poster.png">
+              <video controls poster="./assets/posters/studio-poster.webp">
                 <source src="./assets/videos/studio-apartment.mp4" type="video/mp4">
                 Video format not supported.
               </video>
@@ -284,7 +285,7 @@
           <div class="primary-content__container">
             <div class="primary-content">
               <h4 class="section-sub-heading">360 Tour Video</h4>
-              <video controls poster="./assets/posters/single-poster.png">
+              <video controls poster="./assets/posters/single-poster.webp">
                 <source src="./assets/videos/1-bedroom-house2.mp4" type="video/mp4">
                 Video format not supported.
               </video>
@@ -526,7 +527,7 @@
           <div class="primary-content__container">
             <div class="primary-content">
               <h4 class="section-sub-heading">360 Tour Video</h4>
-              <video controls poster="./assets/posters/house-poster.png">
+              <video controls poster="./assets/posters/house-poster.webp">
                 <source src="./assets/videos/3-bedroom-house2.mp4" type="video/mp4">
                 Video format not supported.
               </video>
@@ -899,7 +900,7 @@
           <div class="primary-content__container">
             <div class="primary-content">
               <h4 class="section-sub-heading">360 Tour Video</h4>
-              <video controls poster="./assets/posters/senior-poster.png">
+              <video controls poster="./assets/posters/senior-poster.webp">
                 <source src="./assets/videos/heights.mp4" type="video/mp4">
                 Video format not supported.
               </video>
@@ -1286,8 +1287,14 @@
           </div>
 
           <div class="footer__matt">
-            <img srcset="./assets/matt-partner-1x.png" alt="Matterport
+            <picture>
+              <source srcset="./assets/matt-partner-1x.webp" type="image/webp"
+              alt="Matterport
               Service Partner Logo">
+              <img src="./assets/matt-partner-1x.png" type="image/png" 
+              alt="Matterport
+              Service Partner Logo">
+            </picture>
           </div>
 
           <ul class="footer__nav">
