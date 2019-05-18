@@ -16,6 +16,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script defer src="lib/jquery-3.4.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>
+    <script defer src="node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
     <script defer src="lib/main.min.js"></script>
   </head>
   <body>
@@ -79,10 +80,31 @@
       <section id="studio">
         <div class="container">
           <h3>Studio Apartment</h3>
-          <video controls poster="./assets/studio-poster.png">
-            <source src="./assets/videos/studio-apartment.mp4" type="video/mp4">
-            Video format not supported.
-          </video>
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Video</h4>
+            <video controls poster="./assets/studio-poster.png">
+              <source src="./assets/videos/studio-apartment.mp4" type="video/mp4">
+              Video format not supported.
+            </video>
+          </div>
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Demo</h4>
+            <div class="resp-container">
+              <iframe class="resp-iframe" src='https://my.matterport.com/show/?m=qVvJhqyZfE6'
+              frameborder='0' allowfullscreen allow='vr'></iframe>
+            </div>
+          </div>
+
+          <div class="tour-link link-a">
+            <h4 class="section-sub-heading">360 Tour Link:</h4>
+            <a href="https://my.matterport.com/show/?m=qVvJhqyZfE6"
+            class="gallery-main__sect--link">https://my.matterport.com/show/?m=qVvJhqyZfE6</a>
+          </div>
+          <div class="tour-link link-b">
+            <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
+            <a href="https://my.matterport.com/vr/show/?m=qVvJhqyZfE6"
+            class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=qVvJhqyZfE6</a>
+          </div>
 
           <h4 class="section-sub-heading">Still Shots</h4>
           <div class="stills" id="studio-stills">
@@ -90,8 +112,12 @@
             <!-- Popup -->
             <div class="popup" id="pop-studio-liv-kitch">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/studio-stills/livingroom-kitchen-1476w.jpg"
-                alt="Livingroom and kitchen">
+                <picture>
+                  <source class="pop-img lazy" data-srcset="./assets/studio-webp/livingroom-kitchen-1476w.webp"
+                          alt="Livingroom and kitchen">
+                  <img class="pop-img lazy" data-src="./assets/studio-stills/livingroom-kitchen-1476w.jpg"
+                  alt="Livingroom and kitchen">
+                </picture>
                 <a href="#studio-stills" class="close">X</a>
               </div>
             </div>
@@ -101,13 +127,14 @@
             <div class="image-box" id="norm-studio-liv-kitch">
               <a href="#pop-studio-liv-kitch">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/studio-stills/livingroom-kitchen-530w.jpg"
+                  <source class="lazy"
+                  data-srcset="./assets/studio-webp/livingroom-kitchen-530w.webp"
                   alt="Livingroom and kitchen">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/studio-stills/livingroom-kitchen-884w.jpg"
+
+                  <source class="lazy"
+                  data-srcset="./assets/studio-stills/livingroom-kitchen-530w.jpg"
                   alt="Livingroom and kitchen">
-                  <img class="lazy" data-src="./assets/studio-stills/livingroom-kitchen-884w.jpg"
+                  <img class="lazy" data-src="./assets/studio-stills/livingroom-kitchen-530w.jpg"
                   alt="Livingroom and kitchen">
                 </picture>
               </a>
@@ -116,7 +143,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-studio-liv">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/studio-stills/livingroom-1476w.jpg" alt="Livingroom">
+                <picture>
+                  <source class="pop-img lazy"
+                          data-srcset="./assets/studio-webp/livingroom-1476w.webp"
+                          alt="Livingroom">
+                  <img class="pop-img lazy"
+                       data-src="./assets/studio-stills/livingroom-1476w.jpg"
+                       alt="Livingroom">
+                </picture>
                 <a href="#studio-stills" class="close">X</a>
               </div>
             </div>
@@ -126,13 +160,14 @@
             <div class="image-box" id="norm-studio-liv">
               <a href="#pop-studio-liv">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/studio-stills/livingroom-530w.jpg"
+                  <source class="lazy"
+                  data-srcset="./assets/studio-webp/livingroom-530w.webp"
                   alt="Livingroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/studio-stills/livingroom-882w.jpg"
+
+                  <source class="lazy"
+                  data-srcset="./assets/studio-stills/livingroom-530w.jpg"
                   alt="Livingroom">
-                  <img class="lazy" data-src="./assets/studio-stills/livingroom-882w.jpg"
+                  <img class="lazy" data-src="./assets/studio-stills/livingroom-530w.jpg"
                   alt="Livingroom">
                 </picture>
               </a>
@@ -141,8 +176,11 @@
             <!-- Popup -->
             <div class="popup" id="pop-studio-kitch">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/studio-stills/kitchen-1-1476w.jpg"
-                alt="Kitchen">
+                <picture>
+                  <source class="pop-img lazy" data-srcset="./assets/studio-webp/kitchen-1-1476w.webp">
+                  <img class="pop-img lazy" data-src="./assets/studio-stills/kitchen-1-1476w.jpg"
+                  alt="Kitchen">
+                </picture>
                 <a href="#norm-studio-liv-kitch" class="close">X</a>
               </div>
             </div>
@@ -152,13 +190,14 @@
             <div class="image-box" id="norm-studio-kitch">
               <a href="#pop-studio-kitch">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/studio-stills/kitchen-1-526w.jpg"
+                  <source class="lazy"
+                  data-srcset="./assets/studio-webp/kitchen-1-526w.webp"
                   alt="Kitchen">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/studio-stills/kitchen-1-886w.jpg"
+
+                  <source class="lazy"
+                  data-srcset="./assets/studio-stills/kitchen-1-526w.jpg"
                   alt="Kitchen">
-                  <img class="lazy" data-src="./assets/studio-stills/kitchen-1-886w.jpg" alt="Kitchen">
+                  <img class="lazy" data-src="./assets/studio-stills/kitchen-1-526w.jpg" alt="Kitchen">
                 </picture>
               </a>
             </div>
@@ -166,8 +205,13 @@
             <!-- Popup -->
             <div class="popup" id="pop-studio-entr-kitch">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/studio-stills/kitchen-2-1473w.jpg"
-                alt="Entrance to kitchen">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/studio-webp/kitchen-2-1473w.webp"
+                  alt="Entrance to kitchen">
+                  <img class="pop-img lazy" data-src="./assets/studio-stills/kitchen-2-1473w.jpg"
+                  alt="Entrance to kitchen">
+                </picture>
                 <a href="#norm-studio-liv" class="close">X</a>
               </div>
             </div>
@@ -177,13 +221,14 @@
             <div class="image-box" id="norm-studio-entr-kitch">
               <a href="#pop-studio-entr-kitch">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/studio-stills/kitchen-2-529w.jpg"
+                  <source class="lazy"
+                  data-srcset="./assets/studio-webp/kitchen-2-529w.webp"
                   alt="Entrance to kitchen">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/studio-stills/kitchen-2-883w.jpg"
+
+                  <source class="lazy"
+                  data-srcset="./assets/studio-stills/kitchen-2-529w.jpg"
                   alt="Entrance to kitchen">
-                  <img class="lazy" data-src="./assets/studio-stills/kitchen-2-883w.jpg"
+                  <img class="lazy" data-src="./assets/studio-stills/kitchen-2-529w.jpg"
                   alt="Entrance to kitchen">
                 </picture>
               </a>
@@ -192,7 +237,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-studio-bath">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/studio-stills/bathroom-1474w.jpg" alt="Bathroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/studio-webp/bathroom-1474w.webp"
+                  alt="Bathroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/studio-stills/bathroom-1474w.jpg"
+                  alt="Bathroom">
+                </picture>
                 <a href="#norm-studio-entr-kitch" class="close">X</a>
               </div>
             </div>
@@ -202,40 +254,52 @@
             <div class="image-box" id="norm-studio-bath">
               <a href="#pop-studio-bath">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/studio-stills/bathroom-530w.jpg"
+                  <source class="lazy"
+                  data-srcset="./assets/studio-webp/bathroom-530w.webp"
                   alt="Bathroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/studio-stills/bathroom-884w.jpg"
+                  <source class="lazy"
+                  data-srcset="./assets/studio-stills/bathroom-530w.jpg"
                   alt="Bathroom">
-                  <img class="lazy" data-src="./assets/studio-stills/bathroom-884w.jpg"
+                  <img class="lazy" data-src="./assets/studio-stills/bathroom-530w.jpg"
                   alt="Bathroom">
                 </picture>
               </a>
             </div>
           </div>
-
-          <h4 class="section-sub-heading">360 Tour Demo</h4>
-          <div class="resp-container">
-            <iframe class="resp-iframe" src='https://my.matterport.com/show/?m=qVvJhqyZfE6'
-            frameborder='0' allowfullscreen allow='vr'></iframe>
-          </div>
-
-          <h4 class="section-sub-heading">360 Tour Link:</h4>
-          <a href="https://my.matterport.com/show/?m=qVvJhqyZfE6" class="gallery-main__sect--link">https://my.matterport.com/show/?m=qVvJhqyZfE6</a>
-
-          <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
-          <a href="https://my.matterport.com/vr/show/?m=qVvJhqyZfE6" class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=qVvJhqyZfE6</a>
         </div>
       </section>
 
       <section id="single">
         <div class="container">
           <h3>Single Bedroom Apartment</h3>
-          <video controls poster="./assets/single-poster.png">
-            <source src="./assets/videos/1-bedroom-house2.mp4" type="video/mp4">
-            Video format not supported.
-          </video>
+
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Video</h4>
+            <video controls poster="./assets/single-poster.png">
+              <source src="./assets/videos/1-bedroom-house2.mp4" type="video/mp4">
+              Video format not supported.
+            </video>
+          </div>
+
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Demo</h4>
+            <div class="resp-container">
+              <iframe class="resp-iframe" src='https://my.matterport.com/show/?m=M9n2n2rkVSS'
+              frameborder='0' allowfullscreen allow='vr'></iframe>
+            </div>
+          </div>
+
+          <div class="tour-link link-a">
+            <h4 class="section-sub-heading">360 Tour Link:</h4>
+            <a href="https://my.matterport.com/show/?m=M9n2n2rkVSS"
+            class="gallery-main__sect--link">https://my.matterport.com/show/?m=qVvJhqyZfE6</a>
+          </div>
+
+          <div class="tour-link link-b">
+            <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
+            <a href="https://my.matterport.com/vr/show/?m=M9n2n2rkVSS"
+            class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=qVvJhqyZfE6</a>
+          </div>
 
           <h4 class="section-sub-heading">Still Shots</h4>
           <div class="stills" id="single-stills">
@@ -243,8 +307,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-single-liv">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/single-stills/livingroom-1474w.jpg"
-                alt="Livingroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/single-webp/livingroom-1474w.webp"
+                  alt="Livingroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/single-stills/livingroom-1474w.jpg"
+                  alt="Livingroom">
+                </picture>
                 <a href="#single-stills" class="close">X</a>
               </div>
             </div>
@@ -254,13 +324,13 @@
             <div class="image-box" id="norm-single-liv">
               <a href="#pop-single-liv">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/single-stills/livingroom-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-webp/livingroom-530w.webp"
                           alt="Livingroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/single-stills/livingroom-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-stills/livingroom-530w.jpg"
                           alt="Livingroom">
-                  <img class="lazy" data-src="./assets/single-stills/livingroom-882w.jpg"
+                  <img class="lazy" data-src="./assets/single-stills/livingroom-530w.jpg"
                        alt="Livingroom">
                 </picture>
               </a>
@@ -269,8 +339,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-single-bed">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/single-stills/bedroom-1474w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/single-webp/bedroom-1474w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/single-stills/bedroom-1474w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#single-stills" class="close">X</a>
               </div>
             </div>
@@ -280,13 +356,13 @@
             <div class="image-box" id="norm-single-bed">
               <a href="#pop-single-bed">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/single-stills/bedroom-528w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-webp/bedroom-528w.webp"
                           alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/single-stills/bedroom-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-stills/bedroom-528w.jpg"
                           alt="Bedroom">
-                  <img class="lazy" data-src="./assets/single-stills/bedroom-884w.jpg"
+                  <img class="lazy" data-src="./assets/single-stills/bedroom-528w.jpg"
                        alt="Bedroom">
                 </picture>
               </a>
@@ -295,7 +371,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-single-bed2">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/single-stills/bedroom2-1476w.jpg" alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/single-webp/bedroom2-1476w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/single-stills/bedroom2-1476w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-single-liv" class="close">X</a>
               </div>
             </div>
@@ -305,13 +388,13 @@
             <div class="image-box" id="norm-single-bed2">
               <a href="#pop-single-bed2">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/single-stills/bedroom2-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-webp/bedroom2-530w.webp"
                           alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/single-stills/bedroom2-886w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-stills/bedroom2-530w.jpg"
                           alt="Bedroom">
-                  <img class="lazy" data-src="./assets/single-stills/bedroom2-886w.jpg"
+                  <img class="lazy" data-src="./assets/single-stills/bedroom2-530w.jpg"
                        alt="Bedroom">
                 </picture>
               </a>
@@ -320,8 +403,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-single-kitch">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/single-stills/kitchen-1474w.jpg"
-                alt="Kitchen">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/single-webp/kitchen-1474w.webp"
+                  alt="Kitchen">
+                  <img class="pop-img lazy"
+                  data-src="./assets/single-stills/kitchen-1474w.jpg"
+                  alt="Kitchen">
+                </picture>
                 <a href="#norm-single-liv" class="close">X</a>
               </div>
             </div>
@@ -331,13 +420,13 @@
             <div class="image-box" id="norm-single-kitch">
               <a href="#pop-single-kitch">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/single-stills/kitchen-528w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-webp/kitchen-528w.webp"
                           alt="Kitchen">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/single-stills/kitchen-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-stills/kitchen-528w.jpg"
                           alt="Kitchen">
-                  <img class="lazy" data-src="./assets/single-stills/kitchen-884w.jpg"
+                  <img class="lazy" data-src="./assets/single-stills/kitchen-528w.jpg"
                        alt="Kitchen">
                 </picture>
               </a>
@@ -346,8 +435,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-single-bath">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/single-stills/bathroom-1474w.jpg"
-                alt="Bathroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/single-webp/bathroom-1474w.webp"
+                  alt="Bathroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/single-stills/bathroom-1474w.jpg"
+                  alt="Bathroom">
+                </picture>
                 <a href="#norm-single-kitch" class="close">X</a>
               </div>
             </div>
@@ -357,13 +452,13 @@
             <div class="image-box">
               <a href="#pop-single-bath">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/single-stills/bathroom-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-webp/bathroom-530w.webp"
                           alt="Bathroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/single-stills/bathroom-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/single-stills/bathroom-530w.jpg"
                           alt="Bathroom">
-                  <img class="lazy" data-src="./assets/single-stills/bathroom-882w.jpg"
+                  <img class="lazy" data-src="./assets/single-stills/bathroom-530w.jpg"
                        alt="Bathroom">
                 </picture>
               </a>
@@ -376,16 +471,29 @@
             <!-- Popup -->
             <div class="popup" id="pop-single-dollhouse">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/single-stills/dollhouse-1474w.jpg"
-                alt="Single bedroom apartment dollhouse">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/single-webp/dollhouse-1474w.webp"
+                  alt="Single bedroom apartment dollhouse">
+                  <img class="pop-img lazy"
+                  data-src="./assets/single-stills/dollhouse-1474w.jpg"
+                  alt="Single bedroom apartment dollhouse">
+                </picture>
                 <a href="#norm-single-doll" class="close">X</a>
               </div>
             </div>
 
             <!-- Normal page -->
-            <div class="image-box">
+            <div class="image-box-doll">
               <a href="#pop-single-dollhouse">
                 <picture>
+                  <source media="(max-width: 41.9em)"
+                          class="lazy" data-srcset="./assets/single-webp/dollhouse-528w.webp"
+                          alt="Single bedroom apartment dollhouse">
+                  <source media="(min-width: 42em)"
+                          class="lazy" data-srcset="./assets/single-webp/dollhouse-884w.webp"
+                          alt="Single bedroom apartment dollhouse">
+
                   <source media="(max-width: 41.9em)"
                           class="lazy" data-srcset="./assets/single-stills/dollhouse-528w.jpg"
                           alt="Single bedroom apartment dollhouse">
@@ -398,30 +506,41 @@
               </a>
             </div>
           </div>
-
-          <h4 class="section-sub-heading">360 Tour Demo</h4>
-          <div class="resp-container">
-            <iframe class="resp-iframe" src='https://my.matterport.com/show/?m=M9n2n2rkVSS'
-            frameborder='0' allowfullscreen allow='vr'></iframe>
-          </div>
-
-          <h4 class="section-sub-heading">360 Tour Link:</h4>
-          <a href="https://my.matterport.com/show/?m=M9n2n2rkVSS"
-          class="gallery-main__sect--link">https://my.matterport.com/show/?m=qVvJhqyZfE6</a>
-
-          <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
-          <a href="https://my.matterport.com/vr/show/?m=M9n2n2rkVSS"
-          class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=qVvJhqyZfE6</a>
         </div>
       </section>
 
       <section id="house">
         <div class="container">
           <h3>3 Bedroom House</h3>
-          <video controls poster="./assets/house-poster.png">
-            <source src="./assets/videos/3-bedroom-house2.mp4" type="video/mp4">
-            Video format not supported.
-          </video>
+
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Video</h4>
+            <video controls poster="./assets/house-poster.png">
+              <source src="./assets/videos/3-bedroom-house2.mp4" type="video/mp4">
+              Video format not supported.
+            </video>
+          </div>
+
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Demo</h4>
+            <div class="resp-container">
+              <iframe class="resp-iframe"
+              src='https://my.matterport.com/show/?m=refUrB1qcHW'
+              frameborder='0' allowfullscreen allow='vr'></iframe>
+            </div>
+          </div>
+
+          <div class="tour-link link-a">
+            <h4 class="section-sub-heading">360 Tour Link:</h4>
+            <a href="https://my.matterport.com/show/?m=refUrB1qcHW"
+            class="gallery-main__sect--link">https://my.matterport.com/show/?m=refUrB1qcHW</a>
+          </div>
+
+          <div class="tour-link link-b">
+            <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
+            <a href="https://my.matterport.com/vr/show/?m=refUrB1qcHW"
+            class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=refUrB1qcHW</a>
+          </div>
 
           <h4 class="section-sub-heading">Still Shots</h4>
           <div class="stills" id="house-stills">
@@ -429,8 +548,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-liv">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/livingroom1-1474w.jpg"
-                alt="Livingroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/livingroom1-1474w.webp"
+                  alt="Livingroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/livingroom1-1474w.jpg"
+                  alt="Livingroom">
+                </picture>
                 <a href="#house-stills" class="close">X</a>
               </div>
             </div>
@@ -440,13 +565,13 @@
             <div class="image-box" id="norm-house-liv">
               <a href="#pop-house-liv">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/livingroom1-528w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/livingroom1-528w.webp"
                           alt="Livingroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/livingroom1-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/livingroom1-528w.jpg"
                           alt="Livingroom">
-                  <img class="lazy" data-src="./assets/house-stills/livingroom1-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/livingroom1-528w.jpg"
                        alt="Livingroom">
                 </picture>
               </a>
@@ -455,8 +580,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-liv2">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/livingroom2-1474w.jpg"
-                alt="Livingroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/livingroom2-1474w.webp"
+                  alt="Livingroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/livingroom2-1474w.jpg"
+                  alt="Livingroom">
+                </picture>
                 <a href="#house-stills" class="close">X</a>
               </div>
             </div>
@@ -466,13 +597,13 @@
             <div class="image-box">
               <a href="#pop-house-liv2">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/livingroom2-528w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/livingroom2-528w.webp"
                           alt="Livingroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/livingroom2-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/livingroom2-528w.jpg"
                           alt="Livingroom">
-                  <img class="lazy" data-src="./assets/house-stills/livingroom2-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/livingroom2-528w.jpg"
                        alt="Livingroom">
                 </picture>
               </a>
@@ -481,8 +612,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-bed">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/bedroom1-1474w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/bedroom1-1474w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/bedroom1-1474w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-house-liv" class="close">X</a>
               </div>
             </div>
@@ -492,13 +629,13 @@
             <div class="image-box" id="norm-house-bed">
               <a href="#pop-house-bed">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/bedroom1-528w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/bedroom1-528w.webp"
                           alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/bedroom1-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/bedroom1-528w.jpg"
                           alt="Bedroom">
-                  <img class="lazy" data-src="./assets/house-stills/bedroom1-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/bedroom1-528w.jpg"
                        alt="Bedroom">
                 </picture>
               </a>
@@ -507,8 +644,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-bed-door">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/sliding-door-1474w.jpg"
-                alt="Bedroom sliding glass door">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/sliding-door-1474w.webp"
+                  alt="Bedroom sliding glass door">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/sliding-door-1474w.jpg"
+                  alt="Bedroom sliding glass door">
+                </picture>
                 <a href="#norm-house-liv" class="close">X</a>
               </div>
             </div>
@@ -518,13 +661,13 @@
             <div class="image-box">
               <a href="#pop-house-bed-door">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/sliding-door-528w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/sliding-door-528w.webp"
                           alt="Bedroom sliding glass door">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/sliding-door-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/sliding-door-528w.jpg"
                           alt="Bedroom sliding glass door">
-                  <img class="lazy" data-src="./assets/house-stills/sliding-door-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/sliding-door-528w.jpg"
                        alt="Bedroom sliding glass door">
                 </picture>
               </a>
@@ -533,8 +676,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-bed2">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/bedroom2-1476w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/bedroom2-1476w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/bedroom2-1476w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-house-bed" class="close">X</a>
               </div>
             </div>
@@ -544,13 +693,13 @@
             <div class="image-box" id="norm-house-bed2">
               <a href="#pop-house-bed2">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/bedroom2-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/bedroom2-530w.webp"
                           alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/bedroom2-886w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/bedroom2-530w.jpg"
                           alt="Bedroom">
-                  <img class="lazy" data-src="./assets/house-stills/bedroom2-886w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/bedroom2-530w.jpg"
                        alt="Bedroom">
                 </picture>
               </a>
@@ -559,8 +708,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-kitch">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/kitchen1-1474w.jpg"
-                alt="Kitchen front view">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/kitchen1-1474w.webp"
+                  alt="Kitchen front view">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/kitchen1-1474w.jpg"
+                  alt="Kitchen front view">
+                </picture>
                 <a href="#norm-house-bed" class="close">X</a>
               </div>
             </div>
@@ -570,13 +725,13 @@
             <div class="image-box">
               <a href="#pop-house-kitch">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/kitchen1-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/kitchen1-530w.webp"
                           alt="Kitchen front view">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/kitchen1-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/kitchen1-530w.jpg"
                           alt="Kitchen front view">
-                  <img class="lazy" data-src="./assets/house-stills/kitchen1-882w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/kitchen1-530w.jpg"
                        alt="Kitchen front view">
                 </picture>
               </a>
@@ -585,8 +740,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-kitch-side">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/kitchen2-1474w.jpg"
-                alt="Kitchen side view">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/kitchen2-1474w.webp"
+                  alt="Kitchen side view">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/kitchen2-1474w.jpg"
+                  alt="Kitchen side view">
+                </picture>
                 <a href="#norm-house-bed2" class="close">X</a>
               </div>
             </div>
@@ -596,13 +757,13 @@
             <div class="image-box" id="norm-house-kitch-side">
               <a href="#pop-house-kitch-side">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/kitchen2-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/kitchen2-530w.webp"
                           alt="Kitchen side view">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/kitchen2-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/kitchen2-530w.jpg"
                           alt="Kitchen side view">
-                  <img class="lazy" data-src="./assets/house-stills/kitchen2-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/kitchen2-530w.jpg"
                        alt="Kitchen side view">
                 </picture>
               </a>
@@ -611,8 +772,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-bath">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/bathroom1-1474w.jpg"
-                alt="Bathroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/bathroom1-1474w.webp"
+                  alt="Bathroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/bathroom1-1474w.jpg"
+                  alt="Bathroom">
+                </picture>
                 <a href="#norm-house-bed2" class="close">X</a>
               </div>
             </div>
@@ -622,13 +789,13 @@
             <div class="image-box">
               <a href="#pop-house-bath">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/bathroom1-528w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/bathroom1-528w.webp"
                           alt="Bathroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/bathroom1-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/bathroom1-528w.jpg"
                           alt="Bathroom">
-                  <img class="lazy" data-src="./assets/house-stills/bathroom1-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/bathroom1-528w.jpg"
                        alt="Bathroom">
                 </picture>
               </a>
@@ -637,8 +804,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-bath2">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/bathroom2-1474w.jpg"
-                alt="Bathroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/bathroom2-1474w.webp"
+                  alt="Bathroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/bathroom2-1474w.jpg"
+                  alt="Bathroom">
+                </picture>
                 <a href="#norm-house-kitch-side" class="close">X</a>
               </div>
             </div>
@@ -648,13 +821,13 @@
             <div class="image-box">
               <a href="#pop-house-bath2">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/house-stills/bathroom2-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-webp/bathroom2-530w.webp"
                           alt="Bathroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/house-stills/bathroom2-884w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/house-stills/bathroom2-530w.jpg"
                           alt="Bathroom">
-                  <img class="lazy" data-src="./assets/house-stills/bathroom2-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/bathroom2-530w.jpg"
                        alt="Bathroom">
                 </picture>
               </a>
@@ -667,44 +840,42 @@
             <!-- Popup -->
             <div class="popup" id="pop-house-doll">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/house-stills/dollhouse-1474w.jpg"
-                alt="Dollhouse simulation of property">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/house-webp/dollhouse-1474w.webp"
+                  alt="Dollhouse simulation of property">
+                  <img class="pop-img lazy"
+                  data-src="./assets/house-stills/dollhouse-1474w.jpg"
+                  alt="Dollhouse simulation of property">
+                </picture>
                 <a href="#house-doll" class="close">X</a>
               </div>
             </div>
 
             <!-- normal page -->
 
-            <div class="image-box">
+            <div class="image-box-doll">
               <a href="#pop-house-doll">
                 <picture>
+                  <source media="(max-width: 41.9em)"
+                          class="lazy" data-srcset="./assets/house-webp/dollhouse-530w.webp"
+                          alt="Dollhouse simulation of property">
+                  <source media="(min-width: 42em)"
+                          class="lazy" data-srcset="./assets/house-webp/dollhouse-884w.webp"
+                          alt="Dollhouse simulation of property">
+
                   <source media="(max-width: 41.9em)"
                           class="lazy" data-srcset="./assets/house-stills/dollhouse-530w.jpg"
                           alt="Dollhouse simulation of property">
                   <source media="(min-width: 42em)"
                           class="lazy" data-srcset="./assets/house-stills/dollhouse-884w.jpg"
                           alt="Dollhouse simulation of property">
-                  <img class="lazy" data-src="./assets/house-stills/dollhouse-884w.jpg"
+                  <img class="lazy" data-src="./assets/house-stills/dollhouse-530w.jpg"
                        alt="Dollhouse simulation of property">
                 </picture>
               </a>
             </div>
           </div>
-
-          <h4 class="section-sub-heading">360 Tour Demo</h4>
-          <div class="resp-container">
-            <iframe class="resp-iframe"
-            src='https://my.matterport.com/show/?m=refUrB1qcHW'
-            frameborder='0' allowfullscreen allow='vr'></iframe>
-          </div>
-
-          <h4 class="section-sub-heading">360 Tour Link:</h4>
-          <a href="https://my.matterport.com/show/?m=refUrB1qcHW"
-          class="gallery-main__sect--link">https://my.matterport.com/show/?m=refUrB1qcHW</a>
-
-          <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
-          <a href="https://my.matterport.com/vr/show/?m=refUrB1qcHW"
-          class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=refUrB1qcHW</a>
         </div>
 
       </section>
@@ -712,10 +883,35 @@
       <section id="senior">
         <div class="container">
           <h3>"The Heights Inn" Senior Care Facility</h3>
-          <video controls poster="./assets/senior-poster.png">
-            <source src="./assets/videos/heights.mp4" type="video/mp4">
-            Video format not supported.
-          </video>
+
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Video</h4>
+            <video controls poster="./assets/senior-poster.png">
+              <source src="./assets/videos/heights.mp4" type="video/mp4">
+              Video format not supported.
+            </video>
+          </div>
+
+          <div class="primary-content">
+            <h4 class="section-sub-heading">360 Tour Demo</h4>
+            <div class="resp-container">
+              <iframe class="resp-iframe"
+              src='https://my.matterport.com/show/?m=DpGBerdrSuK'
+              frameborder='0' allowfullscreen allow='vr'></iframe>
+            </div>
+          </div>
+
+          <div class="tour-link link-a">
+            <h4 class="section-sub-heading">360 Tour Link:</h4>
+            <a href="https://my.matterport.com/show/?m=DpGBerdrSuK"
+            class="gallery-main__sect--link">https://my.matterport.com/show/?m=DpGBerdrSuK</a>
+          </div>
+
+          <div class="tour-link link-b">
+            <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
+            <a href="https://my.matterport.com/vr/show/?m=DpGBerdrSuK"
+            class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=DpGBerdrSuK</a>
+          </div>
 
           <h4 class="section-sub-heading">Still Shots</h4>
           <div class="stills" id="senior-stills">
@@ -723,8 +919,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-liv">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-livingroom-1474w.jpg"
-                alt="Livingroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-livingroom-1474w.webp"
+                  alt="Livingroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-livingroom-1474w.jpg"
+                  alt="Livingroom">
+                </picture>
                 <a href="#senior-stills" class="close">X</a>
               </div>
             </div>
@@ -734,13 +936,13 @@
             <div class="image-box" id="norm-senior-liv">
               <a href="#pop-senior-liv">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/senior-stills/heights-livingroom-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-livingroom-530w.webp"
                           alt="Livingroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/senior-stills/heights-livingroom-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-livingroom-530w.jpg"
                           alt="Livingroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-livingroom-882w.jpg"
+                  <img class="lazy" data-src="./assets/senior-stills/heights-livingroom-530w.jpg"
                        alt="Livingroom">
                 </picture>
               </a>
@@ -749,8 +951,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-liv2">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-livingroom2-1472w.jpg"
-                alt="Livingroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-livingroom2-1472w.webp"
+                  alt="Livingroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-livingroom2-1472w.jpg"
+                  alt="Livingroom">
+                </picture>
                 <a href="#senior-stills" class="close">X</a>
               </div>
             </div>
@@ -760,13 +968,13 @@
             <div class="image-box">
               <a href="#pop-senior-liv2">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/senior-stills/heights-livingroom2-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-livingroom2-530w.webp"
                           alt="Livingroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/senior-stills/heights-livingroom2-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-livingroom2-530w.jpg"
                           alt="Livingroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-livingroom2-882w.jpg"
+                  <img class="lazy" data-src="./assets/senior-stills/heights-livingroom2-530w.jpg"
                        alt="Livingroom">
                 </picture>
               </a>
@@ -775,8 +983,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-bed">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-bedroom-1472w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-bedroom-1472w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-bedroom-1472w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-senior-liv" class="close">X</a>
               </div>
             </div>
@@ -786,13 +1000,13 @@
             <div class="image-box" id="norm-senior-bed">
               <a href="#pop-senior-bed">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                          class="lazy" data-srcset="./assets/senior-stills/heights-bedroom-530w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom-530w.webp"
                           alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                          class="lazy" data-srcset="./assets/senior-stills/heights-bedroom-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-bedroom-530w.jpg"
                           alt="Bedroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom-882w.jpg"
+                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom-530w.jpg"
                        alt="Bedroom">
                 </picture>
               </a>
@@ -801,8 +1015,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-bed2">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-bedroom2-1472w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-bedroom2-1472w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-bedroom2-1472w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-senior-liv" class="close">X</a>
               </div>
             </div>
@@ -812,13 +1032,13 @@
             <div class="image-box">
               <a href="#pop-senior-bed2">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom2-530w.jpg"
-                  alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom2-882w.jpg"
-                  alt="Bedroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom2-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom2-530w.webp"
+                          alt="Bedroom">
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-bedroom2-530w.jpg"
+                          alt="Bedroom">
+                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom2-530w.jpg"
                   alt="Bedroom">
                 </picture>
               </a>
@@ -827,8 +1047,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-bed3">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-bedroom3-1472w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-bedroom3-1472w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-bedroom3-1472w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-senior-bed" class="close">X</a>
               </div>
             </div>
@@ -838,13 +1064,13 @@
             <div class="image-box" id="norm-senior-bed3">
               <a href="#pop-senior-bed3">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom3-530w.jpg"
-                  alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom3-882w.jpg"
-                  alt="Bedroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom3-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom3-530w.webp"
+                          alt="Bedroom">
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-bedroom3-530w.jpg"
+                          alt="Bedroom">
+                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom3-530w.jpg"
                   alt="Bedroom">
                 </picture>
               </a>
@@ -853,8 +1079,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-bed4">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-bedroom4-1472w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-bedroom4-1472w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-bedroom4-1472w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-senior-bed" class="close">X</a>
               </div>
             </div>
@@ -864,13 +1096,13 @@
             <div class="image-box">
               <a href="#pop-senior-bed4">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom4-530w.jpg"
-                  alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom4-882w.jpg"
-                  alt="Bedroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom4-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom4-530w.webp"
+                          alt="Bedroom">
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-bedroom4-530w.jpg"
+                          alt="Bedroom">
+                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom4-530w.jpg"
                   alt="Bedroom">
                 </picture>
               </a>
@@ -879,8 +1111,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-bed5">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-bedroom5-1472w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-bedroom5-1472w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-bedroom5-1472w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-senior-bed3" class="close">X</a>
               </div>
             </div>
@@ -890,13 +1128,13 @@
             <div class="image-box" id="norm-senior-bed5">
               <a href="#pop-senior-bed5">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom5-530w.jpg"
-                  alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom5-882w.jpg"
-                  alt="Bedroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom5-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom5-530w.webp"
+                          alt="Bedroom">
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-bedroom5-530w.jpg"
+                          alt="Bedroom">
+                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom5-530w.jpg"
                   alt="Bedroom">
                 </picture>
               </a>
@@ -905,8 +1143,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-bed6">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-bedroom6-1472w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                  data-srcset="./assets/senior-webp/heights-bedroom6-1472w.webp"
+                  alt="Bedroom">
+                  <img class="pop-img lazy"
+                  data-src="./assets/senior-stills/heights-bedroom6-1472w.jpg"
+                  alt="Bedroom">
+                </picture>
                 <a href="#norm-senior-bed3" class="close">X</a>
               </div>
             </div>
@@ -916,13 +1160,13 @@
             <div class="image-box">
               <a href="#pop-senior-bed6">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom6-530w.jpg"
-                  alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom6-882w.jpg"
-                  alt="Bedroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom6-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom6-530w.webp"
+                          alt="Bedroom">
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-bedroom6-530w.jpg"
+                          alt="Bedroom">
+                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom6-530w.jpg"
                   alt="Bedroom">
                 </picture>
               </a>
@@ -931,8 +1175,14 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-bed7">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-bedroom7-1472w.jpg"
-                alt="Bedroom">
+                <picture>
+                  <source class="pop-img lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom7-1472w.webp"
+                          alt="Bedroom">
+                  <img class="pop-img lazy"
+                       data-src="./assets/senior-stills/heights-bedroom7-1472w.jpg"
+                       alt="Bedroom">
+                </picture>
                 <a href="#norm-senior-bed5" class="close">X</a>
               </div>
             </div>
@@ -942,13 +1192,13 @@
             <div class="image-box">
               <a href="#pop-senior-bed7">
                 <picture>
-                  <source media="(max-width: 41.9em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom7-530w.jpg"
-                  alt="Bedroom">
-                  <source media="(min-width: 42em)"
-                  class="lazy" data-srcset="./assets/senior-stills/heights-bedroom7-882w.jpg"
-                  alt="Bedroom">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom7-882w.jpg"
+                  <source class="lazy"
+                          data-srcset="./assets/senior-webp/heights-bedroom7-530w.webp"
+                          alt="Bedroom">
+                  <source class="lazy"
+                          data-srcset="./assets/senior-stills/heights-bedroom7-530w.jpg"
+                          alt="Bedroom">
+                  <img class="lazy" data-src="./assets/senior-stills/heights-bedroom7-530w.jpg"
                   alt="Bedroom">
                 </picture>
               </a>
@@ -961,43 +1211,41 @@
             <!-- Popup -->
             <div class="popup" id="pop-senior-doll">
               <div class="popup-content">
-                <img class="pop-img lazy" data-src="./assets/senior-stills/heights-dollhouse-1472w.jpg"
-                alt="Dollhouse simulation of property">
+                <picture>
+                  <source class="pop-img lazy"
+                          data-srcset="./assets/senior-webp/heights-dollhouse-1472w.webp"
+                          alt="Dollhouse simulation of property">
+                  <img class="pop-img lazy"
+                       data-src="./assets/senior-stills/heights-dollhouse-1472w.jpg"
+                       alt="Dollhouse simulation of property">
+                </picture>
                 <a href="#senior-doll" class="close">X</a>
               </div>
             </div>
 
             <!-- normal page -->
-            <div class="image-box">
+            <div class="image-box-doll">
               <a href="#pop-senior-doll">
                 <picture>
+                  <source media="(max-width: 41.9em)"
+                  class="lazy" data-srcset="./assets/senior-webp/heights-dollhouse-530w.webp"
+                  alt="Dollhouse simulation of property">
+                  <source media="(min-width: 42em)"
+                  class="lazy" data-srcset="./assets/senior-webp/heights-dollhouse-882w.webp"
+                  alt="Dollhouse simulation of property">
+
                   <source media="(max-width: 41.9em)"
                   class="lazy" data-srcset="./assets/senior-stills/heights-dollhouse-530w.jpg"
                   alt="Dollhouse simulation of property">
                   <source media="(min-width: 42em)"
                   class="lazy" data-srcset="./assets/senior-stills/heights-dollhouse-882w.jpg"
                   alt="Dollhouse simulation of property">
-                  <img class="lazy" data-src="./assets/senior-stills/heights-dollhouse-882w.jpg"
+                  <img class="lazy" data-src="./assets/senior-stills/heights-dollhouse-530w.jpg"
                        alt="Dollhouse simulation of property">
                 </picture>
               </a>
             </div>
           </div>
-
-          <h4 class="section-sub-heading">360 Tour Demo</h4>
-          <div class="resp-container">
-            <iframe class="resp-iframe"
-            src='https://my.matterport.com/show/?m=DpGBerdrSuK'
-            frameborder='0' allowfullscreen allow='vr'></iframe>
-          </div>
-
-          <h4 class="section-sub-heading">360 Tour Link:</h4>
-          <a href="https://my.matterport.com/show/?m=DpGBerdrSuK"
-          class="gallery-main__sect--link">https://my.matterport.com/show/?m=DpGBerdrSuK</a>
-
-          <h4 class="section-sub-heading">3D Virtual Reality Tour Link:</h4>
-          <a href="https://my.matterport.com/vr/show/?m=DpGBerdrSuK"
-          class="gallery-main__sect--link">https://my.matterport.com/vr/show/?m=DpGBerdrSuK</a>
         </div>
 
       </section>

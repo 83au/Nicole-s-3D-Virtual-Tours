@@ -33,36 +33,47 @@
 }
 
 .services__rates {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -8rem;
+  margin-bottom: 12rem;
   padding: 4rem;
   z-index: 1;
 
   background-color: #f8f7f1;
-  box-shadow: 0 0 2rem rgba(43, 43, 43, .5);
-  width: 40%;
+  border-radius: 6px;
+  box-shadow: 0 0 1rem rgba(43, 43, 43, .5);
+  width: 31%;
 }
 
-.services__rates:not(:last-child) {
-  margin-bottom: 16rem;
+.icon-container i {
+  color: #391f3a;
+  margin: 1rem 1rem 2rem 1rem;
 }
 
 .services__rates h4 {
-  margin-bottom: 2rem;
-  text-align: center;
+  margin-bottom: 1rem;
+  color: #391f3a;
+}
+
+.services__rates [role="presentation"] {
+  margin-bottom: 8rem;
 }
 
 .services__rates li {
   padding: 2rem 0;
   border-bottom: 2px solid gray;
+  font-size: 1.4rem;
+  font-weight: 600;
   letter-spacing: .1rem;
   list-style: none;
 }
 
-.services__rates button {
-  margin: 4rem 0 1rem 0;
+.services__rates a:link {
+  position: absolute;
+  bottom: 3rem;
 }
 
 .services__rates .btn-special {
@@ -92,8 +103,21 @@
     align-items: center;
   }
 
+  table {
+    display: none;
+  }
+
   .services__rates {
     width: 60%;
+  }
+
+  .services__rates h4 {
+    font-size: 1.8rem;
+  }
+
+  .services__rates li {
+    font-size: 1.6rem;
+    font-weight: 400;
   }
 }
 
@@ -110,11 +134,7 @@
   }
 
   .services__rates h4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
-  }
-
-  .services__rates li {
-    font-size: 1.2rem;
   }
 }

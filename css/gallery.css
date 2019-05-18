@@ -21,11 +21,12 @@
 .gallery-main__nav--link:link,
 .gallery-main__nav--link:visited {
   margin-bottom: 2rem;
+  padding: 0 1rem;
   color: #db27fa;
   transition: all .3s;
   animation: fade-in 1.3s .8s backwards;
 
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
   text-decoration: none;
 }
@@ -33,9 +34,8 @@
 .gallery-main__nav--link:hover,
 .gallery-main__nav--link:active,
 .gallery-main__nav--link:focus {
-  transform: scale(1.1);
-  text-shadow: 0 3px  5px rgba(0, 0, 0, .7);
-  text-decoration: underline;
+  background-color: #db27fa;
+  color: white;
 }
 
 /* === Gallery Main Section === */
@@ -48,20 +48,20 @@
 }
 
 video {
-  width: 70%;
+  width: 100%;
   outline: none;
 }
 
 section {
   display: flex;
   justify-content: center;
-  padding: 4rem 0 8rem 0;
+  padding: 4rem 0 10rem 0;
   width: 100%;
   text-align: center;
 }
 
 h3 {
-  margin: 4rem 0;
+  margin: 4rem 0 2rem 0;
   color: #242e34;
   font-size: 3rem;
   letter-spacing: .2rem;
@@ -71,11 +71,25 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 8rem;
 }
 
 .section-sub-heading {
-  margin: 8rem 0 4rem 0;
+  margin: 4rem 0 4rem 0;
   font-size: 2rem;
+}
+
+.tour-link {
+  display: inline-block;
+  margin: 4rem 0;
+}
+
+.link-a {
+  margin-right: 1rem;
+}
+
+.link-b {
+  margin-left: 1rem;
 }
 
 
@@ -110,7 +124,7 @@ h3 {
 
 .popup-content {
   position: relative;
-  width: 90%;
+  width: 75%;
   margin: auto;
   padding: 4rem;
   opacity: 0;
@@ -144,7 +158,13 @@ h3 {
 /* = Normal Content = */
 
 .image-box {
-  width: 40%;
+  width: 20%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.image-box-doll {
+  width: 50%;
   height: auto;
   margin: 2rem 0;
 }
@@ -156,16 +176,36 @@ h3 {
 }
 
 .image-box a:hover {
-  padding: 1rem;
-  border: .7rem solid #db27fa;
-  transform: scale(1.1);
+  box-shadow: 1rem 1rem 0 #db27fa,
+              -1rem -1rem 0 #db27fa,
+              1rem -1rem 0 #db27fa,
+              -1rem 1rem 0 #db27fa;
+}
+
+.image-box-doll a:link,
+.image-box-doll a:visited {
+  display: block;
+  transition: all .2s;
+}
+
+.image-box-doll a:hover {
+  box-shadow: 1rem 1rem 0 #db27fa,
+              -1rem -1rem 0 #db27fa,
+              1rem -1rem 0 #db27fa,
+              -1rem 1rem 0 #db27fa;
+}
+
+.primary-content {
+  display: inline-block;
+  margin: 2rem;
+  width: 40%;
 }
 
 .resp-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -225,6 +265,9 @@ h3 {
   .close {
     right: -2rem;
   }
+  .image-box {
+    width: 40%;
+  }
 }
 
 /* = Mobile = */
@@ -239,14 +282,19 @@ h3 {
     margin-top: -3.3rem;
   }
 
-  video {
+  .primary-content {
+    display: block;
     width: 90%;
+  }
+
+  .image-box {
+    margin-bottom: 1rem;
   }
 
   .popup {
     display: none;
   }
-  
+
   .popup:target {
     display: none;
   }
