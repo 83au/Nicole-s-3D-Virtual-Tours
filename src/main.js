@@ -2,11 +2,11 @@ $(document).ready(() => {
 
   // Toggle header background visibility when mobile menu is shown
   const navButton = document.querySelector('.navButton');
-  navButton.addEventListener('click', () => {
+  navButton.onclick = () => {
     document.querySelector('.header').classList.toggle('hide');
-  });
+  };
 
-  // Highlight current page with jquery
+  // Highlight current page
   $(function() {
     $('a').each(function() {
       if ($(this).prop('href') === window.location.href) {
@@ -15,9 +15,14 @@ $(document).ready(() => {
     });
   });
 
-  // TODO: Implement lazy loading myself without cdn
+  // Smooth Scroll
+  $('.gallery-main__nav--link').smoothScroll();
+
   // Lazy load images using remote cdn
   var lazyLoad = new LazyLoad({
       elements_selector: ".lazy",
   });
+
+  // TODO: Implement lazy loading without cdn
+
 });
