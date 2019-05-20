@@ -14,11 +14,14 @@ $(document).ready(() => {
     });
   });
 
+  // Smooth Scroll
+  $('.gallery-main__nav--link').smoothScroll();
+
   // Lazy load images using remote cdn
   var lazyLoad = new LazyLoad({
       elements_selector: ".lazy",
   });
 
   // TODO: Implement lazy loading without cdn
-  
+
 });
