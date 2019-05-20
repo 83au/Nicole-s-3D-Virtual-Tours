@@ -23,6 +23,7 @@ background2(white): #f8f7f1
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -1074,12 +1075,13 @@ a:visited .btn {
   padding: 0 1rem;
 
   animation: fade-in 1.3s .8s backwards;
-  background: linear-gradient(120deg,
+  background: linear-gradient(-120deg,
                               transparent 0%,
                               transparent 50%,
                               #db27fa 50%);
-  background-size: 280%;
-  transition: all .5s ease;
+  background-size: 250%;
+  background-position: 100%;
+  transition: all .6s ease-in-out;
 
   color: #db27fa;
   font-weight: 600;
@@ -1090,7 +1092,7 @@ a:visited .btn {
 .gallery-main__nav--link:hover,
 .gallery-main__nav--link:active,
 .gallery-main__nav--link:focus {
-  background-position: 90%;
+  background-position: 0%;
   color: white;
 }
 

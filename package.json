@@ -9,8 +9,7 @@
     "transpile": "babel src -d lib",
     "minify:css": "minify css/style.prefix.css > css/style.css",
     "minify:js": "minify lib/main.js > lib/main.min.js",
-    "minify:jquery": "minify lib/jquery.smoothScroll.js > lib/smooth.min.js",
-    "build": "npm-run-all concat:css prefix:css transpile minify:css minify:js minify:jquery"
+    "build": "npm-run-all concat:css prefix:css transpile minify:css minify:js"
   },
   "author": "Beau Sherman",
   "license": "ISC",
