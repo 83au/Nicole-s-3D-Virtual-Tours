@@ -19,10 +19,6 @@ $(document).ready(() => {
       elements_selector: ".lazy",
   });
 
-  // Smooth Scroll
-  $('.gallery-main__nav--link').smoothScroll();
-
-
   // TODO: Implement lazy loading without cdn
 
 });
