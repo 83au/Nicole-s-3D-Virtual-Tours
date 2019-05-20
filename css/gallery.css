@@ -28,7 +28,7 @@
                               transparent 0%,
                               transparent 50%,
                               #db27fa 50%);
-  background-size: 250%;
+  background-size: 240%;
   background-position: 100%;
   transition: all .6s ease-in-out;
 
@@ -291,6 +291,11 @@ h3 {
     margin: 2rem 0;
     display: block;
     text-align: center;
+    background: transparent;
+  }
+
+  .gallery-main__nav--link:hover {
+    background-position: 100%;
   }
 
   .gallery-main {
