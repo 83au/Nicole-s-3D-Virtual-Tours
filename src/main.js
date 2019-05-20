@@ -20,5 +20,5 @@ $(document).ready(() => {
   });
 
   // TODO: Implement lazy loading without cdn
-
+  
 });
