@@ -226,12 +226,13 @@ header {
 }
 
 p {
+  margin: 4rem 0;
+  animation: fade-in 1.3s 1s backwards;
   color: #f8f7f1;
+  width: 80%;
   font-size: 1.5rem;
   line-height: 2;
-  margin: 4rem 0;
   font-weight: 500;
-  animation: fade-in 1.3s 1s backwards;
 }
 
 .hero__buttons--btn,
@@ -925,7 +926,7 @@ a:visited .btn {
 
 .services-hero-container p {
   margin: 5rem 0 1rem 0;
-  width: 90%;
+  width: 75%;
   animation: fade-in 1.3s .8s backwards;
 }
 
@@ -1012,8 +1013,8 @@ a:visited .btn {
     align-items: center;
   }
 
-  table {
-    display: none;
+  .services-hero-container p {
+    width: 90%;
   }
 
   .services__rates {
