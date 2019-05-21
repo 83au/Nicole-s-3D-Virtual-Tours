@@ -226,12 +226,13 @@ header {
 }
 
 p {
+  margin: 4rem 0;
+  animation: fade-in 1.3s 1s backwards;
   color: #f8f7f1;
+  width: 80%;
   font-size: 1.5rem;
   line-height: 2;
-  margin: 4rem 0;
   font-weight: 500;
-  animation: fade-in 1.3s 1s backwards;
 }
 
 .hero__buttons--btn,

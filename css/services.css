@@ -16,7 +16,7 @@
 
 .services-hero-container p {
   margin: 5rem 0 1rem 0;
-  width: 90%;
+  width: 75%;
   animation: fade-in 1.3s .8s backwards;
 }
 
@@ -103,8 +103,8 @@
     align-items: center;
   }
 
-  table {
-    display: none;
+  .services-hero-container p {
+    width: 90%;
   }
 
   .services__rates {
