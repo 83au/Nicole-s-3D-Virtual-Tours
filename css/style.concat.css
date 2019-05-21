@@ -229,10 +229,13 @@ p {
   margin: 4rem 0;
   animation: fade-in 1.3s 1s backwards;
   color: #f8f7f1;
-  width: 80%;
   font-size: 1.5rem;
   line-height: 2;
   font-weight: 500;
+}
+
+.home-main p {
+  width: 80%;
 }
 
 .hero__buttons--btn,
