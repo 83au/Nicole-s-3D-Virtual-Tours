@@ -1084,7 +1084,7 @@ a:visited .btn {
                               #db27fa 50%);
   background-size: 240%;
   background-position: 100%;
-  transition: all .6s ease-in-out;
+  transition: all .4s ease-in-out;
 
   color: #db27fa;
   font-weight: 600;
