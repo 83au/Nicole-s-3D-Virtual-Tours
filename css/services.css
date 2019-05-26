@@ -175,17 +175,10 @@ tr:not(:last-child) td {
   .services__rates h4 {
     font-size: 1.8rem;
     text-align: center;
-  }
-
-  .services__rates .first-card-heading {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 
   .services___rates-4 .icon-container i {
     margin-bottom: 2rem;
-  }
-
-  .services___rates-4 h4 {
-    margin-bottom: 1rem;
   }
 }
