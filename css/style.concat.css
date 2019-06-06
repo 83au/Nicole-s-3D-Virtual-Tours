@@ -993,6 +993,15 @@ tr:not(:last-child) td {
   margin-bottom: 4rem;
 }
 
+.services__rates-6 .icon-container {
+  margin-top: 2rem;
+}
+
+.services__rates .extra {
+  margin: 4rem 0 9rem 0;
+  line-height: 2;
+}
+
 .services___rates-4 .icon-container {
   margin-bottom: 2rem;
 }
@@ -1036,6 +1045,15 @@ tr:not(:last-child) td {
   .services___rates-4 h4 {
     line-height: 1.5;
     margin-bottom: 1rem;
+  }
+
+  .services__rates-6 td {
+    padding: 2rem 0;
+  }
+
+  .services__rates-6 .rate {
+    display: inline-block;
+    margin-left: 1.5rem;
   }
 }
 
@@ -1085,10 +1103,24 @@ tr:not(:last-child) td {
     letter-spacing: .2rem;
   }
 
+  .services__rates-6 .icon-container {
+    margin-top: 0;
+  }
+
   .services__rates h4 {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 3rem;
+  }
+
+  .services__rates .extra {
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+
+  .services__rates-6 .rate {
+    display: inline-block;
+    margin-left: 1.5rem;
   }
 
   .services___rates-4 .icon-container i {
