@@ -961,21 +961,29 @@ a:visited .btn {
   width: 31%;
 }
 
-table {
+.services__rates h5 span {
+  font-weight: 200;
+}
+
+.services__rates ul {
+  list-style: none;
+}
+
+.rates {
   border-collapse: collapse;
   margin-bottom: 8rem;
 }
 
-td {
+.rates td {
   text-align: left;
   padding: 1rem 0;
 }
 
-tr:not(:last-child) td {
+.rates tr:not(:last-child) td {
   border-bottom: 1px solid rgba(191, 191, 191, .75);
 }
 
-.rate {
+.rates .rate {
   text-align: right;
 }
 
@@ -989,35 +997,49 @@ tr:not(:last-child) td {
   color: #391f3a;
 }
 
-.services__rates .first-card-heading {
-  margin-bottom: 4rem;
-}
-
-.services__rates-6 .icon-container {
-  margin-top: 2rem;
-}
-
-.services__rates .extra {
-  margin: 4rem 0 9rem 0;
-  line-height: 2;
-}
-
-.services___rates-4 .icon-container {
-  margin-bottom: 2rem;
-}
-
-.services___rates-4 h4 {
-  line-height: 2.5;
-  margin-bottom: 6rem;
-}
-
-.services__rates a:link {
+.schedule-button:link {
   position: absolute;
   bottom: 3rem;
 }
 
 .services__rates .btn-special {
   margin-top: 6.5rem;
+}
+
+.commercial .icon-container {
+  margin-bottom: 4rem;
+}
+
+.commercial li {
+  margin-top: 1rem;
+}
+
+.commercial h5 {
+  margin-top: 5rem;
+  font-size: 1.7rem;
+}
+
+.independent .icon-container {
+  margin-bottom: 5rem;
+}
+
+.independent td {
+  padding: 3rem 0;
+}
+
+.extras h5 {
+  margin-bottom: 8rem;
+}
+
+.extras h5 img {
+  display: inline-block;
+  margin: 0 1rem;
+  height: 1.4rem;
+  width: auto;
+}
+
+.extras .rates {
+  margin-bottom: 2rem;
 }
 
 
@@ -1037,27 +1059,9 @@ tr:not(:last-child) td {
   .services__rates {
     width: 40%;
   }
-
-  .services___rates-4 .icon-container {
-    margin-bottom: 2rem;
-  }
-
-  .services___rates-4 h4 {
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-
-  .services__rates-6 td {
-    padding: 2rem 0;
-  }
-
-  .services__rates-6 .rate {
-    display: inline-block;
-    margin-left: 1.5rem;
-  }
 }
 
-/* = Thin Desktop = */
+/* = Thin Desktop/Tablet = */
 
 @media only screen and (max-width: 64.93em) { /* 1039px */
   .services-hero-container p {
@@ -1068,21 +1072,16 @@ tr:not(:last-child) td {
     width: 45%;
   }
 
-  .services__rates h4 {
-    font-size: 1.8rem;
+  .extras .icon-container {
+    margin-bottom: 3rem;
   }
 
-  .services___rates-4 .icon-container {
-    margin-bottom: 0;
+  .extras h4 {
+    margin: 1rem 0 5rem 0;
   }
 
-  .services___rates-4 .icon-container i {
-    margin-bottom: 0;
-  }
-
-  .services___rates-4 h4 {
-    line-height: 1.5;
-    margin-bottom: 0;
+  .extras h5 {
+    margin: 2rem 0 8rem 0;
   }
 }
 
@@ -1103,28 +1102,47 @@ tr:not(:last-child) td {
     letter-spacing: .2rem;
   }
 
-  .services__rates-6 .icon-container {
-    margin-top: 0;
-  }
-
   .services__rates h4 {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 3rem;
   }
 
-  .services__rates .extra {
+  .commercial .icon-container {
+    margin-bottom: 1rem;
+  }
+
+  .commercial li {
+    margin-top: 0;
+  }
+
+  .commercial h5 {
+    margin: 3rem 0 12rem 0;
+  }
+
+  .independent .icon-container {
+    margin-bottom: 1rem;
+  }
+
+  .independent td {
+    padding: 1rem 0;
+  }
+
+  .extras .icon-container {
+    margin-bottom: 1rem;
+  }
+
+  .extras h4 {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .extras h5 {
+    margin-bottom: 8rem;
+  }
+
+  .services__rates .indpendent__heading {
     margin: 1rem 0;
     line-height: 1.5;
-  }
-
-  .services__rates-6 .rate {
-    display: inline-block;
-    margin-left: 1.5rem;
-  }
-
-  .services___rates-4 .icon-container i {
-    margin-bottom: 2rem;
   }
 }
 
