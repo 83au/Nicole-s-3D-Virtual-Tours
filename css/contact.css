@@ -16,8 +16,27 @@
   position: relative;
   left: -4rem;
   margin: 4rem 0;
+  animation: fade-in 1.3s .6s backwards;
   border-collapse: collapse;
   width: 70%;
+}
+
+/* Animations */
+
+.contact-table:nth-child(2) tr:first-child {
+  animation: fade-in 1.3s .6s backwards;
+}
+
+.contact-table:nth-child(2) tr:last-child {
+  animation: fade-in 1.3s .8s backwards;
+}
+
+.contact-table:last-child tr:first-child {
+  animation: fade-in 1.3s 1s backwards;
+}
+
+.contact-table:last-child tr:last-child {
+  animation: fade-in 1.3s 1.2s backwards;
 }
 
 .contact-icon {
