@@ -1225,7 +1225,7 @@ h3 {
 .stills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 8rem;
 }
 
@@ -1313,9 +1313,9 @@ h3 {
 /* = Normal Content = */
 
 .image-box {
-  width: 20%;
+  width: 18%;
   height: auto;
-  margin: 2rem 0;
+  margin: 2rem 1rem;
 }
 
 .image-box-doll {
