@@ -27,12 +27,12 @@
   background: linear-gradient(-120deg,
                               transparent 0%,
                               transparent 50%,
-                              #db27fa 50%);
+                              var(--light-purple) 50%);
   background-size: 240%;
   background-position: 100%;
-  transition: all .4s ease-in-out;
+  transition: all .5s ease-in-out;
 
-  color: #db27fa;
+  color: var(--light-purple);
   font-weight: 600;
   font-size: 2rem;
   text-decoration: none;
@@ -42,7 +42,7 @@
 .gallery-main__nav--link:active,
 .gallery-main__nav--link:focus {
   background-position: 0%;
-  color: white;
+  color: var(--white);
 }
 
 /* === Gallery Main Section === */
@@ -69,7 +69,7 @@ section {
 
 h3 {
   margin: 4rem 0 2rem 0;
-  color: #391f3a;
+  color: var(--dark-purple);
   font-size: 3rem;
   letter-spacing: .2rem;
 }
@@ -140,7 +140,7 @@ h3 {
 }
 
 .popup-content img {
-  border: .5rem solid #f8f7f1;
+  border: .5rem solid var(--white);
 }
 
 .close,
@@ -149,7 +149,7 @@ h3 {
   position: absolute;
   top: 1rem;
   right: -4rem;
-  background-color: #f8f7f1;
+  background-color: var(--white);
   color: gray;
   border-radius: 50%;
   width: 2.7rem;
@@ -159,7 +159,7 @@ h3 {
 }
 
 .close:hover {
-  color: #db27fa;
+  color: var(--light-purple);
 }
 
 /* = Normal Content = */
@@ -183,10 +183,10 @@ h3 {
 }
 
 .image-box a:hover {
-  box-shadow: 1rem 1rem 0 #db27fa,
-              -1rem -1rem 0 #db27fa,
-              1rem -1rem 0 #db27fa,
-              -1rem 1rem 0 #db27fa;
+  box-shadow: 1rem 1rem 0 var(--light-purple),
+              -1rem -1rem 0 var(--light-purple),
+              1rem -1rem 0 var(--light-purple),
+              -1rem 1rem 0 var(--light-purple);
 }
 
 .image-box-doll a:link,
@@ -196,10 +196,10 @@ h3 {
 }
 
 .image-box-doll a:hover {
-  box-shadow: 1rem 1rem 0 #db27fa,
-              -1rem -1rem 0 #db27fa,
-              1rem -1rem 0 #db27fa,
-              -1rem 1rem 0 #db27fa;
+  box-shadow: 1rem 1rem 0 var(--light-purple),
+              -1rem -1rem 0 var(--light-purple),
+              1rem -1rem 0 var(--light-purple),
+              -1rem 1rem 0 var(--light-purple);
 }
 
 .primary-content__container {
@@ -233,11 +233,11 @@ h3 {
 
 .gallery-main__sect--link:link {
   font-weight: 700;
-  color: #db27fa;
+  color: var(--light-purple);
 }
 
 .gallery-main__sect--link:visited {
-  color: #AF9933;
+  color: var(--gold);
 }
 
 .gallery-main__sect--link:hover,
@@ -248,12 +248,12 @@ h3 {
 
 #studio,
 #house {
-  background-color: #ece9d9;
+  background-color: var(--off-white);
 }
 
 #single,
 #senior {
-  background-color: #f8f7f1;
+  background-color: var(--white);
 }
 
 /* === Media Queries === */

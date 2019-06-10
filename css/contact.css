@@ -5,7 +5,7 @@
 
 .contact-main__container {
   padding: 0 2rem;
-  color: #f8f7f1;
+  color: var(--white);
 }
 
 .contact-hero__heading {
@@ -50,13 +50,13 @@
 }
 
 .contact-info a:link {
-  color: #db27fa;
+  color: var(--light-purple);
   font-weight: 700;
   font-size: 1.5rem;
 }
 
 .contact-info a:visited {
-  color: #AF9933;
+  color: var(--gold);
   opacity: .9;
   font-weight: 400;
 }

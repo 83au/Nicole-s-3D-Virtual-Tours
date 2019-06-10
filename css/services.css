@@ -7,7 +7,7 @@
 .services-hero-container {
   padding: 10rem 2rem;
   margin: 0 auto;
-  color: #f8f7f1;
+  color: var(--white);
 }
 
 .services-hero__heading {
@@ -22,7 +22,7 @@
 
 .services {
   display: flex;
-  background-color: #ece9d9;
+  background-color: var(--off-white);
 }
 
 .services .container {
@@ -42,7 +42,7 @@
   padding: 4rem;
   z-index: 1;
 
-  background-color: #f8f7f1;
+  background-color: var(--white);
   border-radius: 6px;
   box-shadow: 0 0 1rem rgba(43, 43, 43, .5);
   width: 31%;
@@ -75,13 +75,13 @@
 }
 
 .icon-container i {
-  color: #391f3a;
+  color: var(--dark-purple);
   margin: 1rem 1rem 2rem 1rem;
 }
 
 .services__rates h4 {
   margin-bottom: 1rem;
-  color: #391f3a;
+  color: var(--dark-purple);
 }
 
 .schedule-button:link {
