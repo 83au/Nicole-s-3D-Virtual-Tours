@@ -32,6 +32,7 @@ html {
 
 .container {
   width: 105rem;
+  max-width: 100%;
 }
 
 img {
