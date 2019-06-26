@@ -39,7 +39,6 @@ $(document).ready(() => {
 
   // slick
   $('.stills').slick({
-    lazyLoad: 'ondemand',
     dots: true,
     infinite: true,
     speed: 300,
