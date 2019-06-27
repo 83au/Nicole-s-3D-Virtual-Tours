@@ -59,7 +59,7 @@ video {
   outline: none;
 }
 
-section {
+.gallery-section {
   padding: 4rem 0 10rem 0;
   width: 100%;
   text-align: center;
