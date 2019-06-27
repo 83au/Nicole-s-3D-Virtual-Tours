@@ -17,17 +17,21 @@ $(document).ready(() => {
   */
 
   // Highlight current page in vanilla JavaScript
-  let hyperlink;
-  let currentPage;
-  const links = document.querySelectorAll('a');
+  const highlightCurrentPage = () => {
+    let hyperlink;
+    let currentPage;
+    const links = document.querySelectorAll('a');
 
-  links.forEach(link => {
-    hyperlink = link.href;
-    currentPage = window.location.href;
-    if (currentPage.includes(hyperlink)) {
-      link.classList.add('current');
-    }
-  });
+    links.forEach(link => {
+      hyperlink = link.href;
+      currentPage = window.location.href;
+      if (currentPage.includes(hyperlink)) {
+        link.classList.add('current');
+      }
+    });
+  }
+
+  highlightCurrentPage();
 
   // Smooth Scroll
   $('.gallery-main__nav--link').smoothScroll();
