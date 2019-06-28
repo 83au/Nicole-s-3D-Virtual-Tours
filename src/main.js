@@ -33,6 +33,7 @@ $(document).ready(() => {
 
   highlightCurrentPage();
 
+
   // Smooth Scroll
   $('.gallery-main__nav--link').smoothScroll();
 
