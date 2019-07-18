@@ -70,7 +70,7 @@ section .container {
   margin: 0 auto;
 }
 
-h3 {
+.gallery-section__heading {
   margin: 4rem 0 2rem 0;
   color: var(--dark-purple);
   font-size: 3rem;
@@ -339,7 +339,7 @@ h3 {
     padding: 2rem 0 4rem 0;
   }
 
-  h3 {
+  .gallery-section__heading {
     margin: 5rem 0 4rem 0;
     padding: 0 .5rem;
     font-size: 2.5rem;

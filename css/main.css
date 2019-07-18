@@ -225,7 +225,7 @@ header {
   letter-spacing: .5rem;
 }
 
-p {
+.hero-para {
   margin: 4rem 0;
   animation: fade-in 1.3s 1s backwards;
   color: var(--white);
