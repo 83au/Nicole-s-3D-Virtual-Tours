@@ -1,12 +1,16 @@
 $(document).ready(() => {
+  // TODO: Add loading animation
+  $(window).on('load', () => {
+    console.log("PAGE FULLY LOADED");
+    // TODO: Remove loading animation
+  });
 
-  // Toggle header background visibility when mobile menu is shown
+  // toggle header background visibility when mobile menu is shown
   $(function() {
     $('.navButton').click(() => $('.header').toggleClass('hide'));
   });
 
-
-  /* Highlight current page in jQuery
+  // highlight current page in jquery
   $(function() {
     $('a').each(function() {
       if ($(this).prop('href') === window.location.href) {
@@ -14,30 +18,11 @@ $(document).ready(() => {
       }
     });
   });
-  */
 
-  // Highlight current page in vanilla JavaScript
-  const highlightCurrentPage = () => {
-    let hyperlink;
-    let currentPage;
-    const links = document.querySelectorAll('a');
-
-    links.forEach(link => {
-      hyperlink = link.href;
-      currentPage = window.location.href;
-      if (currentPage.includes(hyperlink)) {
-        link.classList.add('current');
-      }
-    });
-  }
-
-  highlightCurrentPage();
-
-
-  // Smooth Scroll
+  // smooth scroll for safari and ios browsers
   $('.gallery-main__nav--link').smoothScroll();
 
-  // Lazy load images using remote cdn
+  // Lazy load dollhouse images using remote cdn
   var lazyLoad = new LazyLoad({
     elements_selector: ".lazy",
   });

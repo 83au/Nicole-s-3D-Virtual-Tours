@@ -30,16 +30,36 @@
   padding-top: 3rem;
 }
 
-.services-2 {
-  margin-top: 5rem;
+.services-main__iframe-box {
+  position: relative;
+  bottom: 10rem;
+  overflow: hidden;
+  padding-top: 56.25%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.services-main__iframe-box > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 
 .services-main h3 {
+  margin-bottom: 3rem;
   color: var(--dark-purple);
   font-size: 2.5rem;
   letter-spacing: .01rem;
   text-align: center;
   text-decoration: underline;
+}
+
+.services-2 {
+  margin-top: 5rem;
 }
 
 caption {
@@ -137,5 +157,14 @@ caption {
   .services-hero-container .services-hero__heading {
     font-size: 2.8rem;
     letter-spacing: .2rem;
+  }
+  .services-main h3 {
+    margin-top: -3rem;
+  }
+  .services-2 {
+    margin-top: 0;
+  }
+  .services-main h4 {
+    margin-top: 0;
   }
 }
