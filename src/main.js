@@ -1,22 +1,20 @@
-$(document).ready(() => {
+const main = () => {
+
   // TODO: Add loading animation
+
   $(window).on('load', () => {
     console.log("PAGE FULLY LOADED");
     // TODO: Remove loading animation
   });
 
   // toggle header background visibility when mobile menu is shown
-  $(function() {
-    $('.navButton').click(() => $('.header').toggleClass('hide'));
-  });
+  $('.navButton').click(() => $('.header').toggleClass('hide'));
 
-  // highlight current page in jquery
-  $(function() {
-    $('a').each(function() {
-      if ($(this).prop('href') === window.location.href) {
-        $(this).addClass('current');
-      }
-    });
+  // highlight current page
+  $('a').each(function() {
+    if ($(this).prop('href') === window.location.href) {
+      $(this).addClass('current');
+    }
   });
 
   // smooth scroll for safari and ios browsers
@@ -51,4 +49,6 @@ $(document).ready(() => {
       }
     ]
   });
-});
+};
+
+$(document).ready(main);

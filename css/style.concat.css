@@ -901,8 +901,12 @@ a:visited .btn {
 }
 
 .services-main .container {
-  margin: 0 auto;
-  padding-top: 3rem;
+  margin: -10rem auto 0 auto;
+  padding: 3rem;
+  background: var(--white);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  text-align: center;
 }
 
 .services-main__iframe-box {
@@ -933,6 +937,43 @@ a:visited .btn {
   text-decoration: underline;
 }
 
+.service-statement {
+  margin: 2rem auto;
+  color: black;
+  width: 80%;
+  max-width: 99%;
+  text-align: center;
+}
+
+.service-statement img {
+  display: inline-block;
+  margin: 0 1rem;
+  height: 1.4rem;
+  width: auto;
+}
+
+.services-main__bundle-statement {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.services-main h5 {
+  margin-top: 3rem;
+  color: var(--dark-purple);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.services-main__bundle-statement ul {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  list-style: none;
+}
+
+.services-main__bundle-statement li {
+  line-height: 2;
+}
+
 .services-2 {
   margin-top: 5rem;
 }
@@ -950,28 +991,9 @@ caption {
   text-decoration: underline;
 }
 
-.services-main h5 {
-  font-size: 1.6rem;
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.sale {
-  margin: 2rem 0;
-  color: black;
-  text-align: center;
-}
-
-.sale img {
-  display: inline-block;
-  margin: 0 1rem;
-  height: 1.4rem;
-  width: auto;
-}
-
 .rates {
   border-collapse: collapse;
-  margin: 1rem auto;
+  margin: 6rem auto;
 }
 
 .rates-2 {
@@ -993,6 +1015,10 @@ caption {
 
 .rates tr:not(:last-child) td {
   border-bottom: 1px solid rgba(191, 191, 191, .75);
+}
+
+.hours td:last-child {
+  margin-left: 1rem;
 }
 
 
@@ -1041,6 +1067,10 @@ caption {
   }
   .services-main h4 {
     margin-top: 0;
+  }
+
+  .service-statement {
+    width: 100%;
   }
 }
 
