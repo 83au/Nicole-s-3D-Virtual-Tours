@@ -1,7 +1,7 @@
 const imagemin = require("imagemin");
 const webp = require("imagemin-webp");
 
-imagemin(["matt-logo-copy/*.png"], "matt-logo-webp", {
+imagemin(["two-story-stills-copy/*.jpg"], "two-story-stills-webp", {
   use: [
     webp({
       quality: 75

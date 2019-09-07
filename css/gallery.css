@@ -83,7 +83,7 @@ section .container {
 }
 
 .slick-arrow {
-  margin: 1rem auto;
+  margin: 2.5rem auto;
   padding: .6rem 1.3rem;
   background: var(--light-purple);
   border-radius: 6px;
@@ -221,8 +221,12 @@ section .container {
 }
 
 .primary-content {
-  margin: 2rem;
+  margin: 0 2rem;
   width: 40%;
+}
+
+.primary-content.two-story-content {
+  width: 60%;
 }
 
 .resp-container {
@@ -318,7 +322,8 @@ section .container {
     display: block;
   }
 
-  .primary-content {
+  .primary-content,
+  .primary-content.two-story-content {
     width: 90%;
   }
 
