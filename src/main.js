@@ -7,6 +7,11 @@ const main = () => {
     // TODO: Remove loading animation
   });
 
+  // Set copyright date
+  let date = new Date();
+  date = date.getFullYear();
+  $('footer span').append(date);
+
   // toggle header background visibility when mobile menu is shown
   $('.navButton').click(() => $('.header').toggleClass('hide'));
 
