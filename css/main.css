@@ -152,9 +152,9 @@ header {
 
 /* === Main Content === */
 
-.home {
+/* .home {
   height: 90vh;
-}
+} */
 
 .no-webp .hero {
   background-image: var(--hero-background),
@@ -236,6 +236,20 @@ header {
 
 .home-main p {
   width: 80%;
+}
+
+.promo-vid {
+  width: 60%;
+  margin-bottom: 4rem;
+}
+
+.hero__resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .hero__buttons--btn,
@@ -799,6 +813,11 @@ a:visited .btn {
     font-size: 1.5rem;
     line-height: 2;
     margin: 5rem 0;
+  }
+
+  .promo-vid {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   .hero__buttons--btn {

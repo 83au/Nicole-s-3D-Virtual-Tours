@@ -24,8 +24,9 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
     <!-- Scripts -->
-    <script src="lib/modernizr-custom.js"></script>
+    <script src="lib/modernizr-custom.js" jquery.fitvids.js></script>
     <script src="lib/jquery-3.4.0.min.js" defer></script>
+    <script src="lib/jquery.fitvids.js" defer></script>
     <script src="lib/main.min.js" defer></script>
   </head>
   <body>
@@ -45,7 +46,7 @@
         </label>
         <nav class="header__nav--burger-box" role="navigation">
           <ul class="header__nav--burger-menu" role="presentation">
-            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="index.html">Home</a></li>
             <li><a href="services.html">Services & Rates</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -63,7 +64,7 @@
 
           <nav class="header__nav" role="navigation">
             <ul role="presentation">
-              <li><a href="index.html">Home</a></li>
+              <li><a class="current" href="index.html">Home</a></li>
               <li><a href="services.html">Services & Rates</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li class="header__nav--button"><a href="contact.html">Contact</a></li>
@@ -83,14 +84,22 @@
             Located in Glendora, serving Southern California, Nicole’s 3D Virtual
             Tours uses the most advanced technology on the market.</p>
 
-            <div class="hero__buttons">
-              <a href="contact.html"><button type="button" name="button"
-              class="hero__buttons--btn btn hero__buttons--btn-1">Schedule
-              Service</button></a>
-              <a href="gallery.html"><button type="button" name="button"
-              class="hero__buttons--btn hero__buttons--btn-2">View
-                Gallery</button></a>
+          <div class="promo-vid">
+            <div class="hero__resp-container">
+              <iframe width="360" height="515" title="Promotional video" class="resp-iframe"
+                src="https://www.youtube.com/embed/WNyN5FvN5rY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+          </div>
+
+          <div class="hero__buttons">
+            <a href="contact.html"><button type="button" name="button"
+            class="hero__buttons--btn btn hero__buttons--btn-1">Schedule
+            Service</button></a>
+            <a href="gallery.html"><button type="button" name="button"
+            class="hero__buttons--btn hero__buttons--btn-2">View
+              Gallery</button></a>
+          </div>
         </div>
       </main>
 
@@ -128,7 +137,7 @@
           </div>
 
           <ul class="footer__nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="index.html">Home</a></li>
             <li><a href="services.html">Services & Rates</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
