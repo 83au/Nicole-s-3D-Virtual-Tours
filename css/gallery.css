@@ -104,7 +104,7 @@ section .container {
 
 .tour-link {
   display: inline-block;
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 
 .link-a {
@@ -222,10 +222,6 @@ section .container {
 
 .primary-content {
   margin: 0 2rem;
-  width: 40%;
-}
-
-.primary-content.two-story-content {
   width: 60%;
 }
 
@@ -353,5 +349,9 @@ section .container {
   .section-sub-heading {
     margin: 4rem 0 1rem 0;
     font-size: 1.5rem;
+  }
+
+  .tour-link {
+    margin: 1rem 0;
   }
 }
