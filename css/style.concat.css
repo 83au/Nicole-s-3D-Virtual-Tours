@@ -415,12 +415,12 @@ a:visited .btn {
 /* = Wide Desktop = */
 
 @media only screen and (min-width: 75em) { /* 1200px */
-  .no-webp .home {
+  .no-webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner/banner-2x.jpg);
   }
 
-  .webp .home {
+  .webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner-webp/banner-2x.webp);
   }
@@ -448,12 +448,12 @@ a:visited .btn {
   }
 
   /* Main */
-  .no-webp .home {
+  .no-webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner/banner-2x-trimmed.jpg);
   }
 
-  .webp .home {
+  .webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner-webp/banner-2x-trimmed.webp);
   }
@@ -543,12 +543,12 @@ a:visited .btn {
 
 @media only screen and (max-width: 55.63rem) { /* 890px */
   /* Main */
-  .no-webp .home {
+  .no-webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner/banner-slightly-trimmed-1x.jpg);
   }
 
-  .webp .home {
+  .webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner-webp/banner-slightly-trimmed-1x.webp);
   }
@@ -579,13 +579,13 @@ a:visited .btn {
 /* = Tablet = */
 @media only screen and (max-width: 55.63rem) and (orientation: portrait) { /* 890px */
   /* Main */
-  .no-webp .home {
+  .no-webp .hero {
     height: 100%;
     background-image: var(--hero-background),
       url(../assets/banner/banner-trimmed-1x.jpg);
   }
 
-  .webp .home {
+  .webp .hero {
     height: 100%;
     background-image: var(--hero-background),
       url(../assets/banner-webp/banner-trimmed-1x.webp);
@@ -665,12 +665,12 @@ a:visited .btn {
 
 @media only screen and (max-width: 41.9em) { /* 670px */
   /* Main */
-  .no-webp .home {
+  .no-webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner/banner-ultra-trimmed-1x.jpg);
   }
 
-  .webp .home {
+  .webp .hero {
     background-image: var(--hero-background),
       url(../assets/banner-webp/banner-ultra-trimmed-1x.webp);
   }
@@ -831,7 +831,7 @@ a:visited .btn {
     margin-right: .3rem;
   }
 
-  .hero__buttons--btn--2 {
+  .hero__buttons-btn--2 {
     margin-left: .3rem;
   }
 
