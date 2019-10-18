@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <title>Nicole's 3D Virtual Tours - Gallery</title>
+    <!-- Meta info-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicole's 3D Virtual Tours - Gallery</title>
     <meta name="description" content="Explore our gallery of interactive virtual
     tours.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous">
@@ -14,8 +17,12 @@
     <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Icons -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Scripts -->
     <script defer src="lib/jquery-3.4.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>
     <script defer src="lib/smooth.min.js"></script>
@@ -23,23 +30,23 @@
     <script defer src="lib/slick/slick.min.js"></script>
     <script defer src="lib/main.min.js"></script>
   </head>
+
   <body>
     <!-- Facebook share button code -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
-    <div class="hero">
-
-      <div class="header__nav--burger">
+    <header class="header" role="banner">
+      <div class="header__nav-burger">
         <input type="checkbox" class="checkbox" id="menuToggle">
         <label for="menuToggle" class="navButton">
-          <span id="burgerSpan"></span>
+          <span></span>
           <span></span>
           <span></span>
         </label>
-        <nav class="header__nav--burger-box" role="navigation">
-          <ul class="header__nav--burger-menu" role="presentation">
+        <nav class="header__nav-burger-box" role="navigation">
+          <ul class="header__nav-burger-menu" role="presentation">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services & Rates</a></li>
             <li><a class="current" href="gallery.html">Gallery</a></li>
@@ -47,42 +54,47 @@
           </ul>
         </nav>
       </div>
-
-      <header class="header" role="banner">
-        <div class="container">
-          <div class="header__logo-box">
-            <a href="index.html">
-              <img src="./assets/logo-1x.png" alt="Logo">
-            </a>
-          </div>
-
-          <nav class="header__nav" role="navigation">
-            <ul role="presentation">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="services.html">Services & Rates</a></li>
-              <li><a class="current" href="gallery.html">Gallery</a></li>
-              <li class="header__nav--button"><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+      <div class="container">
+        <div class="header__logo-box">
+          <a href="index.html">
+            <img src="./assets/logo-1x.png" alt="Logo">
+          </a>
         </div>
-      </header>
+    
+        <nav class="header__nav" role="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Rates</a></li>
+            <li><a class="current" href="gallery.html">Gallery</a></li>
+            <li class="header__nav-button"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <div class="hero">
       <div class="sub-hero gallery-hero">
-        <div class="sub-hero-container gallery-main__container container">
-          <h2 class="sub-hero-heading gallery-hero__heading">Gallery</h2>
+        <div class="sub-hero__container gallery-main__container container">
+          <h2 class="sub-hero__heading gallery-hero__heading">Gallery</h2>
           <div class="gallery-main__nav">
-            <a href="#studio" class="gallery-main__nav--link">Two Story House</a>
-            <a href="#single" class="gallery-main__nav--link">Single Bedroom Apartment</a>
-            <a href="#house" class="gallery-main__nav--link">3 Bedroom House</a>
-            <a href="#senior" class="gallery-main__nav--link">The Heights Inn Senior Care Facility</a>
+            <a href="#studio" class="gallery-main__nav-link">Two Story House</a>
+            <a href="#single" class="gallery-main__nav-link">Single Bedroom Apartment</a>
+            <a href="#house" class="gallery-main__nav-link">3 Bedroom House</a>
+            <a href="#senior" class="gallery-main__nav-link">The Heights Inn Senior Care Facility</a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Loader -->
+
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
     <main class="gallery-main" role="main">
       <section id="studio" class="gallery-section">
-        <div class="container">
+        <div class="gallery-main__container container">
           <h3 class="gallery-section__heading">Two Story House</h3>
 
           <div class="primary-content__container">
@@ -1366,10 +1378,10 @@
 
           <div class="footer__connect">
             <h4>Connect</h4>
-            <div class="footer__connect--icon-box">
+            <div class="footer__icon-box">
               <a href="https://www.facebook.com/Nicoles3DVirtualTours/"><i class="fab fa-facebook fa-2x"></i></a>
             </div>
-            <div class="footer__connect--icon-box">
+            <div class="footer__icon-box">
               <a href="https://www.instagram.com/nicoles3dvirtualtours/"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
           </div>

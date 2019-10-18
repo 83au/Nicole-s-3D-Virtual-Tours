@@ -1,3 +1,36 @@
+/* === Loader === */
+.loader-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+}
+
+.loader {
+  border: .5rem solid rgba(0, 0, 0, .05);
+  border-bottom: .5rem solid var(--light-purple);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+
+  animation: spin 1s linear infinite;
+}
+
+.loader-container.remove {
+  display: none;
+}
+
+@keyframes spin {
+  100% { transform: rotate(1turn); }
+}
+
 /* === Hero Section === */
 
 .gallery-hero {
@@ -18,8 +51,8 @@
   width: 70%;
 }
 
-.gallery-main__nav--link:link,
-.gallery-main__nav--link:visited {
+.gallery-main__nav-link:link,
+.gallery-main__nav-link:visited {
   margin-bottom: 2rem;
   padding: 0 1rem;
 
@@ -38,9 +71,9 @@
   text-decoration: none;
 }
 
-.gallery-main__nav--link:hover,
-.gallery-main__nav--link:active,
-.gallery-main__nav--link:focus {
+.gallery-main__nav-link:hover,
+.gallery-main__nav-link:active,
+.gallery-main__nav-link:focus {
   background-position: 0%;
   color: var(--white);
 }
@@ -283,7 +316,7 @@ section .container {
 
 /* = Tablet = */
 @media only screen and (max-width: 50em) {  /* 800px */
-  .gallery-main__nav--link:link {
+  .gallery-main__nav-link:link {
     margin: 2rem 2rem;
   }
   .close {
@@ -299,14 +332,14 @@ section .container {
 
 /* = Mobile = */
 @media only screen and (max-width: 41.9em) { /* 670px */
-  .gallery-main__nav--link:link {
+  .gallery-main__nav-link:link {
     margin: 2rem 0;
     display: block;
     text-align: center;
     background: transparent;
   }
 
-  .gallery-main__nav--link:hover {
+  .gallery-main__nav-link:hover {
     background-position: 100%;
   }
 
