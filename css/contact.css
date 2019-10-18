@@ -12,7 +12,7 @@
   margin-top: 2rem;
 }
 
-.contact-table {
+.contact-main__table {
   position: relative;
   left: -4rem;
   margin: 4rem 0;
@@ -23,19 +23,19 @@
 
 /* Animations */
 
-.contact-table:nth-child(2) tr:first-child {
+.contact-main__table:nth-child(2) tr:first-child {
   animation: fade-in 1.3s .6s backwards;
 }
 
-.contact-table:nth-child(2) tr:last-child {
+.contact-main__table:nth-child(2) tr:last-child {
   animation: fade-in 1.3s .8s backwards;
 }
 
-.contact-table:last-child tr:first-child {
+.contact-main__table:last-child tr:first-child {
   animation: fade-in 1.3s 1s backwards;
 }
 
-.contact-table:last-child tr:last-child {
+.contact-main__table:last-child tr:last-child {
   animation: fade-in 1.3s 1.2s backwards;
 }
 
@@ -126,13 +126,13 @@
     letter-spacing: .2rem;
   }
 
-  .contact-table {
+  .contact-main__table {
     left: 0;
     width: 93%;
     font-size: 1.2rem;
   }
 
-  .contact-table:last-child {
+  .contact-main__table:last-child {
     margin-bottom: 0;
   }
 

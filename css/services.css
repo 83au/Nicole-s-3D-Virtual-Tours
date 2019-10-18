@@ -4,7 +4,7 @@
   padding: 3rem 0;
 }
 
-.services-hero-container {
+.services-hero__container {
   padding: 10rem 2rem;
   margin: 0 auto;
   color: var(--white);
@@ -14,7 +14,7 @@
   margin-top: -3rem;
 }
 
-.services-hero-container p {
+.services-hero__container p {
   margin: 5rem 0 1rem 0;
   width: 75%;
   animation: fade-in 1.3s .8s backwards;
@@ -168,11 +168,11 @@ caption {
 /* = Thin Desktop/Tablet = */
 
 @media only screen and (max-width: 64.93em) { /* 1039px */
-  .services-hero-container p {
+  .services-hero__container p {
     width: 90%;
   }
 
-  .services-main .container {
+  .services__container {
     width: 90%;
   }
 }
@@ -180,7 +180,7 @@ caption {
 /* = Mobile = */
 
 @media only screen and (max-width: 42em) { /* 672px */
-  .services-hero-container .services-hero__heading {
+  .services-hero__container .services-hero__heading {
     font-size: 2.8rem;
     letter-spacing: .2rem;
   }
