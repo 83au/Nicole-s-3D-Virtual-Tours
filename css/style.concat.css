@@ -243,7 +243,8 @@ header {
   margin-bottom: 4rem;
 }
 
-.home__resp-container {
+.home__resp-container,
+.services__resp-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
@@ -928,9 +929,18 @@ a:visited .btn {
   text-align: center;
 }
 
+/* Secret Sale section */
+
+.secret-sale {
+  margin: 8rem 1rem 4rem 1rem;
+}
+
+.secret-sale > .promo-vid {
+  margin: 0 auto;
+}
+
 .services-main__iframe-box {
   position: relative;
-  bottom: 10rem;
   overflow: hidden;
   padding-top: 56.25%;
   width: 100%;

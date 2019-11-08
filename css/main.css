@@ -243,7 +243,8 @@ header {
   margin-bottom: 4rem;
 }
 
-.home__resp-container {
+.home__resp-container,
+.services__resp-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
