@@ -1,22 +1,17 @@
 const main = () => {
-
   // Set copyright date
   $('footer span').append(new Date().getFullYear());
-
 
   // Toggle header background visibility when mobile menu is clicked
   $('.navButton').click(() => $('.header').toggleClass('hide'));
 
-
   // Smooth scroll for safari and ios browsers
   $('.gallery-main__nav-link').smoothScroll();
-
 
   // Lazy load images using remote cdn
   var lazyLoad = new LazyLoad({
     elements_selector: ".lazy",
   });
-
 
   // Slick
   $('.stills').slick({
@@ -43,11 +38,8 @@ const main = () => {
     ]
   });
 
-
   // Remove loading animation when page finishes loading
   $(window).on('load', () => {
-    // console.clear();
-    console.log("PAGE FULLY LOADED");
     $('.loader-container').addClass('remove');
   });
 };
