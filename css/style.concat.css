@@ -1003,6 +1003,25 @@ a:visited .btn {
   line-height: 2;
 }
 
+.services-main__bundle-statement h6 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.add-ons-heading {
+  margin-bottom: 2rem;
+}
+
+.services-main__bundle:not(:nth-child(2)) {
+  margin: 6rem auto;
+}
+
+.services-main__bundle strong {
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+
 .services-2 {
   margin-top: 5rem;
 }
@@ -1023,6 +1042,21 @@ caption {
 .rates {
   border-collapse: collapse;
   margin: 6rem auto;
+}
+
+.rates-1 {
+  min-width: 30%;
+}
+
+.rates.sub-rates {
+  margin: 1rem auto;
+  min-width: 30%;
+}
+
+.rates.sub-rates caption {
+  caption-side: bottom;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .rates-2 {
@@ -1244,15 +1278,6 @@ section .container {
   display: inline-block;
   margin: 3rem 0;
 }
-
-.link-a {
-  margin-right: 1rem;
-}
-
-.link-b {
-  margin-left: 1rem;
-}
-
 
 /* = Popup = */
 
