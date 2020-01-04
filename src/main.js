@@ -39,9 +39,7 @@ const main = () => {
   });
 
   // Remove loading animation when page finishes loading
-  $(window).on('load', () => {
-    $('.loader-container').addClass('remove');
-  });
+  $(window).on('load', () => $('.loader-container').addClass('remove'));
 };
 
 // Initialize
