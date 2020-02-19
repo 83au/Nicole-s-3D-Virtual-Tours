@@ -1150,6 +1150,7 @@ caption {
   align-items: center;
 
   background-color: #fff;
+  z-index: 1000;
 }
 
 .loader {
