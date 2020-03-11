@@ -1344,10 +1344,11 @@ section .container {
 
 /* = Normal Content = */
 
-/* .image-box {
+.image-box {
   width: 25%;
   height: auto;
-} */
+  overflow: hidden;
+}
 
 .image-box-doll {
   width: 50%;
@@ -1423,7 +1424,8 @@ section .container {
 }
 
 #studio,
-#house {
+#house,
+#trailer {
   background-color: var(--off-white);
 }
 
