@@ -94,7 +94,7 @@
 .services-main h5 {
   margin-top: 3rem;
   color: var(--dark-purple);
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -190,6 +190,55 @@ caption {
 }
 
 
+/* Special Offers */
+.special-offers {
+  margin-top: 8rem;
+}
+
+.special-offers__main-heading {
+  text-decoration: underline;
+}
+
+.special-offers__sub {
+  margin: 4rem 0;
+}
+
+.special-offers__sub-heading-main {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.special-offers__sub-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.special-offers ul {
+  text-align: left;
+}
+
+.special-offers__list > li {
+  margin: 2rem 0;
+  text-align: center;
+  list-style: inside;
+}
+
+.special-offers p {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.special-offers__sublist {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.special-offers__last-statement {
+  font-weight: bold;
+}
+
+
 /* === Media Queries === */
 
 /* = Wide Tablet = */
@@ -201,6 +250,10 @@ caption {
 
   .services-hero__heading {
     font-size: 6rem;
+  }
+
+  .services-main h5 {
+    font-size: 2.5rem;
   }
 
   .services__rates {
@@ -217,6 +270,14 @@ caption {
 
   .services__container {
     width: 90%;
+  }
+
+  .services-main h5 {
+    font-size: 2rem;
+  }
+
+  .special-offers__sublist {
+    width: 100%;
   }
 }
 
@@ -239,5 +300,9 @@ caption {
 
   .service-statement {
     width: 100%;
+  }
+
+  .special-offers {
+    margin-top: 0;
   }
 }
