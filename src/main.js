@@ -148,32 +148,12 @@ const main = () => {
     }
   ];
 
+
   // Insert first property into DOM
   const $galleryMain = $('.gallery-main');
   $galleryMain.html(makePropertySection(properties[0]));
 
-  // Add link event listeners
-  $('.gallery-main__nav').click(e => {
-    if (e.target.tagName === 'A') {
-      const property = properties.find(prop => e.target.href.includes(prop.id));
-      $galleryMain.html(makePropertySection(property));
-
-      // Reapply image plugins
-      $('.stills').slick(slickOptions);
-      
-      var lazyLoad = new LazyLoad({
-        elements_selector: ".lazy",
-      });
-    }
-  });
-
-  // Lazy load images using remote cdn
-  var lazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-  });
-
-  // Slick
-  const slickOptions = {
+  const slickConfig = {
     dots: true,
     infinite: true,
     speed: 300,
@@ -196,62 +176,62 @@ const main = () => {
       }
     ]
   };
-  $('.stills').slick(slickOptions);
+
+  // Add link event listeners
+  $('.gallery-main__nav').click(e => {
+    if (e.target.tagName === 'A') {
+      const property = properties.find(prop => e.target.href.includes(prop.id));
+      $galleryMain.html(makePropertySection(property));
+
+      // Reapply image plugins
+      $('.stills').slick(slickConfig);
+      
+      var lazyLoad = new LazyLoad({
+        elements_selector: ".lazy",
+      });
+    }
+  });
+
+  // Lazy load images using remote cdn
+  var lazyLoad = new LazyLoad({
+    elements_selector: ".lazy",
+  });
+
+  // Slick
+  $('.stills').slick(slickConfig);
 
 
   function makePropertySection(property) {
-    const html = `
-      <h3 class="gallery-section__heading">${property.title}</h3>
-  
-      <div class="primary-content__container">
-        <div class="primary-content two-story-content">
-          <h4 class="section-sub-heading">360 Tour Demo</h4>
-          <div class="resp-container">
-            <iframe title="${property.title} Virtual Tour" class="resp-iframe"
-              src='${property.matterportLink}' frameborder='0' allowfullscreen allow='vr'></iframe>
+    return `
+      <section id="${property.id}" class="gallery-section">
+        <div class="gallery-main__container container">
+          <h3 class="gallery-section__heading">${property.title}</h3>
+      
+          <div class="primary-content__container">
+            <div class="primary-content two-story-content">
+              <h4 class="section-sub-heading">360 Tour Demo</h4>
+              <div class="resp-container">
+                <iframe title="${property.title} Virtual Tour" class="resp-iframe"
+                  src='${property.matterportLink}' frameborder='0' allowfullscreen allow='vr'></iframe>
+              </div>
+            </div>
+          </div>
+      
+          <div class="tour-link">
+            <h4 class="section-sub-heading">360 Tour Link:</h4>
+            <a href="${property.matterportLink}"
+              class="gallery-main__sect--link">${property.matterportLink}</a>
+          </div>   
+
+          ${property.stills.map(still => createImagePopup(still)).join('')}    
+
+          <h4 class="section-sub-heading">Still Shots</h4>
+          <div id="2-story-stills" class="stills">
+          ${property.stills.map(still => createImageThumbnail(still)).join('')}
           </div>
         </div>
-      </div>
-  
-      <div class="tour-link">
-        <h4 class="section-sub-heading">360 Tour Link:</h4>
-        <a href="${property.matterportLink}"
-          class="gallery-main__sect--link">${property.matterportLink}</a>
-      </div>  
-
-      <h4 class="section-sub-heading">Still Shots</h4>
+      </section>
     `;
-
-    const popupImages = property.stills.map(still => createImagePopup(still));
-    const thumbnailImages = property.stills.map(still => createImageThumbnail(still));
-
-    // Create section element
-    const section = document.createElement('section');
-    section.id = property.id;
-    section.className = 'gallery-section';
-    
-    // Create container
-    const container = document.createElement('div');
-    container.className = 'gallery-main__container container';
-    container.insertAdjacentHTML('afterbegin', html);
-
-    // Create images container
-    const imagesContainer = document.createElement('div');
-    imagesContainer.id = property.stillsId;
-    imagesContainer.className = 'stills';
-
-    // Put images in thumbnail container
-    thumbnailImages.forEach(image => imagesContainer.insertAdjacentHTML('beforeend', image));
-
-    // Put images container in container
-    container.append(imagesContainer);
-
-    // Put popup images in container
-    popupImages.forEach(popup => container.insertAdjacentHTML('beforeend', popup));
-
-    section.append(container);
-
-    return section;
   }
 
 
