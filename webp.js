@@ -3,12 +3,12 @@
 const imagemin = require("imagemin");
 const webp = require("imagemin-webp");
 
-imagemin(["nightingale-stills-copy/*.jpg"], "nightingale-stills-webp", {
+imagemin(["2-story-house-stills/*.jpg"], "2-story-house-stills-webp", {
   use: [
     webp({
       quality: 75
     })
   ]
-}).then(function() {
+}).then(() => {
   console.log("Images converted!");
 });
