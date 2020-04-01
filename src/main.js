@@ -225,7 +225,7 @@ const main = () => {
     const popupImages = property.stills.map(still => createImagePopup(still));
     const thumbnailImages = property.stills.map(still => createImageThumbnail(still));
 
-    // Create sestion element
+    // Create section element
     const section = document.createElement('section');
     section.id = property.id;
     section.className = 'gallery-section';
