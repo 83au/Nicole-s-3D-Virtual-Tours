@@ -3,6 +3,7 @@ const properties = [
     id: 'two-story-house',
     title: 'Two Story House',
     matterportLink: 'https://my.matterport.com/show/?m=y3GUmkCHCeK',
+    stillsId: '2-story-stills',
     stills: [
       {
         id: '2-story-foyer',
