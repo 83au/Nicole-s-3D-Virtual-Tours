@@ -8,6 +8,8 @@ const main = () => {
   // Smooth scroll for safari and ios browsers
   $('.gallery-main__nav-link').smoothScroll();
 
+
+  // Add properties to DOM
   const properties = [
     {
       id: 'two-story-house',
@@ -24,12 +26,146 @@ const main = () => {
 
           thumbWebpSrcPath: './assets/2-story-stills-webp/foyer-1500w.webp',
           thumbSrcPath: './assets/2-story-stills/foyer-700w.jpg',
-        }
+        },
+        {
+          id: '2-story-foyer-2',
+          title: 'Foyer',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/foyer-2-1500w.webp',
+          popSrcPath: './assets/2-story-stills/foyer-2-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/foyer-2-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/foyer-2-700w.jpg',
+        },
+        {
+          id: '2-story-foyer-3',
+          title: 'Foyer',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/foyer-3-1500w.webp',
+          popSrcPath: './assets/2-story-stills/foyer-3-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/foyer-3-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/foyer-3-700w.jpg',
+        },
+        {
+          id: '2-story-living-room',
+          title: 'Living room',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/living-room-1500w.webp',
+          popSrcPath: './assets/2-story-stills/living-room-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/living-room-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/living-room-700w.jpg',
+        },
+        {
+          id: '2-story-bedroom',
+          title: 'Bedroom',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/bedroom-1500w.webp',
+          popSrcPath: './assets/2-story-stills/bedroom-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/bedroom-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/bedroom-700w.jpg',
+        },
+        {
+          id: '2-story-bedroom-2',
+          title: 'Bedroom',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/bedroom-2-1500w.webp',
+          popSrcPath: './assets/2-story-stills/bedroom-2-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/bedroom-2-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/bedroom-2-700w.jpg',
+        },
+        {
+          id: '2-story-bedroom-3',
+          title: 'Bedroom',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/bedroom-3-1500w.webp',
+          popSrcPath: './assets/2-story-stills/bedroom-3-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/bedroom-3-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/bedroom-3-700w.jpg',
+        },
+        {
+          id: '2-story-kitchen',
+          title: 'Kitchen',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/kitchen-1500w.webp',
+          popSrcPath: './assets/2-story-stills/kitchen-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/kitchen-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/kitchen-700w.jpg',
+        },
+        {
+          id: '2-story-front-yard',
+          title: 'Front yard',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/front-yard-1500w.webp',
+          popSrcPath: './assets/2-story-stills/front-yard-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/front-yard-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/front-yard-700w.jpg',
+        },
+        {
+          id: '2-story-pool',
+          title: 'Pool',
+          stillsId: '2-story-stills',
+          popWebpSrcPath: './assets/2-story-stills-webp/pool-1500w.webp',
+          popSrcPath: './assets/2-story-stills/pool-1500w.jpg',
+          sectionLink: '#2-story-stills',
+
+          thumbWebpSrcPath: './assets/2-story-stills-webp/pool-1500w.webp',
+          thumbSrcPath: './assets/2-story-stills/pool-700w.jpg',
+        },       
+      ]
+    },
+    {
+      id: 'nightingale',
+      title: 'Nightingale Care Assisted Living',
+      matterportLink: 'https://my.matterport.com/show/?m=8UjH9SufExS',
+      stills: [
+        {
+          id: 'night-liv',
+          title: 'Living room',
+          stillsId: 'nightingale-stills',
+          popWebpSrcPath: './assets/nightingale-stills-webp/living-room-1500w.webp',
+          popSrcPath: './assets/nightingale-stills/living-room-1500w.jpg',
+          sectionLink: '#nightingale-stills',
+
+          thumbWebpSrcPath: './assets/nightingale-stills-webp/living-room-700w.webp',
+          thumbSrcPath: './assets/nightingale-stills/living-room-700w.jpg',
+        },
       ]
     }
   ];
 
-  $('.gallery-main').append(makePropertySection(properties[0]));
+  // Insert first property into DOM
+  const $galleryMain = $('.gallery-main');
+  $galleryMain.html(makePropertySection(properties[0]));
+
+  // Add link event listeners
+  $('.gallery-main__nav').click(e => {
+    if (e.target.tagName === 'A') {
+      const property = properties.find(prop => e.target.href.includes(prop.id));
+      $galleryMain.html(makePropertySection(property));
+
+      // Reapply image plugins
+      $('.stills').slick(slickOptions);
+      
+      var lazyLoad = new LazyLoad({
+        elements_selector: ".lazy",
+      });
+    }
+  });
 
   // Lazy load images using remote cdn
   var lazyLoad = new LazyLoad({
@@ -37,7 +173,7 @@ const main = () => {
   });
 
   // Slick
-  $('.stills').slick({
+  const slickOptions = {
     dots: true,
     infinite: true,
     speed: 300,
@@ -59,7 +195,8 @@ const main = () => {
         }
       }
     ]
-  });
+  };
+  $('.stills').slick(slickOptions);
 
   function makePropertySection(property) {
     const html = `
