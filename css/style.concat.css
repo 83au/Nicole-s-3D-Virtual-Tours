@@ -1549,8 +1549,7 @@ section .container {
     display: block;
   }
 
-  .primary-content,
-  .primary-content.two-story-content {
+  .primary-content {
     width: 90%;
   }
 
