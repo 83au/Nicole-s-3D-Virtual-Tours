@@ -198,6 +198,7 @@ const main = () => {
   };
   $('.stills').slick(slickOptions);
 
+
   function makePropertySection(property) {
     const html = `
       <h3 class="gallery-section__heading">${property.title}</h3>
@@ -253,6 +254,7 @@ const main = () => {
     return section;
   }
 
+
   function createImageThumbnail(image) {
     return `
       <div class="image-box" id="norm-${image.id}">
@@ -268,6 +270,7 @@ const main = () => {
     `;
   }
 
+
   function createImagePopup(image) {
     return `
       <div class="popup" id="pop-${image.id}">
@@ -277,7 +280,7 @@ const main = () => {
               type="image/webp">
             <img class="pop-img lazy" data-src="${image.popSrcPath}" alt="${image.title}" type="image/jpg">
           </picture>
-          <a href="${image.sectionLink}" class="close">X</a>
+          <a href="#${image.stillsId}" class="close">X</a>
         </div>
       </div>
     `

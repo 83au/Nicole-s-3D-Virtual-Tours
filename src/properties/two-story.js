@@ -9,7 +9,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/foyer-1500w.webp',
       popSrcPath: './assets/2-story-stills/foyer-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/foyer-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/foyer-700w.jpg',
@@ -20,7 +19,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/foyer-2-1500w.webp',
       popSrcPath: './assets/2-story-stills/foyer-2-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/foyer-2-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/foyer-2-700w.jpg',
@@ -31,7 +29,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/foyer-3-1500w.webp',
       popSrcPath: './assets/2-story-stills/foyer-3-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/foyer-3-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/foyer-3-700w.jpg',
@@ -42,7 +39,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/living-room-1500w.webp',
       popSrcPath: './assets/2-story-stills/living-room-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/living-room-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/living-room-700w.jpg',
@@ -53,7 +49,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/bedroom-1500w.webp',
       popSrcPath: './assets/2-story-stills/bedroom-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/bedroom-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/bedroom-700w.jpg',
@@ -64,7 +59,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/bedroom-2-1500w.webp',
       popSrcPath: './assets/2-story-stills/bedroom-2-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/bedroom-2-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/bedroom-2-700w.jpg',
@@ -75,7 +69,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/bedroom-3-1500w.webp',
       popSrcPath: './assets/2-story-stills/bedroom-3-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/bedroom-3-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/bedroom-3-700w.jpg',
@@ -86,7 +79,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/kitchen-1500w.webp',
       popSrcPath: './assets/2-story-stills/kitchen-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/kitchen-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/kitchen-700w.jpg',
@@ -97,7 +89,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/front-yard-1500w.webp',
       popSrcPath: './assets/2-story-stills/front-yard-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/front-yard-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/front-yard-700w.jpg',
@@ -108,7 +99,6 @@ const twoStory = {
       stillsId: '2-story-stills',
       popWebpSrcPath: './assets/2-story-stills-webp/pool-1500w.webp',
       popSrcPath: './assets/2-story-stills/pool-1500w.jpg',
-      sectionLink: '#2-story-stills',
 
       thumbWebpSrcPath: './assets/2-story-stills-webp/pool-1500w.webp',
       thumbSrcPath: './assets/2-story-stills/pool-700w.jpg',
