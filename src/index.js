@@ -50,7 +50,7 @@ const main = () => {
   imagesInit();
 
   // Add link event listener
-  $('.gallery-main__nav').on('mouseover', e => {
+  $('.gallery-main__nav').click(e => {
     if (e.target.tagName !== 'A') return;
     const property = properties.find(prop => e.target.href.includes(prop.id));
     $galleryMain.html(makePropertySection(property));
