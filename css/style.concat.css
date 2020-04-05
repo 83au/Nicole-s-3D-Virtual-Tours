@@ -232,7 +232,7 @@ header {
   margin: 4rem 0;
   animation: fade-in 1.3s 1s backwards;
   color: var(--white);
-  width: 80%;
+  width: 70%;
   font-size: 1.5rem;
   line-height: 2;
   font-weight: 500;
@@ -240,7 +240,7 @@ header {
 
 .promo-vid {
   width: 60%;
-  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .home__resp-container,
@@ -251,6 +251,18 @@ header {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.home__content-wrapper {
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-match-box {
+  width: 18rem;
+  height: 15rem;
 }
 
 .home__buttons-btn,
@@ -603,10 +615,15 @@ a:visited .btn {
   }
 
   .home__para {
-    width: 85%;
+    width: 100%;
     font-size: 2rem;
     line-height: 2;
     margin: 7rem 0;
+  }
+
+  .home__content-wrapper {
+    margin: 1rem 0;
+    flex-direction: column;
   }
 
   .home__buttons-btn {
@@ -800,7 +817,7 @@ a:visited .btn {
 
   /* Banner */
   .home__main {
-    padding: 4rem 0;
+    padding: 0;
   }
 
   .home__heading {
@@ -810,7 +827,6 @@ a:visited .btn {
   }
 
   .home__para {
-    width: 90%;
     font-size: 1.5rem;
     line-height: 2;
     margin: 5rem 0;
@@ -818,22 +834,20 @@ a:visited .btn {
 
   .promo-vid {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+  }
+
+  .home__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
   .home__buttons-btn {
-    height: 4rem;
-    width: 11rem;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-
-  .home__buttons-btn--1 {
-    margin-right: .3rem;
-  }
-
-  .hero__buttons-btn--2 {
-    margin-left: .3rem;
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.3rem;
+    margin: 0;
   }
 
   /* Footer */
