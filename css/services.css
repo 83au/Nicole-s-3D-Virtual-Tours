@@ -62,15 +62,6 @@
   border: 0;
 }
 
-.services-main h3 {
-  margin-bottom: 3rem;
-  color: var(--dark-purple);
-  font-size: 2.5rem;
-  letter-spacing: .01rem;
-  text-align: center;
-  text-decoration: underline;
-}
-
 .service-statement {
   margin: 2rem auto;
   color: black;
@@ -287,9 +278,6 @@ caption {
   .services-hero__container .services-hero__heading {
     font-size: 2.8rem;
     letter-spacing: .2rem;
-  }
-  .services-main h3 {
-    margin-top: -3rem;
   }
   .services-2 {
     margin-top: 0;

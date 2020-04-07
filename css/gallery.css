@@ -35,7 +35,7 @@
 /* === Hero Section === */
 
 .gallery-hero {
-  padding: 9rem 0;
+  padding: 5rem 0;
   z-index: 5;
 }
 
@@ -94,7 +94,8 @@ video {
 }
 
 .gallery-section {
-  padding: 4rem 0 10rem 0;
+  padding: 4rem 0 4rem 0;
+  background-color: var(--off-white);
   width: 100%;
   text-align: center;
   overflow: hidden;
@@ -284,16 +285,6 @@ section .container {
   opacity: .8;
 }
 
-#two-story-house,
-#house,
-#trailer {
-  background-color: var(--off-white);
-}
-
-#single,
-#senior {
-  background-color: var(--white);
-}
 
 /* === Media Queries === */
 
