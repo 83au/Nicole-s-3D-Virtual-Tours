@@ -128,7 +128,7 @@
               Gallery</button></a>
           </div>
         </div>
-        <form id="info-field" class="info-field info-desktop" name="contact" netlify>
+        <form id="info-field" class="info-field info-desktop" name="contact" netlify-honeypot="bot-field" netlify>
           <h3 class="info-field__heading">Schedule now!</h3>        
           <div class="field-box">
             <label for="name" hidden>Name:</label>
@@ -162,11 +162,15 @@
             <label id="time-label" for="time">Time Requested:</label>
             <input type="time" id="time" name="time">
           </div>       
+          <!-- SPAM PROTECTION -->
+          <p style="display:none;">
+            <label>Don’t fill this out: <input name="bot-field"></label>
+          </p>
           <button type="submit" class="btn btn-submit">Submit</button>
         </form>
       </main>
       
-      <form id="info-field" class="info-field info-mobile" name="contact" netlify>
+      <form id="info-field" class="info-field info-mobile" name="contact" netlify-honeypot="bot-field" netlify>
         <h3 class="info-field__heading">Schedule now!</h3>
         <div class="field-box">
           <label for="name" hidden>Name:</label>
@@ -200,6 +204,10 @@
           <label id="time-label" for="time">Time Requested:</label>
           <input type="time" id="time" name="time">
         </div>
+        <!-- SPAM PROTECTION -->
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
         <button type="submit" class="btn btn-submit">Submit</button>
       </form>
       
