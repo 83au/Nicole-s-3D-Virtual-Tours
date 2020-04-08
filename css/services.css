@@ -1,7 +1,7 @@
 /* === Services & Rates === */
 
 .services-hero {
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
 }
 
 .services-hero__container {
@@ -254,9 +254,10 @@ caption {
 
 /* = Thin Desktop/Tablet = */
 
-@media only screen and (max-width: 64.93em) { /* 1039px */
+@media only screen and (max-width: 72em) { /* 1150px */
   .services-hero__container p {
-    width: 90%;
+    font-size: 1.5rem;
+    width: 60%;
   }
 
   .services__container {
@@ -278,6 +279,9 @@ caption {
   .services-hero__container .services-hero__heading {
     font-size: 2.8rem;
     letter-spacing: .2rem;
+  }
+  .services-hero__container p {
+    width: 90%;
   }
   .services-2 {
     margin-top: 0;

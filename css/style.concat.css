@@ -31,7 +31,7 @@ html {
 }
 
 .container {
-  width: 105rem;
+  width: 100rem;
   max-width: 100%;
 }
 
@@ -254,15 +254,25 @@ header {
   margin: 4rem 0;
   animation: fade-in 1.3s 1s backwards;
   color: var(--white);
-  width: 50%;
+  width: 70%;
   font-size: 1.5rem;
   line-height: 2;
   font-weight: 500;
 }
 
+.price-match-box--desktop {
+  position: absolute;
+  bottom: -30%;
+}
+
 .price-match-box {
-  width: 15rem;
-  height: 12rem;
+  right: 7.2rem;
+  width: 18rem;
+  height: 15rem;
+}
+
+.price-match-box--mobile {
+  display: none;
 }
 
 .home__buttons-btn,
@@ -313,21 +323,34 @@ a:visited .btn {
 
 /* === INFO FIELD === */
 .info-field {
-  position: relative;
-  top: 5rem;
-  right: 2rem;
+  position: absolute;
+  right: 5rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem;
 
   background-color: var(--white);
   border-radius: 6px;
   box-shadow: 0 5px 12px rgba(0,0,0,.2);
-  height: 51rem;
-  width: 25rem;
+  height: 48rem;
+  width: 21rem;
   z-index: 1000;
+}
+
+.info-home {
+  top: 20rem;
+  right: 6rem;
+}
+
+.info-services {
+  right: 1.8rem;
+}
+
+.info-gallery,
+.info-contact {
+  top: 12rem;
 }
 
 .info-mobile {
@@ -349,7 +372,7 @@ a:visited .btn {
 .info-field input {
   width: 100%;
   padding: .5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 #date-label, 
@@ -487,10 +510,31 @@ a:visited .btn {
   }
 }
 
-/* = Wide Tablet = */
+@media only screen and (min-height: 47.5em) { /* 700px */
+  .price-match-box--desktop {
+    bottom: -8%;
+  }
+}
 
+/* = Medium Desktop = */
+@media only screen and (max-width: 69.56em) { /* 1113px */
+  .info-home {
+    right: 1rem;
+  }
+  .price-match-box {
+    right: 2rem;
+  }
+  .home__para {
+    width: 60%;
+  }
+}
+
+/* = Wide Tablet = */
 @media only screen and (min-width: 62.5em) and (orientation: portrait) { /* 1000px */
-  /* Header */
+  html {
+    font-size: 50%;
+  }
+  
   header {
     max-height: 12rem;
   }
@@ -521,7 +565,7 @@ a:visited .btn {
 
   .header .container {
     height: 9rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .home__main {
@@ -530,15 +574,15 @@ a:visited .btn {
   }
 
   .home__heading {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .slogan {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .home__para {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 7rem 0;
     width: 90%;
     line-height: 2;
@@ -547,8 +591,17 @@ a:visited .btn {
   .home__buttons-btn {
     height: 7rem;
     width: 20.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 2rem;
+  }
+
+  .price-match-box--desktop {
+    right: 6rem;
+    bottom: 40%;
+  }
+
+  .info-contact {
+    top: 25rem;
   }
 
   /* Footer */
@@ -602,7 +655,7 @@ a:visited .btn {
 
 /* = Thin desktop = */
 
-@media only screen and (max-width: 55.63rem) { /* 890px */
+@media only screen and (max-width: 62.5em) { /* 1000px */
   /* Main */
   .no-webp .hero {
     background-image: var(--hero-background),
@@ -635,9 +688,26 @@ a:visited .btn {
     font-size: 1rem;
   }
 
+  .home__content-wrapper {
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+
+  .price-match-box--desktop {
+    display: none;
+  }
+
+  .price-match-box--mobile {
+    display: block;
+  }
+
   /* FOR CONTACT PAGE */
   .contact-main {
     flex-direction: column;
+  }
+
+  .info-field {
+    position: relative;
   }
 
   .info-desktop {
@@ -696,11 +766,6 @@ a:visited .btn {
     font-size: 2rem;
     line-height: 2;
     margin: 7rem 0;
-  }
-
-  .home__content-wrapper {
-    margin: 1rem 0;
-    flex-direction: column;
   }
 
   .home__buttons-btn {
@@ -914,12 +979,6 @@ a:visited .btn {
     margin-bottom: 0;
   }
 
-  /* .home__buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  } */
-
   .home__buttons-btn {
     height: 5rem;
     width: 15rem;
@@ -987,7 +1046,7 @@ a:visited .btn {
 /* === Services & Rates === */
 
 .services-hero {
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
 }
 
 .services-hero__container {
@@ -1240,9 +1299,10 @@ caption {
 
 /* = Thin Desktop/Tablet = */
 
-@media only screen and (max-width: 64.93em) { /* 1039px */
+@media only screen and (max-width: 72em) { /* 1150px */
   .services-hero__container p {
-    width: 90%;
+    font-size: 1.5rem;
+    width: 60%;
   }
 
   .services__container {
@@ -1264,6 +1324,9 @@ caption {
   .services-hero__container .services-hero__heading {
     font-size: 2.8rem;
     letter-spacing: .2rem;
+  }
+  .services-hero__container p {
+    width: 90%;
   }
   .services-2 {
     margin-top: 0;
