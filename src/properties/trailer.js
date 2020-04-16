@@ -11,7 +11,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/bedroom-1384w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/bedroom-694w.webp',
-      thumbSrcPath: './assets/2-story-stills/bedroom-694w.jpg',
+      thumbSrcPath: './assets/trailer-stills/bedroom-694w.png',
     },
     {
       id: 'trailer-bathroom',
@@ -21,7 +21,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/bathroom-1458w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/bathroom-728w.webp',
-      thumbSrcPath: './assets/2-story-stills/bathroom-728w.jpg',
+      thumbSrcPath: './assets/trailer-stills/bathroom-728w.png',
     },
     {
       id: 'trailer-dining',
@@ -31,7 +31,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/DiningRoom-1458w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/DiningRoom-728w.webp',
-      thumbSrcPath: './assets/2-story-stills/DiningRoom-728w.jpg',
+      thumbSrcPath: './assets/trailer-stills/DiningRoom-728w.png',
     },
     {
       id: 'trailer-front',
@@ -41,7 +41,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/Front-1536w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/Front-768w.webp',
-      thumbSrcPath: './assets/2-story-stills/Front-768w.jpg',
+      thumbSrcPath: './assets/trailer-stills/Front-768w.png',
     },
     {
       id: 'trailer-kitchen',
@@ -51,7 +51,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/kitchen-1456w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/kitchen-728w.webp',
-      thumbSrcPath: './assets/2-story-stills/kitchen-728w.jpg',
+      thumbSrcPath: './assets/trailer-stills/kitchen-728w.png',
     },
     {
       id: 'trailer-living',
@@ -61,7 +61,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/LivingRoom-1458w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/LivingRoom-728w.webp',
-      thumbSrcPath: './assets/2-story-stills/LivingRoom-728w.jpg',
+      thumbSrcPath: './assets/trailer-stills/LivingRoom-728w.png',
     },
     {
       id: 'trailer-living-2',
@@ -71,7 +71,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/LivingRoom-2-1518w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/LivingRoom-2-730w.webp',
-      thumbSrcPath: './assets/2-story-stills/LivingRoom-2-730w.jpg',
+      thumbSrcPath: './assets/trailer-stills/LivingRoom-2-730w.png',
     },
     {
       id: 'trailer-master',
@@ -81,7 +81,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/Master-1480w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/Master-740w.webp',
-      thumbSrcPath: './assets/2-story-stills/Master-740w.jpg',
+      thumbSrcPath: './assets/trailer-stills/Master-740w.png',
     },
     {
       id: 'trailer-bathroom',
@@ -91,7 +91,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/Bathroom-1458w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/Bathroom-728w.webp',
-      thumbSrcPath: './assets/2-story-stills/Bathroom-728w.jpg',
+      thumbSrcPath: './assets/trailer-stills/Bathroom-728w.png',
     },
     {
       id: 'trailer-patio',
@@ -101,7 +101,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/Patio-1536w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/Patio-768w.webp',
-      thumbSrcPath: './assets/2-story-stills/Patio-768w.jpg',
+      thumbSrcPath: './assets/trailer-stills/Patio-768w.png',
     },
     {
       id: 'trailer-side',
@@ -111,7 +111,7 @@ const trailer = {
       popSrcPath: './assets/trailer-stills/side-yard-1536w.png',
 
       thumbWebpSrcPath: './assets/trailer-stills-webp/side-yard-768w.webp',
-      thumbSrcPath: './assets/2-story-stills/side-yard-768w.jpg',
+      thumbSrcPath: './assets/trailer-stills/side-yard-768w.png',
     },
   ]
 };
