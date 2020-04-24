@@ -257,21 +257,6 @@ header {
   font-weight: 500;
 }
 
-.price-match-box--desktop {
-  position: absolute;
-  bottom: -30%;
-}
-
-.price-match-box {
-  right: 7.2rem;
-  width: 18rem;
-  height: 15rem;
-}
-
-.price-match-box--mobile {
-  display: none;
-}
-
 .btn {
   padding: 1.3rem 4rem;
   /* height: 5.5rem;
@@ -509,19 +494,10 @@ a:visited .btn {
   }
 }
 
-@media only screen and (min-height: 47.5em) { /* 700px */
-  .price-match-box--desktop {
-    bottom: -8%;
-  }
-}
-
 /* = Medium Desktop = */
 @media only screen and (max-width: 69.56em) { /* 1113px */
   .info-home {
     right: 1rem;
-  }
-  .price-match-box {
-    right: 2rem;
   }
   .home__para {
     width: 60%;
@@ -592,11 +568,6 @@ a:visited .btn {
     width: 20.5rem;
     font-size: 1.8rem;
     margin: 2rem;
-  }
-
-  .price-match-box--desktop {
-    right: 6rem;
-    bottom: 40%;
   }
 
   .info-contact {

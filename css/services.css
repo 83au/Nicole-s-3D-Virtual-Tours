@@ -40,10 +40,6 @@
   margin: 8rem 1rem 4rem 1rem;
 }
 
-.secret-sale > .promo-vid {
-  margin: 0 auto;
-}
-
 .services-main__iframe-box {
   position: relative;
   overflow: hidden;
@@ -100,7 +96,7 @@
 }
 
 .services-main__bundle-statement h6 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -116,6 +112,10 @@
 .services-main__bundle strong {
   font-weight: 600;
   color: var(--dark-purple);
+}
+
+.services-main__or-statement {
+  margin: -5rem 0;
 }
 
 .services-2 {
@@ -194,16 +194,17 @@ caption {
   margin: 4rem 0;
 }
 
+.special-offers__sub-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 .special-offers__sub-heading-main {
   font-size: 1.8rem;
   font-weight: 700;
   text-decoration: underline;
 }
 
-.special-offers__sub-heading {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
 
 .special-offers ul {
   text-align: left;
