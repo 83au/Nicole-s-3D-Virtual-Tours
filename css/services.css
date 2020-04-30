@@ -101,6 +101,10 @@
   text-decoration: underline;
 }
 
+.assisted-living-bundle__para {
+  margin: 1rem 0;
+}
+
 .add-ons-heading {
   margin-bottom: 2rem;
 }
