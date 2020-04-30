@@ -1,5 +1,6 @@
 const trailer = {
   id: 'trailer',
+  stillsID: 'trailer-stills',
   title: 'Triple Wide Trailer',
   matterportLink: 'https://my.matterport.com/show/?m=3UKuqJy3uu3&brand=0',
   stills: [

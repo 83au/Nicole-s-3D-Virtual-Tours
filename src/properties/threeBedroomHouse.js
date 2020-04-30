@@ -1,5 +1,6 @@
 const threeBedroomHouse = {
   id: 'three-bedroom-house',
+  stillsID: 'luxury-stills',
   title: '3 Bedroom House',
   matterportLink: 'https://my.matterport.com/show/?m=refUrB1qcHW',
   stills: [

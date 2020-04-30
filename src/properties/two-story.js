@@ -1,5 +1,6 @@
 const twoStory = {
   id: 'two-story-house',
+  stillsID: '2-story-stills',
   title: 'Two Story House',
   matterportLink: 'https://my.matterport.com/show/?m=y3GUmkCHCeK',
   stills: [

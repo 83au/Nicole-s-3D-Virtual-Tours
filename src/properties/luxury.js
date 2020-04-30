@@ -1,5 +1,6 @@
 const luxury = {
   id: 'luxury',
+  stillsID: 'luxury-stills',
   title: 'Luxury Vacation Rental',
   matterportLink: 'https://my.matterport.com/show/?m=MTraUFeLLce',
   stills: [

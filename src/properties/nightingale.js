@@ -1,5 +1,6 @@
 const nightingale = {
   id: 'nightingale',
+  stillsID: 'nightingale-stills',
   title: 'Nightingale Care Assisted Living',
   matterportLink: 'https://my.matterport.com/show/?m=8UjH9SufExS',
   stills: [

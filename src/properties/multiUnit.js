@@ -1,5 +1,6 @@
 const multiUnit = {
   id: 'multi-unit',
+  stillsID: 'multi-stills',
   title: 'Multi-Unit Residential',
   matterportLink: 'https://my.matterport.com/show/?m=afxgJA4ALGq',
   stills: [

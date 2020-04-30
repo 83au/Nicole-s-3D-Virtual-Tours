@@ -1,5 +1,6 @@
 const heights = {
   id: 'heights',
+  stillsID: 'heights-stills',
   title: '"The Heights Inn" Senior Care Facility',
   matterportLink: 'https://my.matterport.com/show/?m=DpGBerdrSuK',
   stills: [
