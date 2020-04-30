@@ -7,6 +7,19 @@ const main = () => {
   // Toggle header background visibility when mobile menu is clicked
   $('.navButton').click(() => $('.header').toggleClass('hide'));
 
+  function activateAccordion() {
+    $(this).toggleClass('active');
+    const $panel = $(this).next();
+    
+    if (parseInt($panel.css('max-height'))) {
+      $panel.css('max-height', '0px');
+    } else {
+      $panel.css('max-height', $panel.get(0).scrollHeight + 'px');
+    }
+  }
+
+  $('.accordion').click(activateAccordion);
+
   // Smooth scroll for safari and ios browsers
   $('.gallery-main__nav-link').smoothScroll();
 

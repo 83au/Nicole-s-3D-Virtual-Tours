@@ -353,10 +353,6 @@ section .container {
     display: none;
   }
 
-  section {
-    padding: 2rem 0 4rem 0;
-  }
-
   .gallery-section__heading {
     margin: 5rem 0 4rem 0;
     padding: 0 .5rem;
