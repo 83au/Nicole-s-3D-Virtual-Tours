@@ -10,14 +10,13 @@ const main = () => {
   function activateAccordion() {
     $(this).toggleClass('active');
     const $panel = $(this).next();
-    
+
     if (parseInt($panel.css('max-height'))) {
       $panel.css('max-height', '0px');
     } else {
       $panel.css('max-height', $panel.get(0).scrollHeight + 'px');
     }
   }
-
   $('.accordion').click(activateAccordion);
 
   // Smooth scroll for safari and ios browsers
