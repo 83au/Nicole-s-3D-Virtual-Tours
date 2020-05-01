@@ -1,11 +1,14 @@
 import properties from './properties/properties';
 
+
 const main = () => {
   // Set copyright date
   $('footer span').append(new Date().getFullYear());
 
+
   // Toggle header background visibility when mobile menu is clicked
   $('.navButton').click(() => $('.header').toggleClass('hide'));
+
 
   function activateAccordion() {
     $(this).toggleClass('active');
@@ -19,12 +22,15 @@ const main = () => {
   }
   $('.accordion').click(activateAccordion);
 
+
   // Smooth scroll for safari and ios browsers
   $('.gallery-main__nav-link').smoothScroll();
+
 
   // Insert first property into DOM
   const $galleryMain = $('.gallery-main');
   $galleryMain.html(makePropertySection(properties[0]));
+
 
   const slickConfig = {
     dots: true,
@@ -61,6 +67,7 @@ const main = () => {
   }
   imagesInit();
 
+
   // Add link event listener
   $('.gallery-main__nav').click(e => {
     if (e.target.tagName !== 'A') return;
@@ -73,6 +80,7 @@ const main = () => {
     $galleryMain.html(makePropertySection(property));
     imagesInit();
   });
+
 
   function makeDroneSection() {
     return `
@@ -99,6 +107,7 @@ const main = () => {
       </section>
     `
   }
+
 
   function makePropertySection(property) {
     return `
@@ -133,6 +142,7 @@ const main = () => {
     `;
   }
 
+
   function createImageThumbnail(image) {
     return `
       <div class="image-box" id="norm-${image.id}">
@@ -148,6 +158,7 @@ const main = () => {
     `;
   }
 
+
   function createImagePopup(image) {
     return `
       <div class="popup" id="pop-${image.id}">
@@ -162,6 +173,7 @@ const main = () => {
       </div>
     `
   }
+  
 
   // Remove loading animation when page finishes loading
   $(window).on('load', () => $('.loader-container').addClass('remove'));
