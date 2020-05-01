@@ -27,7 +27,7 @@
 
 .services-main .container {
   margin: -10rem auto 0 auto;
-  padding: 3rem;
+  padding: 1rem;
   background: var(--white);
   box-shadow: 0 5px 12px rgba(0, 0, 0, .2);
   border-radius: 6px;
@@ -78,7 +78,7 @@
 }
 
 .accordion {
-  padding: 1rem 0;
+  padding: 1rem .5rem;
   background-color: var(--light-purple);
   border: none;
   color: var(--white);
@@ -294,7 +294,7 @@ caption {
   }
 
   .services__container {
-    width: 90%;
+    width: 95%;
   }
 
   .services-main h5 {
