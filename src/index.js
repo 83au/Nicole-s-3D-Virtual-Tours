@@ -10,6 +10,7 @@ const main = () => {
   $('.navButton').click(() => $('.header').toggleClass('hide'));
 
 
+  // Services page accordion menu
   function activateAccordion() {
     $(this).toggleClass('active');
     const $panel = $(this).next();
@@ -23,6 +24,17 @@ const main = () => {
   $('.accordion').click(activateAccordion);
 
 
+  // Home page slick 
+  const VidsSlickConfig = {
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  $('.video-slider').slick(VidsSlickConfig);
+
+
   // Smooth scroll for safari and ios browsers
   $('.gallery-main__nav-link').smoothScroll();
 
@@ -32,7 +44,7 @@ const main = () => {
   $galleryMain.html(makePropertySection(properties[0]));
 
 
-  const slickConfig = {
+  const ImagesSlickConfig = {
     dots: true,
     infinite: true,
     speed: 300,
@@ -63,7 +75,7 @@ const main = () => {
     });
 
     // Slick
-    $('.stills').slick(slickConfig);
+    $('.stills').slick(ImagesSlickConfig);
   }
   imagesInit();
 

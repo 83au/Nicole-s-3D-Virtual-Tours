@@ -225,9 +225,13 @@ header {
   letter-spacing: .5rem;
 }
 
-.promo-vid {
+.video-slider {
   width: 60%;
   margin-top: 4rem;
+}
+
+.promo-vid-slide {
+  width: 60%;
 }
 
 .home__resp-container,
@@ -238,6 +242,15 @@ header {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.video-slider .slick-dots li button::before {
+  color: white;
+}
+
+.video-slider .slick-arrow {
+  margin: 2.5rem 50%;
+  transform: translateX(-50%);
 }
 
 .home__content-wrapper {
@@ -944,9 +957,13 @@ a:visited .btn {
     margin: 5rem 0;
   }
 
-  .promo-vid {
+  .video-slider {
     width: 100%;
     margin-bottom: 0;
+  }
+
+  .promo-vid-slide {
+    width: 100%;
   }
 
   .home__buttons-btn {
