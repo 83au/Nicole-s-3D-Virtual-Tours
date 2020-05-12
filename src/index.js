@@ -2,6 +2,8 @@ import properties from './properties/properties';
 
 
 const main = () => {
+  $('.loader-container').addClass('remove');
+  
   // Set copyright date
   $('footer span').append(new Date().getFullYear());
 
@@ -185,10 +187,6 @@ const main = () => {
       </div>
     `
   }
-  
-
-  // Remove loading animation when page finishes loading
-  $(window).on('load', () => $('.loader-container').addClass('remove'));
 };
 
 // Initialize

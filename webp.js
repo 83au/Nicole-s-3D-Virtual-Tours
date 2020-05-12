@@ -3,7 +3,7 @@
 const imagemin = require("imagemin");
 const webp = require("imagemin-webp");
 
-imagemin(["drone/*.jpg"], "drone-webp", {
+imagemin(["2-story-highlight-stills/*.jpg"], "2-story-highlight-webp", {
   use: [
     webp({
       quality: 75

@@ -1,7 +1,7 @@
 import twoStory from './two-story';
 import nightingale from './nightingale';
-import trailer from './trailer';
-import luxury from './luxury';
+import oneStory from './one-story';
+import twoStoryHighlight from './two-story-highlight';
 import heights from './heights';
 import multiUnit from './multiUnit';
 import drone from './drone';
@@ -9,8 +9,8 @@ import drone from './drone';
 const properties = [
   twoStory,
   nightingale,
-  trailer,
-  luxury,
+  oneStory,
+  twoStoryHighlight,
   multiUnit,
   heights,
   drone
