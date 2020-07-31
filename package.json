@@ -4,22 +4,24 @@
   "description": "Nicole's 3D Virtual Tours brochure website",
   "private": true,
   "scripts": {
-    "concat:css": "concat -o css/style.concat.css css/main.css css/services.css css/gallery.css css/contact.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
-    "minify:css": "minify css/style.prefix.css > css/style.css",
-    "webpack": "webpack --mode=production",
-    "build": "npm-run-all concat:css prefix:css minify:css webpack"
+    "build": "webpack --mode=production"
   },
   "author": "Beau Sherman",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.7.1",
+    "autoprefixer": "^9.8.5",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "concat": "^1.0.3",
+    "css-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "minify": "^4.1.3",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.3",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "sugarss": "^2.0.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },

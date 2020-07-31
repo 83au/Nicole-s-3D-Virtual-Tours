@@ -1,5 +1,5 @@
 import properties from './properties/properties';
-
+import './scss/main.scss';
 
 const main = () => {
   $('.loader-container').addClass('remove');
