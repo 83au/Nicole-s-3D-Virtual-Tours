@@ -1,6 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,7 +12,18 @@ module.exports = {
   },
 
   plugins: [
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {from: 'src/assets', to: 'assets/'},
+        {from: 'src/index.html', to: 'index.html'},
+        {from: 'src/services.html', to: 'services.html'},
+        {from: 'src/gallery.html', to: 'gallery.html'},
+        {from: 'src/contact.html', to: 'contact.html'},
+        {from: 'src/lib/', to: 'lib/'},
+      ]
+    }),
   ],
 
   module: {
@@ -30,6 +43,10 @@ module.exports = {
           'sass-loader'
         ]
       },
+      {
+        test: /\.(svg|png|jpe?g|gif|webp)$/i,
+        loader: 'url-loader',
+      }
     ]
   }
 }
