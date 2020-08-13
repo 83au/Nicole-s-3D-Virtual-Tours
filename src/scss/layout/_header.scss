@@ -1,0 +1,94 @@
+/* === Header === */
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  max-height: 6.2rem;
+  width: 100%;
+}
+
+.hide {
+  background: rgba(250, 0, 0, 0);
+  transition: all 400ms cubic-bezier(.38,0,.8,.33);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+}
+
+.header__logo-box {
+  height: 3.7rem;
+  width: 3.7rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.header__nav-burger {
+  display: none;
+}
+
+.header__nav li {
+  position: relative;
+  display: inline-block;
+  width: 15rem;
+  text-align: center;
+}
+
+.header__nav a:link {
+  padding: 2rem 0;
+  color: var(--white);
+  transition: color 250ms;
+  text-decoration: none;
+}
+
+.header__nav a:visited {
+  color: var(--white);
+}
+
+.header__nav a::after { /* Underline animation */
+  position: absolute;
+  top: 4.1rem;
+  content: '';
+  display: block;
+  background-color: var(--light-purple);
+  height: 3px;
+  width: 0;
+  transition: all 300ms;
+}
+
+.header__nav a:hover::after { /* ^ */
+  width: 100%;
+}
+
+.header__nav-button a:link {
+  padding: 1rem 3rem;
+  border-radius: .6rem;
+  border: 2px solid var(--light-purple);
+  color: var(--light-purple);
+  transition: all 250ms;
+}
+
+.header__nav-button a:visited {
+  border: 2px solid var(--light-purple);
+  color: var(--light-purple);
+}
+
+.header__nav .header__nav-button a:hover {
+  background-color: var(--light-purple);
+  color: var(--white);
+}
+
+.header__nav .header__nav-button a::after {
+  opacity: 0;
+}

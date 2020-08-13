@@ -1,0 +1,16 @@
+/* === Key Frames == */
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(3rem) scale(.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  100% { transform: rotate(1turn); }
+}
