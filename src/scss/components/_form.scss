@@ -1,0 +1,70 @@
+/* === INFO FIELD === */
+.info-field {
+  position: absolute;
+  right: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0 5px 12px rgba(0,0,0,.2);
+  height: 48rem;
+  width: 21rem;
+  z-index: 1000;
+
+  &__heading {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--dark-purple);
+  }
+
+  input {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+
+    &:focus {
+      outline: solid var(--light-purple);
+    }
+  }
+}
+
+.info {
+  &-home {
+    top: 20rem;
+    right: 6rem;
+  }
+
+  &-services {
+    right: 1.8rem;
+  }
+
+  &-gallery,
+  &-contact {
+    top: 12rem;
+  }
+
+  &-mobile {
+    display: none;
+  }
+}
+
+.field-box {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#date-label, 
+#time-label {
+  display: block;
+}
+
+.btn-submit {
+  margin-top: 2rem;
+  color: var(--white);
+}
