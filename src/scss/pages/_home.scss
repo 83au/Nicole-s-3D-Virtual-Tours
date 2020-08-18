@@ -3,11 +3,31 @@
 .no-webp .hero {
   background-image: var(--hero-background),
     url(../assets/banner/banner-1x.jpg);
+
+  @include respond(desktop-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-2x.jpg);
+  }
+
+  @include respond(tablet-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-2x-trimmed.jpg);
+  }
 }
 
 .webp .hero {
   background-image: var(--hero-background),
     url(../assets/banner-webp/banner-1x.webp);
+
+  @include respond(desktop-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-2x.webp);
+  }
+
+  @include respond(tablet-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-2x-trimmed.webp);
+  }
 }
 
 .home, 
@@ -60,10 +80,39 @@
     font-size: 1.5rem;
     line-height: 2;
     font-weight: 500;
+
+    @include respond(desktop-md) {
+      width: 60%;
+    }
   }
 
   &__buttons-btn {
     margin: 0 .5rem;
+  }
+
+  @include respond(tablet-lg) {
+    &__main {
+      height: 90%;
+      padding: 10rem 0;
+    }
+
+    &__heading {
+      font-size: 6rem;
+    }
+
+    &__para {
+      font-size: 2rem;
+      margin: 7rem 0;
+      width: 90%;
+      line-height: 2;
+    }
+
+    &__buttons-btn {
+      height: 7rem;
+      width: 20.5rem;
+      font-size: 1.8rem;
+      margin: 2rem;
+    }
   }
 }
 
@@ -93,6 +142,10 @@
   font-size: 1.5rem;
   letter-spacing: .1rem;
   text-align: center;
+
+  @include respond(tablet-lg) {
+    font-size: 2.3rem;
+  }
 }
 
 .video-slider {
@@ -114,8 +167,7 @@
 }
 
 // EXTEND ??
-.home__resp-container,
-.services__resp-container {
+.home__resp-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
@@ -153,151 +205,6 @@ a:visited .btn {
 
 
 /* === Media Queries === */
-
-/* = Wide Desktop = */
-
-@media only screen and (min-width: 75em) { /* 1200px */
-  .no-webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-2x.jpg);
-  }
-
-  .webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-2x.webp);
-  }
-}
-
-/* = Medium Desktop = */
-@media only screen and (max-width: 69.56em) { /* 1113px */
-  .info-home {
-    right: 1rem;
-  }
-  .home__para {
-    width: 60%;
-  }
-}
-
-/* = Wide Tablet = */
-@media only screen and (min-width: 62.5em) and (orientation: portrait) { /* 1000px */
-  html {
-    font-size: 50%;
-  }
-  
-  .header {
-    max-height: 12rem;
-
-    &__logo-box {
-      height: 4.7rem;
-      width: 4.7rem;
-    }
-
-    &__nav li {
-      width: 20rem;
-    }
-
-    &__nav-button a:link {
-      padding: 1.5rem 4rem;
-    }
-
-    .container {
-      height: 9rem;
-      font-size: 1.5rem;
-    }
-  }
-
-  /* Main */
-  .no-webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-2x-trimmed.jpg);
-  }
-
-  .webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-2x-trimmed.webp);
-  }
-
-  .home {
-    &__main {
-      height: 90%;
-      padding: 10rem 0;
-    }
-
-    &__heading {
-      font-size: 6rem;
-    }
-
-    &__para {
-      font-size: 2rem;
-      margin: 7rem 0;
-      width: 90%;
-      line-height: 2;
-    }
-
-    &__buttons-btn {
-      height: 7rem;
-      width: 20.5rem;
-      font-size: 1.8rem;
-      margin: 2rem;
-    }
-  }
-
-  .slogan {
-    font-size: 2.3rem;
-  }
-
-  .info-contact {
-    top: 25rem;
-  }
-
-  /* Footer */
-  .footer {
-    padding: 6rem 2.5rem;
-    font-size: 2rem;
-  }
-
-  .footer .container {
-    justify-content: center;
-  }
-
-  .fb-share-button {
-    position: relative;
-    left: 5rem;
-  }
-
-  .footer__icon-box {
-    height: 5rem;
-    width: 5rem;
-    margin-top: 2rem;
-  }
-
-  .footer__matt {
-    width: 12rem;
-    left: 1rem;
-    margin: 0 10rem;
-  }
-
-  .footer__nav {
-    width: 20rem;
-    flex-direction: column;
-    text-align: left;
-    margin-top: -1rem;
-    position: relative;
-    left: 5rem;
-  }
-
-  .footer li:not(:first-child) {
-    margin-top: 2rem;
-  }
-
-  .footer__nav li:not(:nth-child(odd)) {
-    margin-left: 0;
-  }
-
-  .footer__nav li:last-child {
-    right: 0;
-  }
-}
 
 /* = Thin desktop = */
 

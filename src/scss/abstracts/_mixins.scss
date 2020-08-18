@@ -1,0 +1,17 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop-lg {
+    @media only screen and (min-width: 75em) { @content }; // > 1200 px
+  } @else if $breakpoint == desktop-md {
+    @media only screen and (max-width: 69.56em) { @content }; // < 1113px
+  } @else if $breakpoint == tablet-lg {
+    @media only screen and (min-width: 62.5em) and (orientation: portrait) { @content }; // > 1000px 
+  } @else if $breakpoint == desktop-sm {
+    @media only screen and (max-width: 62.5em) { @content }; // < 1000px
+  } @else if $breakpoint == tablet {
+    @media only screen and (max-width: 55.63rem) and (orientation: portrait) { @content }; // < 890px
+  } @else if $breakpoint == phone-lg {
+    @media only screen and (max-width: 41.9em) { @content }; // < 670px
+  } @else if $breakpoint == phone-sm {
+    @media only screen and (max-width: 25em) and (orientation: portrait) { @content }; // < 400px
+  }
+}

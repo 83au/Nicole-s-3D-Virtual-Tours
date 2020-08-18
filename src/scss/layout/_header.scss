@@ -1,6 +1,6 @@
 /* === Header === */
 
-header {
+.header {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -8,6 +8,28 @@ header {
   background: rgba(0, 0, 0, 0.5);
   max-height: 6.2rem;
   width: 100%;
+
+  @include respond(tablet-lg) {
+    max-height: 12rem;
+
+    &__logo-box {
+      height: 4.7rem;
+      width: 4.7rem;
+    }
+
+    &__nav li {
+      width: 20rem;
+    }
+
+    &__nav-button a:link {
+      padding: 1.5rem 4rem;
+    }
+
+    .container {
+      height: 9rem;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .hide {

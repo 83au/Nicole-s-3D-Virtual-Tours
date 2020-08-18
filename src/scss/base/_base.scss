@@ -13,6 +13,10 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(tablet-lg) {
+    font-size: 50%;
+  }
 }
 
 .container {

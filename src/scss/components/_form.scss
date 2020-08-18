@@ -37,6 +37,10 @@
   &-home {
     top: 20rem;
     right: 6rem;
+
+    @include respond(desktop-md) {
+      right: 1rem;
+    }
   }
 
   &-services {
@@ -46,6 +50,12 @@
   &-gallery,
   &-contact {
     top: 12rem;
+  }
+
+  &-contact {
+    @include respond(tablet-lg) {
+      top: 25rem;
+    }
   }
 
   &-mobile {
