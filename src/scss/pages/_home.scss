@@ -490,6 +490,19 @@ a:visited .btn {
     color: gray;
   }
 
+  .slogan {
+    margin-bottom: -15rem;
+  }
+
+  .home__vid-mobile-respond {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
   .checkbox:checked ~ .header__nav-burger-box {
     background: rgba(0, 0, 0, 0.9);
     transform: translateX(0);
