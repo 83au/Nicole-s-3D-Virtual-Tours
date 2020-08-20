@@ -13,6 +13,11 @@
     background-image: var(--hero-background),
       url(../assets/banner/banner-2x-trimmed.jpg);
   }
+
+  @include respond(desktop-sm) {
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-slightly-trimmed-1x.jpg);
+  }
 }
 
 .webp .hero {
@@ -27,6 +32,11 @@
   @include respond(tablet-lg) {
     background-image: var(--hero-background),
       url(../assets/banner-webp/banner-2x-trimmed.webp);
+  }
+
+  @include respond(desktop-sm) {
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-slightly-trimmed-1x.webp);
   }
 }
 
@@ -90,6 +100,15 @@
     margin: 0 .5rem;
   }
 
+  &__resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
   @include respond(tablet-lg) {
     &__main {
       height: 90%;
@@ -112,6 +131,28 @@
       width: 20.5rem;
       font-size: 1.8rem;
       margin: 2rem;
+    }
+  }
+
+  @include respond(desktop-sm) {
+    &__main {
+      padding: 10rem 0;
+    }
+
+    &__heading {
+      font-size: 5rem;
+      letter-spacing: .2rem;
+    }
+
+    &__para {
+      font-size: 1.3rem;
+      line-height: 1.7;
+      margin: 4rem 0;
+    }
+
+    &__content-wrapper {
+      margin: 1rem 0;
+      flex-direction: column;
     }
   }
 }
@@ -167,16 +208,6 @@
 }
 
 // EXTEND ??
-.home__resp-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-// EXTEND ??
 .home__buttons-btn:hover,
 .btn:hover {
   transform: translateY(-.5rem) scale(1.02);
@@ -206,44 +237,11 @@ a:visited .btn {
 
 /* === Media Queries === */
 
-/* = Thin desktop = */
-
-@media only screen and (max-width: 62.5em) { /* 1000px */
-  /* Main */
-  .no-webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-slightly-trimmed-1x.jpg);
-  }
-
-  .webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-slightly-trimmed-1x.webp);
-  }
-
-  .home__main {
-    padding: 10rem 0;
-  }
-
-  .home__heading {
-    font-size: 5rem;
-    letter-spacing: .2rem;
-  }
-
-  .home__para {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    margin: 4rem 0;
-  }
-
+@include respond(desktop-sm) {
   .hero__buttons-btn {
     height: 4.5rem;
     width: 16rem;
     font-size: 1rem;
-  }
-
-  .home__content-wrapper {
-    margin: 1rem 0;
-    flex-direction: column;
   }
 
   .price-match-box--desktop {
@@ -252,39 +250,6 @@ a:visited .btn {
 
   .price-match-box--mobile {
     display: block;
-  }
-
-  /* FOR CONTACT PAGE */
-  .contact-main {
-    flex-direction: column;
-  }
-
-  .info-field {
-    position: relative;
-  }
-
-  .info-desktop {
-    display: none;
-  }
-
-  .info-field-container {
-    margin-top: -3rem;
-    padding-bottom: 2rem;
-    background-color: var(--off-white);
-  }
-
-  .info-mobile {
-    display: flex;
-    margin: 2rem auto;
-    width: 95%;
-    z-index: 1;
-  }
-
-  .info-field {
-    padding: 2rem 1rem;
-    top: 3rem;
-    right: 0;
-    height: 53rem;
   }
 }
 

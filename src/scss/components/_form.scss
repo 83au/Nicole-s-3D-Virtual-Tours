@@ -31,6 +31,20 @@
       outline: solid var(--light-purple);
     }
   }
+
+  @include respond(desktop-sm) {
+    padding: 2rem 1rem;
+    position: relative;
+    top: 3rem;
+    right: 0;
+    height: 53rem;
+
+    &-container {
+      margin-top: -3rem;
+      padding-bottom: 2rem;
+      background-color: var(--off-white);
+    }
+  }
 }
 
 .info {
@@ -47,7 +61,6 @@
     right: 1.8rem;
   }
 
-  &-gallery,
   &-contact {
     top: 12rem;
   }
@@ -61,6 +74,19 @@
   &-mobile {
     display: none;
   }
+
+  @include respond(desktop-sm) {
+    &-desktop {
+      display: none;
+    }
+
+    &-mobile {
+      display: flex;
+      margin: 2rem auto;
+      width: 95%;
+      z-index: 1;
+    }
+  }
 }
 
 .field-box {
@@ -69,8 +95,8 @@
   width: 100%;
 }
 
-#date-label, 
-#time-label {
+.date-label, 
+.time-label {
   display: block;
 }
 
