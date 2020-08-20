@@ -12,7 +12,7 @@
   border-radius: 6px;
   box-shadow: 0 5px 12px rgba(0,0,0,.2);
   height: 48rem;
-  width: 21rem;
+  width: 25rem;
   z-index: 1000;
 
   &__heading {
@@ -24,7 +24,7 @@
   input {
     width: 100%;
     padding: .5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: none;
 
     &:focus {
@@ -58,7 +58,8 @@
   }
 
   &-services {
-    right: 1.8rem;
+    top: 6.5rem;
+    right: 1rem;
   }
 
   &-contact {
