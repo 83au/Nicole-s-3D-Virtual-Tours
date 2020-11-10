@@ -66,7 +66,8 @@
   text-align: center;
 }
 
-.service-statement img {
+.service-statement img,
+.services-main__bundle-statement li img {
   display: inline-block;
   margin: 0 1rem;
   height: 1.4rem;
@@ -123,7 +124,14 @@
 }
 
 .services-main__bundle-statement li {
+  margin: 2rem auto;
+  max-width: 80%;
   line-height: 2;
+}
+
+.services-main__bundle-statement p {
+  margin: 1rem auto;
+  width: 80%;
 }
 
 .services-main__bundle-statement h6 {
@@ -329,5 +337,10 @@ caption {
 
   .special-offers {
     margin-top: 0;
+  }
+
+  .services-main__bundle-statement p {
+    margin: 1rem auto;
+    width: 99%;
   }
 }
