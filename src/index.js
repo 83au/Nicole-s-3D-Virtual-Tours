@@ -144,13 +144,6 @@ const main = () => {
             <a href="${property.matterportLink}"
               class="gallery-main__sect--link">${property.matterportLink}</a>
           </div>   
-
-          ${property.stills.map(still => createImagePopup(still)).join('')}    
-
-          <h4 class="section-sub-heading">Still Shots</h4>
-          <div id="${property.stillsID}" class="stills">
-          ${property.stills.map(still => createImageThumbnail(still)).join('')}
-          </div>
         </div>
       </section>
     `;
