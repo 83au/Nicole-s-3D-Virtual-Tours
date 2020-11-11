@@ -1,19 +1,25 @@
-import twoStory from './two-story';
-import nightingale from './nightingale';
-import oneStory from './one-story';
-import twoStoryHighlight from './two-story-highlight';
-import heights from './heights';
-import multiUnit from './multiUnit';
-import drone from './drone';
+import palisades from './palisades';
+import budgetWarehouse from './budget_warehouse';
+import twoStoryHouse from './2-story-house';
+import hollywoodEstate from './hollywood-estate';
+import kellerWilliams from './keller-williams';
+import seniorLiving from './senior-assisted-living';
+import happyPaws from './happy-paws';
+import sanGabMiniMans from './san-gabriel-mini-mansion';
+import hollywoodHomeGuest from './hollywood-home-guest';
+import fourPlex from './4-plex';
 
 const properties = [
-  twoStory,
-  nightingale,
-  oneStory,
-  twoStoryHighlight,
-  multiUnit,
-  heights,
-  drone
+  palisades,
+  budgetWarehouse,
+  twoStoryHouse,
+  hollywoodEstate,
+  kellerWilliams,
+  seniorLiving,
+  happyPaws,
+  sanGabMiniMans,
+  hollywoodHomeGuest,
+  fourPlex
 ];
 
 export default properties;
