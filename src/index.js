@@ -1,4 +1,4 @@
-import properties from './properties/properties';
+import virtualTours from './virtual-tours/virtual-tours';
 import './scss/main.scss';
 
 const main = () => {
@@ -43,7 +43,7 @@ const main = () => {
 
   // Insert first property into DOM
   const $galleryMain = $('.gallery-main');
-  $galleryMain.html(makePropertySection(properties[0]));
+  $galleryMain.html(makeVirtualTourSection(virtualTours[0]));
 
 
   const ImagesSlickConfig = {
@@ -90,8 +90,8 @@ const main = () => {
       imagesInit();
       return;
     }
-    const property = properties.find(prop => e.target.href.includes(prop.id));
-    $galleryMain.html(makePropertySection(property));
+    const property = virtualTours.find(prop => e.target.href.includes(prop.id));
+    $galleryMain.html(makeVirtualTourSection(property));
     imagesInit();
   });
 
@@ -111,11 +111,11 @@ const main = () => {
             </div>
           </div>
 
-          ${properties[properties.length - 1].map(still => createImagePopup(still)).join('')}    
+          ${virtualTours[virtualTours.length - 1].map(still => createImagePopup(still)).join('')}    
 
           <h4 class="section-sub-heading">Still Shots</h4>
           <div id="drone-stills" class="stills">
-          ${properties[properties.length - 1].map(still => createImageThumbnail(still)).join('')}
+          ${virtualTours[virtualTours.length - 1].map(still => createImageThumbnail(still)).join('')}
           </div>
         </div>
       </section>
@@ -123,7 +123,7 @@ const main = () => {
   }
 
 
-  function makePropertySection(property) {
+  function makeVirtualTourSection(property) {
     return `
       <section id="${property.id}" class="gallery-section">
         <div class="gallery-main__container container">

@@ -9,7 +9,7 @@ import sanGabMiniMans from './san-gabriel-mini-mansion';
 import hollywoodHomeGuest from './hollywood-home-guest';
 import fourPlex from './4-plex';
 
-const properties = [
+const virtualTours = [
   palisades,
   budgetWarehouse,
   twoStoryHouse,
@@ -22,4 +22,4 @@ const properties = [
   fourPlex
 ];
 
-export default properties;
+export default virtualTours;
