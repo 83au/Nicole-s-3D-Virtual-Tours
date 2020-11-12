@@ -1,4 +1,5 @@
-import virtualTours from './virtual-tours/virtual-tours';
+import virtualTours from './gallery-data/virtual-tours/virtual-tours';
+import photosData from './gallery-data/photos-data/photos-data';
 import './scss/main.scss';
 
 const main = () => {
@@ -77,7 +78,7 @@ const main = () => {
     });
 
     // Slick
-    $('.stills').slick(ImagesSlickConfig);
+    $('#stills').slick(ImagesSlickConfig);
   }
   imagesInit();
 
@@ -87,6 +88,12 @@ const main = () => {
     if (e.target.tagName !== 'A') return;
     if (e.target.href.includes('#drone')) {
       $galleryMain.html(makeDroneSection());
+      imagesInit();
+      return;
+    }
+    if (e.target.href.includes('#stills')) {
+      const stillsObj = photosData.find(obj => e.target.href.includes(obj.id));
+      $galleryMain.html(makeStillsSection(stillsObj));
       imagesInit();
       return;
     }
@@ -149,16 +156,30 @@ const main = () => {
     `;
   }
 
+  function makeStillsSection(obj) {
+    return `
+      <section id="${obj.id}" class="gallery-section">
+        <div class="gallery-main__container container">
+          <h3 class="gallery-section__heading">${obj.title}</h3>
+          ${obj.stills.map(still => createImagePopup(still)).join('')}    
+          <div id="stills">
+          ${obj.stills.map(still => createImageThumbnail(still)).join('')}
+          </div>
+        </div>
+      </section>
+    `
+  }
+ 
 
   function createImageThumbnail(image) {
+    console.log(image.id);
     return `
       <div class="image-box" id="norm-${image.id}">
         <a href="#pop-${image.id}">
           <picture>
-            <source class="lazy" srcset="${image.thumbWebpSrcPath}" alt="${image.title}" type="image/webp">
-
-            <source class="lazy" srcset="${image.thumbSrcPath}" alt="${image.title}" type="image/jpeg">
-            <img class="lazy" src="${image.thumbSrcPath}" alt="${image.title}" type="image/jpg">
+            <source class="lazy" srcset="${image.thumbWebpSrc}" alt="${image.title}" type="image/webp">
+            <source class="lazy" srcset="${image.thumbSrc}" alt="${image.title}" type="image/jpeg">
+            <img class="lazy" src="${image.thumbSrc}" alt="${image.title}" type="image/jpg">
           </picture>
         </a>
       </div>
@@ -171,11 +192,11 @@ const main = () => {
       <div class="popup" id="pop-${image.id}">
         <div class="popup-content">
           <picture>
-            <source class="pop-img lazy" data-srcset="${image.popWebpSrcPath}" alt="${image.title}"
+            <source class="pop-img lazy" data-srcset="${image.popWebpSrc}" alt="${image.title}"
               type="image/webp">
-            <img class="pop-img lazy" data-src="${image.popSrcPath}" alt="${image.title}" type="image/jpg">
+            <img class="pop-img lazy" data-src="${image.popSrc}" alt="${image.title}" type="image/jpg">
           </picture>
-          <a href="#${image.stillsId}" class="close">X</a>
+          <a href="#stills" class="close">X</a>
         </div>
       </div>
     `

@@ -3,7 +3,7 @@
 const imagemin = require("imagemin");
 const webp = require("imagemin-webp");
 
-imagemin(["2-story-highlight-stills/*.jpg"], "2-story-highlight-webp", {
+imagemin(["matterport-pro-2/*.jpg"], "matterport-pro-2-webp", {
   use: [
     webp({
       quality: 75
