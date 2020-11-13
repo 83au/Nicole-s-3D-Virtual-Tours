@@ -86,11 +86,6 @@ const main = () => {
   // Add link event listener
   $('.gallery-main__nav').click(e => {
     if (e.target.tagName !== 'A') return;
-    if (e.target.href.includes('#drone')) {
-      $galleryMain.html(makeDroneSection());
-      imagesInit();
-      return;
-    }
     if (e.target.href.includes('#stills')) {
       const stillsObj = photosData.find(obj => e.target.href.includes(obj.id));
       $galleryMain.html(makeStillsSection(stillsObj));
@@ -101,33 +96,6 @@ const main = () => {
     $galleryMain.html(makeVirtualTourSection(property));
     imagesInit();
   });
-
-
-  function makeDroneSection() {
-    return `
-      <section id="drone" class="gallery-section">
-        <div class="gallery-main__container container">
-          <h3 class="gallery-section__heading">Drone Footage</h3>
-
-          <div class="primary-content__container">
-            <div class="primary-content">
-              <h4 class="section-sub-heading">Drone Footage Video</h4>
-              <div class="resp-container">
-                <iframe class="resp-iframe" width="560" height="315" src="https://www.youtube.com/embed/D2NwSjDd4LQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-
-          ${virtualTours[virtualTours.length - 1].map(still => createImagePopup(still)).join('')}    
-
-          <h4 class="section-sub-heading">Still Shots</h4>
-          <div id="drone-stills" class="stills">
-          ${virtualTours[virtualTours.length - 1].map(still => createImageThumbnail(still)).join('')}
-          </div>
-        </div>
-      </section>
-    `
-  }
 
 
   function makeVirtualTourSection(property) {
