@@ -3,7 +3,7 @@
 const imagemin = require("imagemin");
 const webp = require("imagemin-webp");
 
-imagemin(["nikon-dslr/*.jpg"], "nikon-dslr-webp", {
+imagemin(["virtual-staging/*.jpg"], "virtual-staging-webp", {
   use: [
     webp({
       quality: 75
