@@ -1,6 +1,6 @@
 const drone = {
   id: 'stills-drone',
-  title: 'Matterport Pro 2 Photos',
+  title: '2.7k Drone Photos',
   stills: [
     {
       id: 'drone-valley',
