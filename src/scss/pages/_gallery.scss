@@ -28,7 +28,7 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 3rem 0;
     width: 70%;
@@ -52,7 +52,7 @@
 
 .gallery-main__nav-link:link,
 .gallery-main__nav-link:visited {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 0 1rem;
 
   animation: fade-in 1.3s .8s backwards;
@@ -66,12 +66,12 @@
 
   color: var(--light-purple);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-decoration: none;
 
   @include respond(tablet) {
-    margin: 2rem 2rem;
-  }
+    margin: 1rem 2rem;
+  } 
 }
 
 .gallery-main__nav-link:hover,
@@ -279,8 +279,12 @@ section .container {
   .gallery-main {
     margin-top: -3.3rem;
 
+    &__nav {
+      width: 100%;
+    }
+
     &__nav-link:link {
-      margin: 2rem 0;
+      margin: .8rem 0;
       display: block;
       text-align: center;
       background: transparent;
@@ -313,7 +317,7 @@ section .container {
   }
 
   .gallery-section__heading {
-    margin: 5rem 0 4rem 0;
+    margin: 5rem 0 3rem 0;
     padding: 0 .5rem;
     font-size: 2.5rem;
   }
