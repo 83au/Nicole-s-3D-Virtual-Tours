@@ -25,13 +25,24 @@
   align-items: center;
   justify-content: space-around;
 
+  & .accordion {
+    width: 70%;
+  }
+
   &__nav {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin: 3rem 0;
-    width: 70%;
+    margin: 3rem auto;
+    width: 80%;
+
+    @include respond(desktop-md) {
+      flex-direction: column;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__sect--link:link {
@@ -66,7 +77,7 @@
 
   color: var(--light-purple);
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-decoration: none;
 
   @include respond(tablet) {
@@ -278,10 +289,6 @@ section .container {
 @include respond(phone-lg) { /* 670px */
   .gallery-main {
     margin-top: -3.3rem;
-
-    &__nav {
-      width: 100%;
-    }
 
     &__nav-link:link {
       margin: .8rem 0;

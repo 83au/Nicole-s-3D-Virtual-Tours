@@ -101,25 +101,33 @@
       <div class="sub-hero gallery-hero">
         <div class="sub-hero__container gallery-main__container container">
           <h2 class="sub-hero__heading gallery-hero__heading">Gallery</h2>
-          <div class="gallery-main__nav">
-            <a href="#palisades" class="gallery-main__nav-link">Pacific Palisades Mansion</a>
-            <a href="#budgetWarehouse" class="gallery-main__nav-link">Budget Warehouse</a>
-            <a href="#twoStoryHouse" class="gallery-main__nav-link">2 Story House</a>
-            <a href="#hollywoodEstate" class="gallery-main__nav-link">Hollywood Hills Estate</a>
-            <a href="#kellerWilliams" class="gallery-main__nav-link">Keller Williams Signature Realty</a>
-            <a href="#seniorLiving" class="gallery-main__nav-link">Senior Assisted Living Home</a>
-            <a href="#happyPaws" class="gallery-main__nav-link">Happy Paws Grooming</a>
-            <a href="#sanGabMiniMans" class="gallery-main__nav-link">San Gabriel Valley Mini Mansion</a>
-            <a href="#hollywoodHomeGuest" class="gallery-main__nav-link">Hollywood Hills Home with Guest House</a>
-            <a href="#fourPlex" class="gallery-main__nav-link">4-Plex</a>
-            <a href="#stills-matterportPro2" class="gallery-main__nav-link">Matterport Pro 2 Photos</a>
-            <a href="#stills-drone" class="gallery-main__nav-link">2.7K Drone Photos</a>
-            <a href="#stills-nikon" class="gallery-main__nav-link">Nikon DSLR Photos</a>
-            <a href="#stills-virtual-staging" class="gallery-main__nav-link">Virtual Staging</a>
-            <a href="#stills-floor-plans" class="gallery-main__nav-link">Floor Plans</a>
-          </div>
+          <button class="accordion">Matterport 3D Virtual Tours</button>
+            <section class="panel gallery-main__panel">
+              <div class="gallery-main__nav">
+                  <a href="#palisades" class="gallery-main__nav-link">Pacific Palisades Mansion</a>
+                  <a href="#budgetWarehouse" class="gallery-main__nav-link">Budget Warehouse</a>
+                  <a href="#twoStoryHouse" class="gallery-main__nav-link">2 Story House</a>
+                  <a href="#hollywoodEstate" class="gallery-main__nav-link">Hollywood Hills Estate</a>
+                  <a href="#kellerWilliams" class="gallery-main__nav-link">Keller Williams Signature Realty</a>
+                  <a href="#seniorLiving" class="gallery-main__nav-link">Senior Assisted Living Home</a>
+                  <a href="#happyPaws" class="gallery-main__nav-link">Happy Paws Grooming</a>
+                  <a href="#sanGabMiniMans" class="gallery-main__nav-link">San Gabriel Valley Mini Mansion</a>
+                  <a href="#hollywoodHomeGuest" class="gallery-main__nav-link">Hollywood Hills Home with Guest House</a>
+                  <a href="#fourPlex" class="gallery-main__nav-link">4-Plex</a>
+              </div>
+            </section>
+            <button class="accordion">Photos</button>
+            <section class="panel gallery-main__panel">
+              <div class="gallery-main__nav">
+                <a href="#stills-matterportPro2" class="gallery-main__nav-link">Matterport Pro 2 Photos</a>
+                <a href="#stills-drone" class="gallery-main__nav-link">2.7K Drone Photos</a>
+                <a href="#stills-nikon" class="gallery-main__nav-link">Nikon DSLR Photos</a>
+                <a href="#stills-virtual-staging" class="gallery-main__nav-link">Virtual Staging</a>
+                <a href="#stills-floor-plans" class="gallery-main__nav-link">Floor Plans</a>
+              </div>
+            </section>
         </div>
-        <form id="info-field" class="info-field info-desktop" name="contact" netlify-honeypot="bot-field" netlify>
+        <form id="info-field" class="info-field info-desktop info-gallery" name="contact" netlify-honeypot="bot-field" netlify>
           <h3 class="info-field__heading">Schedule now!</h3>
         
           <div class="field-box">
@@ -185,7 +193,7 @@
     </main>
     
     <section class="info-field-container">
-      <form class="info-field info-mobile" name="contact" netlify-honeypot="bot-field" netlify>
+      <form class="info-field info-mobile info-gallery-mobile" name="contact" netlify-honeypot="bot-field" netlify>
         <h3 class="info-field__heading">Schedule now!</h3>
         <div class="field-box">
           <label for="name-mobile" hidden>Name:</label>

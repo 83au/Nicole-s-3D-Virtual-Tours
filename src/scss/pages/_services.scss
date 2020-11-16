@@ -78,33 +78,6 @@
   margin-bottom: 1rem;
 }
 
-.accordion {
-  padding: 1rem .5rem;
-  background-color: var(--light-purple);
-  border: none;
-  color: var(--white);
-  cursor: pointer;
-  width: 90%;
-
-  font-size: 2rem;
-  transition: .3s;
-}
-
-.accordion:focus {
-  outline: none;
-}
-
-.accordion:hover,
-.accordion.active {
-  background-color: var(--dark-purple);
-}
-
-.panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .3s ease-out;
-}
-
 .services-main__bundle-statement {
   margin: 3rem 0;
   text-align: center;
