@@ -11,9 +11,18 @@
   background-color: var(--white);
   border-radius: 6px;
   box-shadow: 0 5px 12px rgba(0,0,0,.2);
-  height: 48rem;
   width: 25rem;
   z-index: 100;
+
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+
+    @include respond(phone-lg) {
+      font-size: 1.3rem;
+    }
+  }
 
   &__heading {
     font-size: 2rem;
@@ -37,7 +46,6 @@
     position: relative;
     top: 3rem;
     right: 0;
-    height: 53rem;
 
     &-container {
       margin-top: -3rem;

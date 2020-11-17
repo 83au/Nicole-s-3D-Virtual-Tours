@@ -64,6 +64,10 @@
   width: 80%;
   max-width: 99%;
   text-align: center;
+
+  &.main-service-statement {
+    width: 60%;
+  }
 }
 
 .service-statement img,
@@ -304,7 +308,8 @@ caption {
     margin-top: 0;
   }
 
-  .service-statement {
+  .service-statement,
+  .service-statment.main-service-statement {
     width: 100%;
   }
 
