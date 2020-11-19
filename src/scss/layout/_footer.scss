@@ -62,7 +62,7 @@
   &__nav {
     display: flex;
     flex-wrap: wrap;
-    width: 23rem;
+    width: 26rem;
     list-style: none;
 
     a:link,
@@ -73,14 +73,18 @@
 
     a:hover { opacity: .7 };
 
-    li:last-child {
-      position: relative;
-      right: .5rem;
+    li {
+      width: 50%;
     }
 
-    li:not(:nth-child(odd)) {
-      margin-left: 4rem;
-    }
+    // li:last-child {
+    //   position: relative;
+    //   right: .5rem;
+    // }
+
+    // li:nth-child(even) {
+    //   margin-left: 4rem;
+    // }
   }
 
   span {

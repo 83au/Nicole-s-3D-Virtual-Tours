@@ -76,11 +76,17 @@
 
   &-contact {
     top: 12rem;
-  }
 
-  &-contact {
     @include respond(tablet-lg) {
       top: 25rem;
+    }
+  }
+
+  &-about {
+    top: 8rem;
+
+    @include respond(tablet-lg) {
+      top: 24rem;
     }
   }
 

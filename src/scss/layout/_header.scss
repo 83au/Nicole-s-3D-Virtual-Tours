@@ -50,21 +50,24 @@
 }
 
 .header__nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    width: 20%;
+    text-align: center;
+  }
 }
 
 .header__nav-burger {
   display: none;
-}
-
-.header__nav li {
-  position: relative;
-  display: inline-block;
-  width: 15rem;
-  text-align: center;
 }
 
 .header__nav a:link {
