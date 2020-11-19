@@ -22,6 +22,7 @@ module.exports = {
         {from: 'src/gallery.html', to: 'gallery.html'},
         {from: 'src/contact.html', to: 'contact.html'},
         {from: 'src/about.html', to: 'about.html'},
+        {from: 'src/reviews.html', to: 'reviews.html'},
         {from: 'src/lib/', to: 'lib/'},
       ]
     }),
