@@ -302,6 +302,10 @@ a:visited .btn {
     justify-content: space-around;
   }
 
+  // .footer .container > * {
+  //   border: 1px solid white;
+  // }
+
   .footer__icon-box {
     height: 5rem;
     width: 5rem;
@@ -318,12 +322,14 @@ a:visited .btn {
   }
 
   .footer__nav {
-    width: 15rem;
     flex-direction: column;
-    text-align: left;
     margin-top: -3rem;
     position: relative;
     left: -1rem;
+
+    li {
+      width: 100%;
+    }
   }
 
   .footer li:not(:first-child) {
