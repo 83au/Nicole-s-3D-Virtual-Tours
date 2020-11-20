@@ -1,0 +1,37 @@
+.reviews-hero__heading {
+  margin: 4rem 0;
+
+  @include respond(phone-lg) {
+    text-align: center;
+  }
+}
+
+.reviews-main {
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include respond(phone-lg) {
+      padding: 0 .5rem;
+    }
+  }
+
+  &__review-container {
+    margin: 1rem 0;
+    width: 70rem;
+
+    @include respond(phone-lg) {
+      width: 100%;
+    }
+  }
+
+  &__resp-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

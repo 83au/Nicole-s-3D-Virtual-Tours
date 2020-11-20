@@ -90,6 +90,14 @@
     }
   }
 
+  &-reviews {
+    top: 10rem;
+
+    @include respond(tablet-lg) {
+      top: 20rem;
+    }
+  }
+
   &-mobile {
     display: none;
   }
