@@ -107,6 +107,10 @@
   border: 2px solid var(--light-purple);
   color: var(--light-purple);
   transition: all 250ms;
+
+  @include respond(tablet) {
+    padding: .5rem 2rem;
+  }
 }
 
 .header__nav-button a:visited {
