@@ -61,8 +61,12 @@
 
   li {
     position: relative;
-    width: 20%;
+    width: 16.7%;
     text-align: center;
+
+    @include respond(desktop-sm) {
+      font-size: 1rem;
+    }
   }
 }
 
