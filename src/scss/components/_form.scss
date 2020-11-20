@@ -90,7 +90,8 @@
     }
   }
 
-  &-reviews {
+  &-reviews,
+  &-setup {
     top: 10rem;
 
     @include respond(tablet-lg) {

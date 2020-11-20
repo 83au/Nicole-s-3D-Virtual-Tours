@@ -15,3 +15,35 @@
     @media only screen and (max-width: 25em) and (orientation: portrait) { @content }; // < 400px
   }
 }
+
+@mixin darker-hero-background {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../assets/banner/banner-1x.jpg);
+
+  @include respond(desktop-lg) {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+      url(../assets/banner/banner-2x.jpg);
+  }
+
+  @include respond(tablet-lg) {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+      url(../assets/banner/banner-2x-trimmed.jpg);
+  }
+
+  @include respond(desktop-sm) {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+      url(../assets/banner/banner-slightly-trimmed-1x.jpg);
+  }
+}

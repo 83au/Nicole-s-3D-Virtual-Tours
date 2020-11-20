@@ -1,9 +1,6 @@
 .reviews-hero__heading {
   margin: 4rem 0;
-
-  @include respond(phone-lg) {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .reviews-main {
