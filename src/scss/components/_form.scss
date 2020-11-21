@@ -99,6 +99,14 @@
     }
   }
 
+  &-promotions {
+    top: 6rem;
+    
+    @include respond(tablet-lg) {
+      top: 18rem;
+    }
+  }
+
   &-mobile {
     display: none;
   }

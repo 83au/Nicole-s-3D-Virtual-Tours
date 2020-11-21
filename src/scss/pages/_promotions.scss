@@ -1,0 +1,11 @@
+.hero.promotions-hero {
+  @include darker-hero-background;
+}
+
+.promotions-hero__heading {
+  @extend %sub-hero-heading;
+}
+
+.promotions-main {
+  @include hero-main-content;
+}

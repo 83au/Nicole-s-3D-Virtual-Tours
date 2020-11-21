@@ -47,3 +47,26 @@
       url(../assets/banner/banner-slightly-trimmed-1x.jpg);
   }
 }
+
+@mixin hero-main-content {
+  width: 100%;
+  color: var(--white);
+
+  &__content {
+    width: 65%;
+    text-align: center;
+
+    @include respond(desktop-sm) {
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+  
+  &__content-container {
+    margin-bottom: 3rem;
+
+    @include respond(tablet-lg) {
+      margin-bottom: 4rem;
+    }
+  }
+}

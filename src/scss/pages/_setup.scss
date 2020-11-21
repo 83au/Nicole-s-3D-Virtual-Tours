@@ -3,8 +3,7 @@
 }
 
 .setup-hero__heading {
-  margin: 4rem 0 2rem 0;
-  text-align: center;
+  @extend %sub-hero-heading;
 
   @include respond(tablet-lg) {
     margin: 6rem 0 4rem 0;
@@ -12,25 +11,7 @@
 }
 
 .setup-main {
-  width: 100%;
-  color: var(--white);
-
-  &__content {
-    width: 65%;
-
-    @include respond(desktop-sm) {
-      padding: 1rem;
-      width: 100%;
-    }
-  }
-  
-  &__content-container {
-    margin-bottom: 2.5rem;
-
-    @include respond(tablet-lg) {
-      margin-bottom: 4rem;
-    }
-  }
+  @include hero-main-content; 
 
   &__resp-container {
     position: relative;
