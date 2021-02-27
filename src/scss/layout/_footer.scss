@@ -43,7 +43,7 @@
     a:hover,
     a:active,
     a:focus {
-      opacity: .7;
+      opacity: 0.7;
     }
   }
 
@@ -71,7 +71,9 @@
       color: inherit;
     }
 
-    a:hover { opacity: .7 };
+    a:hover {
+      opacity: 0.7;
+    }
 
     li {
       width: 50%;
@@ -79,8 +81,8 @@
   }
 
   span {
-    font-size: .5rem;
-    letter-spacing: .1rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
   }
 
   // MEDIA QUERIES
@@ -96,9 +98,15 @@
       position: relative;
       left: 5rem;
 
-      @include respond(tablet) { left: -4rem; }
-      @include respond(phone-lg) { left: 2rem; }
-      @include respond(phone-sm) { left: 0; }
+      @include respond(tablet) {
+        left: -4rem;
+      }
+      @include respond(phone-lg) {
+        left: 2rem;
+      }
+      @include respond(phone-sm) {
+        left: 0;
+      }
     }
 
     &__icon-box {
