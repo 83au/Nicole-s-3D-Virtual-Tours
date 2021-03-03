@@ -5,19 +5,18 @@
 */
 
 export function activateAccordion() {
-  $(this).toggleClass('active');
+  $(this).toggleClass("active");
   const $panel = $(this).next();
 
-  if (parseInt($panel.css('max-height'))) {
-    $panel.css('max-height', '0px');
+  if (parseInt($panel.css("max-height"))) {
+    $panel.css("max-height", "0px");
   } else {
-    $panel.css('max-height', $panel.get(0).scrollHeight + 'px');
+    $panel.css("max-height", $panel.get(0).scrollHeight + "px");
   }
 }
 
-
 export function makeVirtualTourSection(property) {
-    return `
+  return `
       <section id="${property.id}" class="gallery-section">
         <div class="gallery-main__container container">
           <h3 class="gallery-section__heading">${property.title}</h3>
@@ -40,30 +39,28 @@ export function makeVirtualTourSection(property) {
         </div>
       </section>
     `;
-  }
-  
+}
 
-  export function makeStillsSection(obj) {
-    return `
+export function makeStillsSection(obj) {
+  return `
       <section id="${obj.id}" class="gallery-section">
         <div class="gallery-main__container container">
           <h3 class="gallery-section__heading">${obj.title}</h3>
-          ${obj.stills.map(still => createImagePopup(still)).join('')}    
+          ${obj.stills.map((still) => createImagePopup(still)).join("")}    
           <div id="stills">
-          ${obj.stills.map(still => createImageThumbnail(still)).join('')}
+          ${obj.stills.map((still) => createImageThumbnail(still)).join("")}
           </div>
         </div>
       </section>
-    `
-  }
- 
+    `;
+}
 
-  /* ==================================
+/* ==================================
                 PRIVATE
   ==================================  */
 
-  function createImageThumbnail(image) {
-    return `
+function createImageThumbnail(image) {
+  return `
       <div class="image-box" id="norm-${image.id}">
         <a href="#pop-${image.id}">
           <picture>
@@ -74,11 +71,10 @@ export function makeVirtualTourSection(property) {
         </a>
       </div>
     `;
-  }
+}
 
-
-  function createImagePopup(image) {
-    return `
+function createImagePopup(image) {
+  return `
       <div class="popup" id="pop-${image.id}">
         <div class="popup-content">
           <picture>
@@ -90,4 +86,4 @@ export function makeVirtualTourSection(property) {
         </div>
       </div>
     `;
-  }
+}

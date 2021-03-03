@@ -1,14 +1,15 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const autoprefixer = require('autoprefixer');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const autoprefixer = require("autoprefixer");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
-  output: {  
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js' 
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "main.js",
   },
 
   plugins: [
@@ -16,17 +17,40 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
-        {from: 'src/assets', to: 'assets/'},
-        {from: 'src/index.html', to: 'index.html'},
-        {from: 'src/services.html', to: 'services.html'},
-        {from: 'src/gallery.html', to: 'gallery.html'},
-        {from: 'src/contact.html', to: 'contact.html'},
-        {from: 'src/about.html', to: 'about.html'},
-        {from: 'src/reviews.html', to: 'reviews.html'},
-        {from: 'src/setup.html', to: 'setup.html'},
-        {from: 'src/promotions.html', to: 'promotions.html'},
-        {from: 'src/lib/', to: 'lib/'},
-      ]
+        { from: "src/assets", to: "assets/" },
+        { from: "src/lib/", to: "lib/" },
+      ],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "services.html",
+      template: "./src/services.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "gallery.html",
+      template: "./src/gallery.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "./src/contact.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: "./src/about.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "reviews.html",
+      template: "./src/reviews.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "setup.html",
+      template: "./src/setup.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "promotions.html",
+      template: "./src/promotions.html",
     }),
   ],
 
@@ -36,31 +60,31 @@ module.exports = {
         test: /\.scss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          "css-loader",
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
-              ident: 'postcss',
+              ident: "postcss",
               plugins: () => autoprefixer(),
-            }
+            },
           },
-          'sass-loader'
-        ]
+          "sass-loader",
+        ],
       },
       {
         test: /\.(svg|png|jpe?g|gif|webp)$/i,
-        loader: 'url-loader',
+        loader: "url-loader",
       },
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
-  }
-}
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+    ],
+  },
+};
