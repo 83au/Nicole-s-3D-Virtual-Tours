@@ -1,10 +1,12 @@
 import { activateAccordion } from "./helpers";
-import "./scss/main.scss";
+import global from "./global";
 
-const main = () => {
+const services = () => {
+  global();
+
   // Initialize accordion functionality
   $(".accordion").on("click", activateAccordion);
 };
 
 // Initialize
-$(main);
+$(services);

@@ -1,5 +1,4 @@
 import global from "./global";
-import "./scss/main.scss";
 
 const main = () => {
   global();
