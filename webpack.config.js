@@ -6,10 +6,21 @@ const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+    services: "./src/services.js",
+    gallery: "./src/gallery.js",
+    global: "./src/global.js",
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "[name].bundle.js",
+  },
+
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
   },
 
   plugins: [
@@ -23,26 +34,32 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
       filename: "services.html",
       template: "./src/services.html",
+      chunks: ["services"],
     }),
     new HtmlWebpackPlugin({
       filename: "gallery.html",
       template: "./src/gallery.html",
+      chunks: ["gallery"],
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",
       template: "./src/contact.html",
+      chunks: ["global"],
     }),
     new HtmlWebpackPlugin({
       filename: "about.html",
       template: "./src/about.html",
+      chunks: ["global"],
     }),
     new HtmlWebpackPlugin({
       filename: "reviews.html",
       template: "./src/reviews.html",
+      chunks: ["global"],
     }),
     new HtmlWebpackPlugin({
       filename: "setup.html",
@@ -51,6 +68,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "promotions.html",
       template: "./src/promotions.html",
+      chunks: ["global"],
     }),
   ],
 
