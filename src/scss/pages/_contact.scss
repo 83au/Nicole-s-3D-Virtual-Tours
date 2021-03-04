@@ -1,3 +1,7 @@
+.hero.contact-hero {
+  @include darker-hero-background;
+}
+
 .contact-main {
   padding: 5rem 1rem 2rem 1rem;
   height: 100%;
@@ -20,7 +24,7 @@
   position: relative;
   left: -4rem;
   margin: 4rem 0;
-  animation: fade-in 1.3s .6s backwards;
+  animation: fade-in 1.3s 0.6s backwards;
   border-collapse: collapse;
   width: 70%;
 }
@@ -28,11 +32,11 @@
 /* Animations */
 
 .contact-main__table:nth-child(2) tr:first-child {
-  animation: fade-in 1.3s .6s backwards;
+  animation: fade-in 1.3s 0.6s backwards;
 }
 
 .contact-main__table:nth-child(2) tr:last-child {
-  animation: fade-in 1.3s .8s backwards;
+  animation: fade-in 1.3s 0.8s backwards;
 }
 
 .contact-main__table:last-child tr:first-child {
@@ -61,21 +65,22 @@
 
 .contact-info a:visited {
   color: var(--gold);
-  opacity: .9;
+  opacity: 0.9;
   font-weight: 400;
 }
 
 .contact-info a:hover,
 .contact-info a:focus,
 .contact-info a:active {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 /* === Media Queries === */
 
 /* = Wide Tablet */
 
-@media only screen and (min-width: 62.5em) and (orientation: portrait) { /* 1000px */
+@media only screen and (min-width: 62.5em) and (orientation: portrait) {
+  /* 1000px */
   .contact-main {
     padding: 10rem 0;
   }
@@ -87,7 +92,7 @@
   .contact-hero__heading {
     margin-bottom: 3rem;
     font-size: 6rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
   }
 
   .contact-info {
@@ -100,7 +105,8 @@
 }
 
 /* = Tablet = */
-@media only screen and (max-width: 770px) and (orientation: portrait) { /* 770px */
+@media only screen and (max-width: 770px) and (orientation: portrait) {
+  /* 770px */
   .contact-main {
     padding: 10rem 0;
   }
@@ -115,7 +121,8 @@
 }
 
 /* = Mobile = */
-@media only screen and (max-width: 41.9em) { /* 670px */
+@media only screen and (max-width: 41.9em) {
+  /* 670px */
   .contact-main {
     padding: 5rem 0;
   }
@@ -127,7 +134,7 @@
 
   .contact-hero__heading {
     font-size: 2.5rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
   }
 
   .contact-main__table {

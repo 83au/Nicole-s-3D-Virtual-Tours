@@ -1,54 +1,5 @@
 /* === Main Content === */
 
-.no-webp .hero {
-  background-image: var(--hero-background),
-    url(../assets/banner/banner-1x.jpg);
-
-  @include respond(desktop-lg) {
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-2x.jpg);
-  }
-
-  @include respond(tablet-lg) {
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-2x-trimmed.jpg);
-  }
-
-  @include respond(desktop-sm) {
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-slightly-trimmed-1x.jpg);
-  }
-}
-
-.webp .hero {
-  background-image: var(--hero-background),
-    url(../assets/banner-webp/banner-1x.webp);
-
-  @include respond(desktop-lg) {
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-2x.webp);
-  }
-
-  @include respond(tablet-lg) {
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-2x-trimmed.webp);
-  }
-
-  @include respond(desktop-sm) {
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-slightly-trimmed-1x.webp);
-  }
-}
-
-.home, 
-.hero {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .home {
   &__main {
     display: flex;
@@ -66,13 +17,14 @@
   }
 
   &__heading {
+    animation: fade-in 1.3s 0.3s backwards;
     color: var(--white);
+    font-family: "Kaushan Script", cursive;
     font-size: 5rem;
-    letter-spacing: .3rem;
     font-weight: 600;
+    letter-spacing: 0.3rem;
     position: relative;
     top: 1rem;
-    animation: fade-in 1.3s .3s backwards;
   }
 
   &__content-wrapper {
@@ -97,7 +49,7 @@
   }
 
   &__buttons-btn {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
 
   &__resp-container {
@@ -141,7 +93,7 @@
 
     &__heading {
       font-size: 5rem;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
     }
 
     &__para {
@@ -157,31 +109,12 @@
   }
 }
 
-.sub-hero {
-  display: flex;
-  justify-content: center;
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__heading {
-    animation: fade-in 1.3s .3s backwards;
-    color: var(--white);
-    font-size: 4rem;
-    letter-spacing: .5rem;
-  }
-}
-
 .slogan {
   margin-top: 4rem;
-  animation: fade-in 1.3s .8s backwards;
+  animation: fade-in 1.3s 0.8s backwards;
   color: var(--white);
   font-size: 1.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-align: center;
 
   @include respond(tablet-lg) {
@@ -210,7 +143,7 @@
 // EXTEND ??
 .home__buttons-btn:hover,
 .btn:hover {
-  transform: translateY(-.5rem) scale(1.02);
+  transform: translateY(-0.5rem) scale(1.02);
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
@@ -234,7 +167,6 @@ a:visited .btn {
   color: var(--white);
 }
 
-
 /* === Media Queries === */
 
 @include respond(desktop-sm) {
@@ -253,9 +185,9 @@ a:visited .btn {
   }
 }
 
-
 /* = Tablet = */
-@media only screen and (max-width: 55.63rem) and (orientation: portrait) { /* 890px */
+@media only screen and (max-width: 55.63rem) and (orientation: portrait) {
+  /* 890px */
   /* Main */
   .no-webp .hero {
     height: 100%;
@@ -296,7 +228,8 @@ a:visited .btn {
 
 /* = Wide Mobile = */
 
-@media only screen and (max-width: 41.9em) { /* 670px */
+@media only screen and (max-width: 41.9em) {
+  /* 670px */
   /* Main */
   .no-webp .hero {
     background-image: var(--hero-background),
@@ -310,7 +243,7 @@ a:visited .btn {
 
   .header {
     position: fixed;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     background: rgba(0, 0, 0, 0.9);
     z-index: 5;
   }
@@ -343,13 +276,13 @@ a:visited .btn {
 
   .navButton span {
     display: block;
-    content: '';
+    content: "";
     background-color: var(--light-purple);
     width: 3.3rem;
     height: 4px;
     position: absolute;
     left: 2rem;
-    border-radius: 1rem
+    border-radius: 1rem;
   }
 
   .navButton span:first-child {
@@ -474,7 +407,6 @@ a:visited .btn {
     margin: 0;
   }
 }
-
 
 /* === Current Page link style === */
 .header__nav a.current,

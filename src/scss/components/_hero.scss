@@ -1,0 +1,65 @@
+.no-webp .hero {
+  background-image: var(--hero-background), url(../assets/banner/banner-1x.jpg);
+
+  @include respond(desktop-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-2x.jpg);
+  }
+
+  @include respond(tablet-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-2x-trimmed.jpg);
+  }
+
+  @include respond(desktop-sm) {
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-slightly-trimmed-1x.jpg);
+  }
+}
+
+.webp .hero {
+  background-image: var(--hero-background),
+    url(../assets/banner-webp/banner-1x.webp);
+
+  @include respond(desktop-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-2x.webp);
+  }
+
+  @include respond(tablet-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-2x-trimmed.webp);
+  }
+
+  @include respond(desktop-sm) {
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-slightly-trimmed-1x.webp);
+  }
+}
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.sub-hero {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    animation: fade-in 1.3s 0.3s backwards;
+    color: var(--white);
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+}

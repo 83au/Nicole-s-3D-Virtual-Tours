@@ -1,5 +1,4 @@
 /* === Reset === */
-
 *,
 *::before,
 *::after {
@@ -7,7 +6,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 /* === Global Styles === */
 
@@ -24,21 +22,10 @@ html {
   max-width: 100%;
 }
 
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-.home__heading {
-  font-family: 'Kaushan Script', cursive;
-}
-
-
 /* === Body === */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
