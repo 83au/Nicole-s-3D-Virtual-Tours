@@ -1,6 +1,6 @@
 import global from "./global";
 
-const main = () => {
+const home = () => {
   global();
 
   // Home page slick
@@ -16,7 +16,7 @@ const main = () => {
   // Home page iframes lazy-load
   const vidSlides = document.querySelectorAll(".promo-vid-slide");
   vidSlides.forEach((vidSlide) => {
-    vidSlide.addEventListener("click", (event) => {
+    vidSlide.addEventListener("click", () => {
       const source = vidSlide.dataset.source;
       vidSlide.innerHTML = `
         <div class="home__resp-container">
@@ -37,4 +37,4 @@ const main = () => {
 };
 
 // Initialize
-$(main);
+$(home);

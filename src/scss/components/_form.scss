@@ -16,8 +16,9 @@
 
   p {
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
+    color: var(--off-black);
 
     @include respond(phone-lg) {
       font-size: 1.3rem;
@@ -54,63 +55,8 @@
     }
   }
 }
-
+// *** SPLIT THESE INTO THEIR RESPECTIVE PAGE FILES
 .info {
-  &-home {
-    top: 20rem;
-    right: 6rem;
-
-    @include respond(desktop-md) {
-      right: 1rem;
-    }
-  }
-
-  &-services {
-    top: 6.5rem;
-    right: 1rem;
-  }
-
-  &-gallery {
-    right: 1rem;
-  }
-
-  &-contact {
-    top: 10rem;
-
-    @include respond(tablet-lg) {
-      top: 25rem;
-    }
-  }
-
-  &-about {
-    top: 8rem;
-
-    @include respond(tablet-lg) {
-      top: 24rem;
-    }
-  }
-
-  &-reviews {
-    right: 3rem;
-  }
-
-  &-reviews,
-  &-setup {
-    top: 10rem;
-
-    @include respond(tablet-lg) {
-      top: 20rem;
-    }
-  }
-
-  &-promotions {
-    top: 6rem;
-
-    @include respond(tablet-lg) {
-      top: 18rem;
-    }
-  }
-
   &-mobile {
     display: none;
   }

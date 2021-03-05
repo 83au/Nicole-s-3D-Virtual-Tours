@@ -11,9 +11,20 @@
       url(../assets/banner/banner-2x-trimmed.jpg);
   }
 
+  @include respond(tablet) {
+    height: 100%;
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-trimmed-1x.jpg);
+  }
+
   @include respond(desktop-sm) {
     background-image: var(--hero-background),
       url(../assets/banner/banner-slightly-trimmed-1x.jpg);
+  }
+
+  @include respond(phone-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner/banner-ultra-trimmed-1x.jpg);
   }
 }
 
@@ -35,12 +46,24 @@
     background-image: var(--hero-background),
       url(../assets/banner-webp/banner-slightly-trimmed-1x.webp);
   }
+
+  @include respond(tablet) {
+    height: 100%;
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-trimmed-1x.webp);
+  }
+
+  @include respond(phone-lg) {
+    background-image: var(--hero-background),
+      url(../assets/banner-webp/banner-ultra-trimmed-1x.webp);
+  }
 }
 
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: calc(100vh - 165px);
   padding-top: 5rem;
   padding-bottom: 5rem;
 }

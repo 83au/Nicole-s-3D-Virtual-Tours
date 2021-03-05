@@ -29,6 +29,16 @@
   width: 70%;
 }
 
+// Form
+.info-contact {
+  top: 7rem;
+
+  @include respond(tablet-lg) {
+    top: 22rem;
+    right: 2rem;
+  }
+}
+
 /* Animations */
 
 .contact-main__table:nth-child(2) tr:first-child {

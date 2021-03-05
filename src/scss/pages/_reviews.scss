@@ -3,6 +3,16 @@
   text-align: center;
 }
 
+// Form
+.info-reviews {
+  right: 3rem;
+  top: 9rem;
+
+  @include respond(tablet-lg) {
+    top: 20rem;
+  }
+}
+
 .reviews-main {
   &__content {
     display: flex;
@@ -11,7 +21,7 @@
     width: 100%;
 
     @include respond(phone-lg) {
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
     }
   }
 

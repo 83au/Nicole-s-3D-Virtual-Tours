@@ -11,7 +11,7 @@
 }
 
 .setup-main {
-  @include hero-main-content; 
+  @include hero-main-content;
 
   &__resp-container {
     position: relative;
@@ -20,5 +20,14 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+  }
+}
+
+// Form
+.info-setup {
+  top: 9rem;
+
+  @include respond(tablet-lg) {
+    top: 20rem;
   }
 }

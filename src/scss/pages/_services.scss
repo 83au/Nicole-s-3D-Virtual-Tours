@@ -17,7 +17,7 @@
 .services-hero__container p {
   margin: 5rem 0 1rem 0;
   width: 75%;
-  animation: fade-in 1.3s .8s backwards;
+  animation: fade-in 1.3s 0.8s backwards;
 }
 
 .services-main {
@@ -29,9 +29,15 @@
   margin: -10rem auto 0 auto;
   padding: 1rem;
   background: var(--white);
-  box-shadow: 0 5px 12px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   text-align: center;
+}
+
+// FORM
+.info-services {
+  top: 6rem;
+  right: 1rem;
 }
 
 /* Secret Sale section */
@@ -193,13 +199,12 @@ caption {
 }
 
 .rates tr:not(:last-child) td {
-  border-bottom: 1px solid rgba(191, 191, 191, .75);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.75);
 }
 
 .hours td:last-child {
   margin-left: 1rem;
 }
-
 
 /* Special Offers */
 
@@ -221,7 +226,6 @@ caption {
   font-weight: 700;
   text-decoration: underline;
 }
-
 
 .special-offers ul {
   text-align: left;
@@ -247,7 +251,6 @@ caption {
   font-weight: bold;
 }
 
-
 /* === Media Queries === */
 
 /* = Wide Tablet = */
@@ -272,7 +275,8 @@ caption {
 
 /* = Thin Desktop/Tablet = */
 
-@media only screen and (max-width: 72em) { /* 1150px */
+@media only screen and (max-width: 72em) {
+  /* 1150px */
   .services-hero__container p {
     font-size: 1.5rem;
     width: 60%;
@@ -293,10 +297,11 @@ caption {
 
 /* = Mobile = */
 
-@media only screen and (max-width: 42em) { /* 672px */
+@media only screen and (max-width: 42em) {
+  /* 672px */
   .services-hero__container .services-hero__heading {
     font-size: 2.8rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
   }
   .services-hero__container p {
     width: 90%;

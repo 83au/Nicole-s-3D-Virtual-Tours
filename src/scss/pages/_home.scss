@@ -140,30 +140,25 @@
   width: 60%;
 }
 
-// EXTEND ??
-.home__buttons-btn:hover,
-.btn:hover {
-  transform: translateY(-0.5rem) scale(1.02);
-  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
+.info-home {
+  top: 18rem;
+  right: 6rem;
+
+  @include respond(desktop-md) {
+    right: 1rem;
+  }
 }
 
-.home__buttons-btn:active,
-.home__buttons-btn:focus,
-.btn:active,
-.btn:focus {
-  transform: translateY(0);
-  outline: none;
+.home__buttons-btn {
+  @include button;
 }
 
-a:link .home__buttons-btn,
-a:link .btn {
+a:link .home__buttons-btn {
   color: var(--white);
   text-decoration: none;
 }
 
-a:visited .home__buttons-btn,
-a:visited .btn {
+a:visited .home__buttons-btn {
   color: var(--white);
 }
 
@@ -188,19 +183,6 @@ a:visited .btn {
 /* = Tablet = */
 @media only screen and (max-width: 55.63rem) and (orientation: portrait) {
   /* 890px */
-  /* Main */
-  .no-webp .hero {
-    height: 100%;
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-trimmed-1x.jpg);
-  }
-
-  .webp .hero {
-    height: 100%;
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-trimmed-1x.webp);
-  }
-
   /* Banner */
   .home__main {
     padding: 5rem 0;
@@ -230,118 +212,6 @@ a:visited .btn {
 
 @media only screen and (max-width: 41.9em) {
   /* 670px */
-  /* Main */
-  .no-webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner/banner-ultra-trimmed-1x.jpg);
-  }
-
-  .webp .hero {
-    background-image: var(--hero-background),
-      url(../assets/banner-webp/banner-ultra-trimmed-1x.webp);
-  }
-
-  .header {
-    position: fixed;
-    padding: 0 0.5rem;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 5;
-  }
-
-  /* Navigation */
-  .header__nav {
-    display: none;
-  }
-
-  .header__nav-burger {
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  .checkbox {
-    display: none;
-  }
-
-  .navButton {
-    position: absolute;
-    height: 6rem;
-    width: 6rem;
-    right: 0;
-    z-index: 50;
-  }
-
-  .navButton span {
-    display: block;
-    content: "";
-    background-color: var(--light-purple);
-    width: 3.3rem;
-    height: 4px;
-    position: absolute;
-    left: 2rem;
-    border-radius: 1rem;
-  }
-
-  .navButton span:first-child {
-    top: 1.5rem;
-    transition: transform 500ms;
-  }
-
-  .navButton span:nth-of-type(2) {
-    top: 2.5rem;
-    transition: transform 500ms;
-  }
-
-  .navButton span:nth-of-type(3) {
-    top: 3.5rem;
-    transition: transform 500ms;
-  }
-
-  .header__nav-burger-box {
-    position: fixed;
-
-    z-index: 0;
-
-    background: rgba(0, 0, 0, 0);
-    height: 100vh;
-    width: 100vw;
-    transform: translateX(50rem);
-    transition: all 300ms ease-in-out;
-  }
-
-  .header__nav-burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin-top: 2rem;
-
-    height: 80vh;
-    transition: all 400ms ease-in-out;
-    list-style: none;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .header__nav-burger-menu li {
-    margin-bottom: 2rem;
-  }
-
-  .header__nav-burger a:link,
-  .header__nav-burger a:visited {
-    padding: 2rem 0;
-    color: var(--white);
-    font-size: 2rem;
-    text-decoration: none;
-  }
-
-  .header__nav-burger a:active,
-  .header__nav-burger a:focus {
-    color: gray;
-  }
 
   .slogan {
     margin-bottom: -15rem;
@@ -354,26 +224,6 @@ a:visited .btn {
     width: 100%;
     height: auto;
     margin: 0 auto;
-  }
-
-  .checkbox:checked ~ .header__nav-burger-box {
-    background: rgba(0, 0, 0, 0.9);
-    transform: translateX(0);
-    z-index: 10;
-  }
-
-  .checkbox:checked ~ .navButton span:first-child {
-    transform: translateY(8px) rotate(135deg);
-    background-color: gray;
-  }
-
-  .checkbox:checked ~ .navButton > span:nth-of-type(2) {
-    transform: scale(0);
-  }
-
-  .checkbox:checked ~ .navButton span:nth-of-type(3) {
-    transform: translateY(-12px) rotate(-135deg);
-    background-color: gray;
   }
 
   /* Banner */
@@ -406,11 +256,4 @@ a:visited .btn {
     font-size: 1.5rem;
     margin: 0;
   }
-}
-
-/* === Current Page link style === */
-.header__nav a.current,
-.header__nav-burger a.current,
-.footer__nav a.current {
-  color: gray;
 }

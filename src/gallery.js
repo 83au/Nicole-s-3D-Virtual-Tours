@@ -9,6 +9,7 @@ import {
 
 const gallery = () => {
   global();
+
   // Remove loading animation
   $(".loader-container").addClass("remove");
 

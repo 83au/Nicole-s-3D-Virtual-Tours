@@ -9,3 +9,12 @@
 .promotions-main {
   @include hero-main-content;
 }
+
+// Form
+.info-promotions {
+  top: 5rem;
+
+  @include respond(tablet-lg) {
+    top: 18rem;
+  }
+}
