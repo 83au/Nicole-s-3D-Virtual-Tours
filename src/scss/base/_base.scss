@@ -22,6 +22,34 @@ html {
   max-width: 100%;
 }
 
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: calc(100vh - 165px);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.sub-hero {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    animation: fade-in 1.3s 0.3s backwards;
+    color: var(--white);
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+}
+
 .btn {
   @include button;
 }
@@ -33,6 +61,30 @@ a:link .btn {
 
 a:visited .btn {
   color: var(--white);
+}
+
+.slick-arrow {
+  margin: 2.5rem auto;
+  padding: 0.6rem 1.3rem;
+  background: var(--light-purple);
+  border-radius: 6px;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* === Body === */

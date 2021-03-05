@@ -1,4 +1,5 @@
 import global from "./global";
+import "./scss/pages/home.scss";
 
 const home = () => {
   global();

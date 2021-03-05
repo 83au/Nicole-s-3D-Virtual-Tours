@@ -1,0 +1,36 @@
+@import "../shared";
+@import "../components/accordion";
+
+.hero.setup-hero {
+  @include darker-hero-background;
+}
+
+.setup-hero__heading {
+  @extend %sub-hero-heading;
+
+  @include respond(tablet-lg) {
+    margin: 6rem 0 4rem 0;
+  }
+}
+
+.setup-main {
+  @include hero-main-content;
+
+  &__resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+// Form
+.info-setup {
+  top: 9rem;
+
+  @include respond(tablet-lg) {
+    top: 20rem;
+  }
+}

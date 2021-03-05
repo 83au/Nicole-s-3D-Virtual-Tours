@@ -6,6 +6,7 @@ import {
   makeStillsSection,
   activateAccordion,
 } from "./helpers";
+import "./scss/pages/gallery.scss";
 
 const gallery = () => {
   global();

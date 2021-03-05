@@ -1,5 +1,3 @@
-import "./scss/main.scss";
-
 const global = () => {
   // Set copyright date
   // $('footer span').append(new Date().getFullYear());

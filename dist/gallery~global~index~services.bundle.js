@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],[,function(n,o,t){"use strict";t.r(o);t(3);o.default=function(){$(".navButton").on("click",(function(){return $(".header").toggleClass("hide")}))}},,function(n,o,t){}]]);

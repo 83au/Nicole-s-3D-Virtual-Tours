@@ -10,6 +10,11 @@ module.exports = {
     index: "./src/index.js",
     services: "./src/services.js",
     gallery: "./src/gallery.js",
+    about: "./src/about.js",
+    reviews: "./src/reviews.js",
+    setup: "./src/setup.js",
+    promotions: "./src/promotions.js",
+    contact: "./src/contact.js",
     global: "./src/global.js",
   },
   output: {
@@ -47,28 +52,29 @@ module.exports = {
       chunks: ["gallery"],
     }),
     new HtmlWebpackPlugin({
-      filename: "contact.html",
-      template: "./src/contact.html",
-      chunks: ["global"],
-    }),
-    new HtmlWebpackPlugin({
       filename: "about.html",
       template: "./src/about.html",
-      chunks: ["global"],
+      chunks: ["about"],
     }),
     new HtmlWebpackPlugin({
       filename: "reviews.html",
       template: "./src/reviews.html",
-      chunks: ["global"],
+      chunks: ["reviews"],
     }),
     new HtmlWebpackPlugin({
       filename: "setup.html",
       template: "./src/setup.html",
+      chunks: ["setup"],
     }),
     new HtmlWebpackPlugin({
       filename: "promotions.html",
       template: "./src/promotions.html",
-      chunks: ["global"],
+      chunks: ["promotions"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "./src/contact.html",
+      chunks: ["contact"],
     }),
   ],
 
