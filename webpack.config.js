@@ -97,7 +97,14 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpe?g|gif|webp)$/i,
-        loader: "url-loader",
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: false,
+            },
+          },
+        ],
       },
       {
         test: /\.m?js$/,
