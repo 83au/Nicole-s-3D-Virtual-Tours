@@ -28,7 +28,7 @@
   padding: 3rem 0;
 }
 
-.services-main .container {
+.services__container {
   margin: -10rem auto 0 auto;
   padding: 1rem;
   background: var(--white);
@@ -286,6 +286,7 @@ caption {
   }
 
   .services__container {
+    margin-top: -20rem;
     width: 95%;
   }
 
@@ -307,7 +308,7 @@ caption {
     letter-spacing: 0.2rem;
   }
   .services-hero__container p {
-    width: 90%;
+    width: 100%;
   }
   .services-2 {
     margin-top: 0;
@@ -328,5 +329,9 @@ caption {
   .services-main__bundle-statement p {
     margin: 1rem auto;
     width: 99%;
+  }
+
+  .rates {
+    width: 80%;
   }
 }
