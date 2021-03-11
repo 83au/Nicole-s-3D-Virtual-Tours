@@ -16,6 +16,10 @@
 .setup-main {
   @include hero-main-content;
 
+  &__vid-container {
+    cursor: pointer;
+  }
+
   &__resp-container {
     position: relative;
     overflow: hidden;
