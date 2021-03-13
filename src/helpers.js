@@ -24,9 +24,7 @@ export function makeVirtualTourSection(property) {
           <div class="primary-content__container">
             <div class="primary-content two-story-content">
               <h4 class="section-sub-heading">360 Tour Demo</h4>
-              <div class="resp-container">
-                <iframe title="${property.title} Virtual Tour" class="resp-iframe"
-                  src='${property.matterportLink}' frameborder='0' allowfullscreen allow='vr'></iframe>
+              <div class="resp-container" data-title="${property.title}" data-src="${property.matterportLink}">
               </div>
             </div>
           </div>
@@ -39,6 +37,24 @@ export function makeVirtualTourSection(property) {
         </div>
       </section>
     `;
+}
+
+export function setupObserver() {
+  const toursObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const title = entry.target.dataset.title;
+      const src = entry.target.dataset.src;
+      entry.target.innerHTML = `
+        <iframe title="${title} Virtual Tour" class="resp-iframe"
+        src='${src}' frameborder='0' allowfullscreen allow='vr'></iframe>
+      `;
+      observer.unobserve(entry.target);
+    });
+  });
+
+  const respContainer = document.querySelector(".resp-container");
+  toursObserver.observe(respContainer);
 }
 
 export function makeStillsSection(obj) {

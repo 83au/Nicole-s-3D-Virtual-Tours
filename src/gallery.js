@@ -5,6 +5,7 @@ import {
   makeVirtualTourSection,
   makeStillsSection,
   activateAccordion,
+  setupObserver,
 } from "./helpers";
 import "./scss/pages/gallery.scss";
 
@@ -23,6 +24,7 @@ const gallery = () => {
   // Insert first property into DOM
   const $galleryMain = $(".gallery-main");
   $galleryMain.html(makeVirtualTourSection(virtualTours[0]));
+  setupObserver();
 
   const ImagesSlickConfig = {
     dots: true,
@@ -57,7 +59,6 @@ const gallery = () => {
     // Slick
     $("#stills").slick(ImagesSlickConfig);
   }
-  imagesInit();
 
   // Add link event listener
   $(".gallery-main__nav").on("click", (evt) => {
@@ -74,7 +75,7 @@ const gallery = () => {
       evt.target.href.includes(prop.id)
     );
     $galleryMain.html(makeVirtualTourSection(property));
-    imagesInit();
+    setupObserver();
   });
 };
 
