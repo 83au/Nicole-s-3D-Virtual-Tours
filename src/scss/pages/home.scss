@@ -1,5 +1,5 @@
-@import "../shared";
-@import "../components/hero";
+@import '../shared';
+@import '../components/hero';
 
 /* === Main Content === */
 .home {
@@ -21,7 +21,7 @@
   &__heading {
     animation: fade-in 1.3s 0.3s backwards;
     color: var(--white);
-    font-family: "Kaushan Script", cursive;
+    font-family: 'Kaushan Script', cursive;
     font-size: 5rem;
     font-weight: 600;
     letter-spacing: 0.3rem;
@@ -39,7 +39,7 @@
   &__para {
     margin: 4rem 0;
     animation: fade-in 1.3s 1s backwards;
-    color: var(--white);
+    color: #fff;
     width: 70%;
     font-size: 1.5rem;
     line-height: 2;
@@ -216,7 +216,7 @@ a:visited .home__buttons-btn {
   /* 670px */
 
   .slogan {
-    margin-bottom: -15rem;
+    margin-bottom: -17rem;
   }
 
   .home__vid-mobile-respond {
@@ -242,7 +242,7 @@ a:visited .home__buttons-btn {
   .home__para {
     font-size: 1.5rem;
     line-height: 2;
-    margin: 5rem 0;
+    margin: -3rem 0 2rem 0;
   }
 
   .video-slider {
