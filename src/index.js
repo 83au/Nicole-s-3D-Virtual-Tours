@@ -1,5 +1,5 @@
-import global from "./global";
-import "./scss/pages/home.scss";
+import global from './global';
+import './scss/pages/home.scss';
 
 const home = () => {
   global();
@@ -12,12 +12,12 @@ const home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  $(".video-slider").slick(VidsSlickConfig);
+  $('.video-slider').slick(VidsSlickConfig);
 
   // Home page iframes lazy-load
-  const vidSlides = document.querySelectorAll(".promo-vid-slide");
-  vidSlides.forEach((vidSlide) => {
-    vidSlide.addEventListener("click", () => {
+  const vidSlides = document.querySelectorAll('.promo-vid-slide');
+  vidSlides.forEach(vidSlide => {
+    vidSlide.addEventListener('click', () => {
       const source = vidSlide.dataset.source;
       vidSlide.innerHTML = `
         <div class="home__resp-container">
